@@ -12,7 +12,7 @@ fi
 t=$(date '+%s') 
 while [[ $(($(date '+%s') - $t)) -le 10800 ]]  
 do 
-  wget http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn -N 2>/dev/null 
+  wget -c http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn -N 2>/dev/null 
   sleep 5s 
   md5sum -c  md5file_gpw.md5
   wynik=$? 

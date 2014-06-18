@@ -225,6 +225,7 @@ void Tworz::create_tab_promo(Tabela* tab) {
    message_file_create(file_address);
 }
 
+
 void Tworz::create_tab_fact(Tabela* tab) {
   
    string name_tab = tab->getName_tab();
@@ -261,23 +262,97 @@ void Tworz::create_all_dimensions_tab(Tabela* t ) {
 		     out.close();
 		     message_file_create(file_address); 
 		} else {
-
+		     create_dimension(dimension);
 		}
          }
      }
 
 }
-
-void Tworz::create_dimension(Tabela* t) {
+void Tworz::create_dimension(Tabela* dimension) {
+     create_tab_intf(dimension);
+     create_tab_stg_dimension(dimension);
+     create_tab_dimension(dimension);
 }
+
+/////////////////////////////////////////////////
+
+
+void Tworz::create_tab_stg_dimension(Tabela* tab) {
+  
+   string name_tab = tab->getName_tab();
+   string file_address= create_file_address(f_create, p_stg,name_tab,f_sql);
+   ofstream& out= getZapis(file_address);
+
+     out << g_drop_table(p_stg,name_tab) << endl;
+     out << g_create_sequence(name_tab) << endl; 
+
+    out <<  g_create_table(p_stg, name_tab) << endl;    
+    out << "  id_" << name_tab << " integer default nextval('"<< name_tab << "_kmap_seq')" << endl;
+    out << "," <<  tab->show_tab();
+    out <<  ");" << endl;
+    out.close(); 
+   message_file_create(file_address);
+}
+
+
+void Tworz::create_tab_dimension(Tabela* tab) {
+  
+   string name_tab = tab->getName_tab();
+   string file_address= create_file_address(f_create, "",name_tab,f_sql);
+   ofstream& out= getZapis(file_address);
+
+     out << g_drop_table("",name_tab) << endl;
+    out <<  g_create_table("", name_tab) << endl;    
+    out << "  id_" << name_tab << " integer " << endl;
+    out << "," <<  tab->show_tab();
+    out <<  ");" << endl;
+    out.close(); 
+   message_file_create(file_address);
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////     Główna funkcja sterujące 
 void Tworz::insert() {
 cout << "Tworzenie  procesów dotyczące warstwy pośredniej i docelowej " << endl; 
+
+Tabela* dimension= NULL;
+string name_dim;
+vector<Columna*>& vec_column= w->getFact()->getTab();
+
 insert_stg(w->getFact());
-insert_kmap_dimension(w->getFact());
+
+     for (vector<Columna*>::iterator it=vec_column.begin(); it != vec_column.end(); ++it) {
+         if (2 == (*it)->getTyp() ) {
+                name_dim= (*it)->getNameColumnaWymiar(); 
+     	        dimension= w->getWymiar( name_dim);
+
+	        if (NULL==dimension) {
+                     insert_kmap_dimension(w->getFact());
+		} else {
+		     insert_stg(dimension);
+		}
+         }
+     }
+
+
 insert_promo(w->getFact());
+
+
+     for (vector<Columna*>::iterator it=vec_column.begin(); it != vec_column.end(); ++it) {
+         if (2 == (*it)->getTyp() ) {
+                name_dim= (*it)->getNameColumnaWymiar(); 
+     	        dimension= w->getWymiar( name_dim);
+
+	        if (NULL==dimension) {
+		} else {
+		     insert_dimension(dimension);
+		}
+         }
+     }
+
+
 insert_fact(w->getFact());
+
 cout << "Koniec  Tworzenia procesów dotyczące warstwy pośredniej i docelowej \n\n\n" << endl; 
 }
 
@@ -496,4 +571,43 @@ int count_key=0;
   out.close();
   message_file_create(file_address); 
 }
+
+
+
+void Tworz::insert_dimension(Tabela* t ) {
+  string name_tab= t->getName_tab();
+  vector<Columna*>& vec_column= t->getTab();
+int count_key=0;
+  string file_address= create_file_address( "", "" ,name_tab,f_sql);
+  ofstream& out= getZapis(file_address);
+
+  out << g_insert_into("",name_tab) << endl;
+ 
+         out <<  "id_" << t->getName_tab() <<endl;
+     for (vector<Columna*>::iterator it=vec_column.begin(); it != vec_column.end(); ++it) {
+	 out  << ",  "<< (*it)->getNameColumna()  << endl;
+     }
+
+  out << ")" << endl;
+  out << s_select << endl; 
+
+         out <<  "id_" << t->getName_tab() <<endl;
+     for (vector<Columna*>::iterator it=vec_column.begin(); it != vec_column.end(); ++it) {
+	out << ", " << (*it)->getNameColumna()  << endl;
+     }
+
+  out << s_from << p_stg << name_tab << " i " << endl;
+  out << s_where_not_exists << endl;
+  out << "(" << endl;
+  out << "    " << s_select << " 1 " << endl;
+  out << "    " << s_from << name_tab << " s " << endl;
+  out << "    " << s_where << endl;
+             out << "       i.id_" << t->getName_tab() << "= s.id_"  << t->getName_tab()  << endl;
+  out << ");" << endl;
+
+  out.close();
+  message_file_create(file_address); 
+}
+
+
 #endif

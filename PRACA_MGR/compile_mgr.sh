@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /home/and/Pulpit/PRACA_MGR
+cd $MGR_PRACA
 pdflatex praca_mgr.tex 
 
 

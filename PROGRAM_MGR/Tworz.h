@@ -72,6 +72,9 @@ void create_tab_stg(Tabela*  );
 void create_tab_promo(Tabela*);
 void create_tab_fact(Tabela* );
 
+void create_tab_stg_dimension(Tabela*);
+void create_tab_dimension(Tabela* );
+
 void create_all_dimensions_tab(Tabela* );
 void create_dimension(Tabela* t=NULL);
 
@@ -79,8 +82,10 @@ void insert();
 void insert_stg(Tabela* );
 void insert_kmap_dimension(Tabela* );
 void insert_promo(Tabela* );
-void insert_fact(Tabela* );
 
+/// funkce warstwy docelowej 
+void insert_fact(Tabela* );
+void insert_dimension(Tabela*);
 
 
 };
