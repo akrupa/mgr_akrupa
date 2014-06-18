@@ -1,0 +1,163 @@
+%\documentclass[a4paper,12pt]{ report}
+\documentclass[a4paper,12pt]{ report}
+\usepackage[ top=2.5cm, bottom=2.5cm, left=3 cm, right=2.5cm]{geometry}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm} % do definicji
+\usepackage{indentfirst}
+%\usepackage{epsfig}
+\usepackage{graphicx}
+%\usepackage{epstopdf}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{array} % tabulator
+
+
+
+\definecolor{bgcolor}{rgb}{0.0,0.0,0.0} 		% kolor tla pod kodem
+\definecolor{numbercolor}{rgb}{0.35,0.35,0.35} 	% kolor nr linii kodu
+\definecolor{codecolor}{rgb}{0.20,0.20,0.20} 	% kolor kodu
+\definecolor{keywordcolor}{rgb}{0.00,0.00,0.55}	% kolor slowa kluczowego
+\definecolor{commentcolor}{rgb}{0.50,0.50,0.50}	% kolor komentarza w kodzie
+
+% wyglad kodu w dokumencie
+\lstset{
+	basicstyle=\scriptsize,
+	keywordstyle=\color{keywordcolor}\bfseries,
+	commentstyle=\color{commentcolor}\slshape,
+	showstringspaces=false,
+	tabsize=1,
+	numbers=left,	
+	numbersep=1.5em,
+	stepnumber=1,
+	xleftmargin=1.2em,
+	xrightmargin=1.2em,
+	breaklines=true,	
+	breakatwhitespace=true,	
+	frameround=fttt,
+	frame=BLtr,
+	framextopmargin=1ex,
+	framexbottommargin=1ex,
+	framexleftmargin=1ex,
+	framexrightmargin=1ex,
+	backgroundcolor=\color{bgcolor},	
+	breakautoindent=false,
+	belowcaptionskip=1.5ex
+}
+
+
+
+\def\noindentation{\let\@afterindentfalse}
+\pagestyle{plain}
+
+
+\linespread{1.5}
+\setlength{\parindent}{1cm}
+\newtheorem{mydef}{Definition}
+\setlength{\parskip}{2ex plus 0.5ex minus 0.5ex}
+
+\newcommand{\jezyk}		 {J($\mathbb{S} $)}
+\newcommand{\slownik}[1] {$\mathbb{S}_{#1}$}
+\newcommand{\zbior}	 	 {Z($\mathbb{S}$)}
+\newcommand{\gramatyka}[1] {$\mathbb{G}_{#1}$}
+
+\newcommand*\stdchapter{}
+\let\stdchapter\chapter
+\renewcommand*\chapter{%
+\clearpage\ifodd\value{page}\else\mbox{}\clearpage\fi
+\stdchapter}
+
+\newcommand{\ang}[1]{ \textit{(ang. #1})}
+\newcommand{\kategoria}[1]{$<$#1$>$}
+\newcommand{\cytat}[1] { ''#1''}
+\newcommand{\symlex}[1]{ \mbox{\uppercase{\textbf{#1}}}}
+\newcommand{\defp}[1]{\textit{#1}}
+%\newenvironment{akapit} %{} %{}
+
+\begin{document}
+
+%\include{strona-tytulowa}
+
+%\tableofcontents
+%\addcontentsline{toc}{chapter}{Wstęp}
+%\chapter*{Wstęp}
+
+\input{./p/r1}
+\input{./p/r2}
+%\input{./s1/s1}
+%\input{./r1/r1}
+%\include{./r2/r2}
+%\include{./r3/r3}
+
+
+
+  
+%\chapter*{Podsumowanie}
+%\addcontentsline{toc}{chapter}{Podsumowanie}
+
+%\listoffigures
+%\addcontentsline{toc}{chapter}{Spis rysunków}
+
+
+
+
+\begin{comment}
+\begin{thebibliography}{99}\addcontentsline{toc}{chapter}{Literatura}
+
+
+\bibitem{ullmann}
+Hector Garcia-Molina, Jeffrey D. Ullmann, Jennifer Widom: \textit{Implementacja systemów baz danych}, Wydawnictwa Naukowo-Techniczne, Warszawa 2003
+\bibitem{aho}
+  Alfred V. Aho, Ravi Sethi, Jeffrey D. Ullman: \textit{Kompilatory}, Wydawnictwa Naukowo-Techniczne, Warszawa 2002
+
+
+\end{thebibliography}
+
+\begin{comment}
+
+\bibitem{lex_wiki}
+http://en.wikipedia.org/wiki/Lex\_(software)
+\bibitem{eng_chomsky}
+http://en.wikipedia.org/wiki/Chomsky\_hierarchy
+\bibitem{pl_chomsky}
+http://pl.wikipedia.org/wiki/Hierarchia\_Chomsky'ego
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Określenia części napisów
+
+	
+	\begin{tabular}{ | >{\centering}m{4.0cm}<{\centering} |  m{9cm} | } \hline \hline
+ 			\textbf{Termin}			&  \centering \textbf{ Definicja} 		 \tabularnewline \hline \hline
+  		prefiks s 			& napis otrzymany przez usunięcie zera lub więcej symboli z końca napisu s 	\\ \hline
+  		sufiks s 			& napis otrzymany przez usunięcie zera lub więcej symboli z początku napisu s  \\ \hline
+  		podcjiąg spójny s 	& napis otrzymany przez usunięcie prefiksu lub sufiksu z s	\\ \hline
+  		prefiks, sufiks, podsłowo właściwe~s & każdy niepusty napis x, który jest odpowiednio prefiksem, sufiksem lub podsłowem słowa s, takim, że $s\ne x$ \\ \hline
+		podciąg s  		&  napis otrzymany przez usunięcie zera lub więcej symboli (niekoniecznie kolejnych) z napisu s \\ \hline
+	
+	\end{tabular}
+	
+\begin{table}[!h]	
+	 \caption{Określenia części napisów}
+	\end{table}
+			
+
+
+\end{comment}
+
+\end{document}

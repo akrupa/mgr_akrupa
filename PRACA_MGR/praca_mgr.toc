@@ -1,0 +1,31 @@
+\contentsline {chapter}{Wst\IeC {\k e}p}{5}
+\contentsline {chapter}{\numberline {1}Hurtownie danych}{7}
+\contentsline {section}{\numberline {1.1}Powody budowania hurtowni danych.}{8}
+\contentsline {subsection}{\numberline {1.1.1}OLAP a OLTP}{9}
+\contentsline {subsection}{\numberline {1.1.2}Wspomaganie decyzji }{10}
+\contentsline {section}{\numberline {1.2}Architektura hurtowni danych}{10}
+\contentsline {section}{\numberline {1.3}Projektowanie hurtowni danych.}{12}
+\contentsline {section}{\numberline {1.4}Wielowymiarowy danych danych}{13}
+\contentsline {subsection}{\numberline {1.4.1}Schemat gwiazdy}{14}
+\contentsline {subsection}{\numberline {1.4.2}Schemat p\IeC {\l }atka \IeC {\'s}niegu}{16}
+\contentsline {chapter}{\numberline {2}Procesy zasilania hurtowni danych}{19}
+\contentsline {section}{\numberline {2.1}Og\IeC {\'o}lna koncepcja zasilania hurtowni}{19}
+\contentsline {subsection}{\numberline {2.1.1}Ekstrakcja}{19}
+\contentsline {subsection}{\numberline {2.1.2}Transformacja}{20}
+\contentsline {subsection}{\numberline {2.1.3}\IeC {\L }adowanie}{21}
+\contentsline {section}{\numberline {2.2}Analiza przyk\IeC {\l }adowego procesu zasilania}{23}
+\contentsline {subsection}{\numberline {2.2.1}Warstwa interfejsowa}{24}
+\contentsline {subsection}{\numberline {2.2.2}Warstwa po\IeC {\'s}rednia}{27}
+\contentsline {subsection}{\numberline {2.2.3}Warstwa docelowa}{30}
+\contentsline {chapter}{\numberline {3}Temat rozdzia\IeC {\l }u }{33}
+\contentsline {section}{\numberline {3.1}Gramatyka}{33}
+\contentsline {subsection}{\numberline {3.1.1}J\IeC {\k e}zyki formalne}{33}
+\contentsline {subsection}{\numberline {3.1.2}Gramatyka formalna}{35}
+\contentsline {subsection}{\numberline {3.1.3}Klasyfikacja j\IeC {\k e}zyk\IeC {\'o}w}{36}
+\contentsline {subsection}{\numberline {3.1.4}Wyra\IeC {\.z}enia regularne}{37}
+\contentsline {section}{\numberline {3.2}J\IeC {\k e}zyk wysokiego poziomu }{38}
+\contentsline {subsection}{\numberline {3.2.1}Analiza leksykalna}{39}
+\contentsline {subsection}{\numberline {3.2.2}Analiza leksykalna}{40}
+\contentsline {subsection}{\numberline {3.2.3}Analiza semantyczna}{41}
+\contentsline {chapter}{Spis listing\IeC {\'o}w}{41}
+\contentsline {chapter}{Literatura}{45}

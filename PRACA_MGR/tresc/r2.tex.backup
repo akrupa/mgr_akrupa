@@ -1,0 +1,250 @@
+\chapter{Procesy zasilania hurtowni danych}
+
+\section{Ogólna koncepcja zasilania hurtowni}
+Hurtownia danych jako system magazynujący dane i wspierający raportowanie stawia sobie 
+ jako jeden z głównych celów gromadzenie danych i takie ich przekształcanie,
+ aby przyszłe raportowanie było jak najłatwiejsze w kontekście pytań biznesowych,
+ jakie stawiają użytkownicy końcowi. Ogół procesów zasilania jest najczęściej określany skrótem ETL,
+ pochodzącym od angielskich słów Extract, Transform, Load (ekstrakcja, transformacja, ładowanie),
+ które oddają charakter procesów, oraz podsumowują cele, jakie są stawiane przed procesami zasilania hurtowni danych.
+\subsection{Ekstrakcja}
+Dane, które ostatecznie trafiają do hurtowni, pochodzą z różnych źródeł w firmie lub poza nią i różnią się sposobem dostępu.
+Źródłami mogą być systemy transakcyjne (transakcje bankowe, system płatności online, systemy obsługi klienta,
+ zapisy partii szachowych online itp.), logi systemów (logi stron internetowych, systemów e-commerce,
+ pliki z wykazem połączeń telefonicznych),
+ publicznie dostępne pliki (dane giełdowe,
+ wskaźniki i dane makroekonomiczne GUS czy nawet ręcznie generowane przez użytkowników biznesowych 
+ (arkusze kalkulacyjne, plany i cele sprzedaży).
+Różnorodność źródeł stawia po stronie hurtowni danych konieczność ekstrakcji danych z formatu,
+ w którym są dostępne, niezależnie od źródła i formatu 
+ (pliki tekstowe, bazy danych, arkusze kalkulacyjne, dane nieustrukturyzowane, obrazy itp.).
+Czasami trudność przedstawia samo znalezienie właściwego źródła danych,
+ bądź znalezienie kilku źródeł, które razem zawierają potrzebne informacje,
+ czasami najtrudniejsze jest wykonanie ekstrakcji 
+ (zwłaszcza, jeśli mamy do czynienia z wiekowymi systemami pisanymi kilkadziesiąt lat temu w języku COBOL na komputerach klasy mainframe 
+ --- wbrew pozorom tego typu systemy są jeszcze w użyciu).
+Mogą również pojawić się problemy wydajnościowe związane z transportem danych (np. danych jest na tyle dużo, 
+ że wąskim gardłem staje się przepustowość sieci i należy uciec się do kompresji danych jako do rozwiązania problemu).
+Jednym z problemów do rozwiązania przy ekstrakcji danych jest minimalizacja wpływu procesów ekstrakcji na funkcjonowanie źródła danych 
+ --- zazwyczaj systemy transakcyjne nie potrafią sobie poradzić z pobieraniem dużej ilości danych, 
+ gdyż same z siebie są zoptymalizowane do szybkich przetwarzań niewielkich ilości danych.
+Może okazać się, że próby ekstrakcji danych bezpośrednio z systemu źródłowego są tak wielkim obciążeniem wydajnościowym,
+ że doprowadzają do nieakceptowalnych czasów działania systemu transakcyjnego.
+Do typowych rozwiązań należy harmonogramowanie procesów ETL w taki sposób,
+ by ekstrakcja odbywała się np. w nocy, kiedy użytkowników systemu transakcyjnego jest mniej lub nie ma ich wcale, 
+ oraz korzystanie z kopii systemu źródłowego dla celów ekstrakcji (np. druga baza danych połączona z pierwszą w system „hot standby” 
+ lub po prostu zwykła kopia odtwarzania z codziennych backupów systemu transakcyjnego.
+\subsection{Transformacja}
+Po pobraniu danych, dane muszą zostać przekształcone do wspólnej postaci.
+Wynika to z faktu, że różne źródła, nawet podobne do siebie,
+ przechowują dane w różnej postaci i zakładają różne zależności pomiędzy poszczególnymi elementami. 
+Na przykład, bank powstały w wyniku fuzji kilku innych banków może korzystać z kilku systemów obsługi klienta. 
+W jednym systemie kluczowi klienci biznesowi mogą mieć przypisanego jednego opiekuna
+ i taka bieżąca informacja jest dostępna w systemie źródłowym,
+ modelowana jako relacja jeden do wielu (jeden opiekun dla wielu klientów), 
+ natomiast w drugim systemie może to być relacja wiele do wielu z archiwizacją historii przypisań opiekunów do klientów.
+Dane w systemach transakcyjnych bardzo często są zgodne z trzecią postacią normalną,
+ natomiast hurtownia danych często przechowuje i prezentuje dane w postaci zdenormalizowanej,
+ zwłaszcza jeśli do modelowania hurtowni został wybrany schemat gwiazdy. 
+Kontynuując przykład opiekuna klienta, model hurtowni danych może przewidywać opiekuna jako zwykły atrybut klienta,
+ ignorując fakt, że w rzeczywistości relacja jest postaci jeden do wielu bądź wiele do wielu i tak jest zamodelowana w systemach źródłowych. 
+Tego typu transformacje oraz zamiany kluczy z systemów źródłowych na własne klucze używane przez hurtownię 
+(zazwyczaj zwane w środowisku hurtowni danych kluczami sztucznymi) są podstawowymi zadaniami procesów zasilania hurtowni.
+Do innych typowych przekształceń należy uwspólnianie typów danych 
+ (np. ten sam atrybut może być opisywany w różnych systemach przez ciągi znaków różnej długości),
+ ujednolicanie zawartości atrybutów 
+(np. typ klienta może przybierać wartości „biznesowy”, „business”, 3, „firma” itp. w różnych systemach,
+ w hurtowni chcemy przechowywać jedną wartość, wspólną dla wszystkich rekordów jednego typu),
+ łączenie bądź rozdzielanie atrybutów (np. „małżeństwo z dziećmi” chcemy rozdzielić na dwa atrybuty,
+ jeden opisujący „małżeństwo”, drugi niosący informację, czy „ma dzieci”),
+ łączenie atrybutów (np. rodzaj „firma”, rozmiar „poniżej 200 pracowników” chcemy oznaczyć jako „SME”).
+ Możliwe są również przekształcenia specyficzne dla danej dziedziny,
+ np. wyliczanie stopy zwrotu czy procentowej zmiany cen z danych giełdowych.
+\subsection{Ładowanie}
+Przekształcone dane muszą trafić do docelowego modelu danych.
+Większość pracy została już wykonana na etapie ekstrakcji i transformacji,
+ jednak pozostaje zadbać o spójność danych 
+(czy podczas ładowania hurtownia pozwoli na dostęp do transakcji dla nowych klientów, których jeszcze nie zdążyliśmy załadować?).
+Często tego typu kwestie są rozwiązywane w zupełnie inny sposób niż w systemach transakcyjnych,
+ w których spójność danych jest zapewniana mechanizmami bazodanowymi typu transakcje czy więzy integralności.
+Przenoszenie takich rozwiązań do hurtowni danych stwarza potencjał dla problemów wydajnościowych zależnych bądź nie od implementacji
+ konkretnego systemu zarządzania bazami danych – np. więzy integralności spowalniają ładowanie,
+ gdyż są sprawdzane wiersz po wierszu, a transakcje czasami wręcz nie są możliwe do użycia 
+ z uwagi na ograniczenia techniczne przy dużej ilości danych przetwarzanych w hurtowniach. 
+Przykładowo, w s.z.b.d. Oracle, transakcje standardowo generują UNDO i REDO, więc zawarcie całości ładowania w jednej transakcji,
+ nawet gdyby było technicznie możliwe (bazę można skonfigurować, aby udostępniała wystarczająco dużo miejsca na UNDO i REDO), 
+ stwarzałoby olbrzymie problemy wydajnościowe z uwagi na kilkukrotne zwiększenie ilości operacji wejścia/wyjścia 
+ (należy pamiętać, że UNDO też jest chronione przez REDO,
+ więc ilość operacji dyskowych może wzrosnąć nawet czterokrotnie). 
+Typową „sztuczką” praktyczną bywa np. wyłączenie generowania REDO na poziomie bazy danych. 
+ Jeśli chodzi o UNDO, to typowym rozwiązaniem jest podzielenie transakcji na mniejsze części,
+ co redukuje ilość UNDO, które musi być przechowywane (każde zatwierdzenie transakcji pozwala na pozbycie się UNDO,
+ które zostało wygenerowane przez daną transakcję), 
+ ale to już oznacza, że zapewnienie spójności musi leżeć po stronie procesów zasilania. 
+Na szczęście zasilanie hurtowni danych jest procesem wsadowym, który w razie czego może zostać powtórzony,
+ więc większość tradycyjnych mechanizmów bazodanowych zapewniających ochronę transakcji nie jest potrzebna. 
+Zapewnienie spójności danych jest realizowane w samych procesach ładowania, 
+ chociażby przy ustalaniu kolejności zasileń.
+Przykładowo, ładując hurtownię zbudowaną w oparciu o schemat gwiazdy, 
+ tradycyjnie ładuje się najpierw wymiary, 
+ a potem fakty. Pomimo że nie zapewnia to spójności w najściślejszym znaczeniu tego pojęcia 
+ (mogą pojawiać się wiersze w tabelach wymiarów, które nie mają swoich odpowiedników w tabelach faktowych), 
+ to w praktyce jest to spójność, jakiej oczekują użytkownicy i personel utrzymujący hurtownie danych.
+Wynika to z faktu, że w modelu gwiazdy wymiary są używane do interpretacji danych faktowych, a więc ich znaczenie jest drugorzędne. 
+Najbardziej istotne jest, aby wszystkie dane faktowe dostępne dla użytkownika były opisane przez wymiary, 
+więc ładowanie wymiarów w pierwszej kolejności zapewnia ten stan rzeczy. 
+
+\section{Analiza przykładowego procesu zasilania}
+Dla zilustrowania koncepcji języka do budowy hurtowni danych oraz jego praktycznego zastosowania,
+ zostanie zbudowane przykładowa,
+ uproszczona hurtownia danych wraz z procesami zasilania. 
+Tematyką hurtowni będą dane giełdowe, a konkretnie notowania ciągłe z warszawskiej Giełdy Papierów Wartościowych (GPW).
+Wybór ten jest umotywowany powszechną dostępnością danych ---
+ każdy może sobie w dowolnej chwili pobrać publicznie dostępne dane z wielu różnych stron internetowych.
+Nie bez znaczenia jest również prostota danych, które są intuicyjnie zrozumiałe dla większości osób 
+ i~nie będą wymagały wyjaśniania.
+
+Do zbudowanie hurtowni danych zostanie użyty schemat gwiazdy, 
+ w którym występować będzie jedna tabela faktów, zaprezentowana na listingu \ref{l:fakt},
+ wraz z towarzyszącym jej wymiarem pokazanym na listingu \ref{l:wymiar}.
+\lstinputlisting[ label=l:fakt,  language=sql, caption ={Kod tworzący tabelę faktów. }]{"./sql/fakt_tabela.sql"} 
+\lstinputlisting[ label=l:wymiar, language=sql,caption ={Kod tworzący tabelę wymiaru.}] {"./sql/wymiar_tabela.sql"} 
+
+ 
+Docelowe rozwiązanie będzie składało się z trzech warstw:
+ \begin{itemize}
+  \item warstwy interfejsowej,
+  \item warstwy pośredniej,
+  \item warstwy docelowej,
+ \end{itemize}
+które zostaną omówione w kolejnych podrozdziałach.
+
+\subsection{Warstwa interfejsowa}
+
+Warstwa interfejsowa będzie służyła do komunikacji ze światem zewnętrznym celem pobrania danych do hurtowni. 
+Przed procesami zasilania będą postawione następujące zadania szczegółowe:
+\begin{enumerate}
+ \item \label{w_intf:wykrywanie}
+ Wykrywanie nowych danych w systemie źródłowym
+ \item \label{w_inf:pobieranie}
+ Pobieranie danych z systemu źródłowego
+ \item \label{w_intf_ladowanie}
+Ładowanie plików do bazy danych                 
+        
+\end{enumerate}
+
+Dane o cenach akcji GPW są publicznie dostępne w internecie 
+ i są już wyekstraktowane w postaci gotowych do ściągnięcia plików tekstowych.
+Zatem nie jest konieczne, aby procesy zasilania wykonywały ekstrakcję ze źródła (jakiegoś systemu operacyjnego).
+Zamiast tego, przydatne będzie wykrywanie,
+czy od ostatniego wykonania procesów zasilania pojawiły się nowe pliki z danymi 
+ i pobranie wyłącznie nowych danych.
+ 
+Cel ten zostanie zrealizowany za pomocą skryptów powłoki systemu Linux, przedstawiony na listingu 
+oraz podstawowych narzędzi systemowych dostępnych z poziomu systemu operacyjnego. 
+
+
+\lstinputlisting[ label=l:skrypt, language=sh, caption = {Skrypt pobierający dane serwera bossa.pl .}] {"./skrypt/skrypt_gpw.sh"} 
+
+
+Procesy ETL muszą pobrać dane i przygotować do ładowania, 
+ są to wszystkie czynności, które programiści uznają za potrzebne 
+ w celu przygotowania danych do poprawnego załadowania danych do tabelki interfejsowej.
+Czynnościami tymi chociażby może być rozpakowanie danych i rozmieszenie ich w odpowiednich katalogach.
+W naszym rozważanym przykładzie pobieramy plik o nazwie \textit{sesjacgl.prn},
+ który jest plikiem tekstowym.
+
+Pliki muszą zostać załadowane do bazy danych w niezmienionej formie celem ich udostępnienia do dalszych przekształceń.
+Czyli trafiają do tabelki interfejsowej, która ma typ zmiennych zgodny z pobranymi danymi źródłowymi. 
+Tabelkę te nazywać będziemy \textit{intf\_pgw}, a ma ona strukturę zaprezentowaną na listingu \ref{l:t_intf_gpw} .
+
+\lstinputlisting[ label=l:t_intf_gpw, language=sql, caption = {Kod tworzący tabelkę interfejsową.}] {"./sql/tworz_intf_gpw.sql"} 
+
+
+Dla umożliwienia pełnej audytowalności procesów,
+ konieczne jest przechowywanie ściągniętych plików przynajmniej przez jakiś czas.
+W razie wystąpienia wątpliwości odnośnie jakości danych,
+ będzie możliwość weryfikacji danych i porównania hurtowni z danymi źródłowymi. 
+Często w hurtowniach danych istnieje dedykowana warstwa służąca tylko temu celowi. 
+W rozwiązaniu zbudowanym na potrzeby niniejszej pracy,
+ archiwizacja będzie odbywać się za pomocą kompresji plików i przeniesienia ich do dedykowanego katalogu, 
+ co zostało pokazane na listingu \ref{l:skrypt}. 
+ 
+W komercyjnych rozwiązaniach, jeśli archiwizacja danych odbywa się za pomocą plików,
+ najczęściej stosowane są specjalistyczne narzędzia do backupów,
+ a dane ostatecznie nagrywane są na taśmy. Z uwagi na wysoką cenę tego typu urządzeń 
+oraz łatwą publiczną dostępność danych źródłowych użytych na potrzeby niniejszej pracy, 
+taki poziom dbałości o bezpieczeństwo danych nie jest konieczny. 
+
+W celu załadowania danych do bazy danych zostanie użyte narzędzie pgloader,
+ które dobrze współpracuje z systemem zarządzania bazą danych Postgres.
+Na listingu \ref{l:pgloader} został pokazany skrypt pgloader'a , który realizuje to zadanie.
+
+
+\lstinputlisting[ label=l:pgloader, language=sh, caption = {Skrypt pgloader'a ładujący dane do tabelki interfejsowej.}] {"./skrypt/pgloader.conf"}
+
+
+
+\subsection{Warstwa pośrednia}
+
+Celem warstwy pośredniej jest przekształcenie danych z formatu źródłowego, które znajdują się w tabeli interfejsowej,
+czyli w tabeli \textit{intf\_gpw}, pokazanej na listingu \ref{l:t_intf_gpw},
+na format umożliwiający załadowanie do tabeli docelowej.
+Szczegółowe cele zależą najczęściej od konkretnego rozwiązania i jego architektury,
+ a także od ładowanych danych. 
+W przykładzie stworzonym na potrzeby naszej pracy będą to:
+\begin{enumerate}
+ \item \label{wp_stg}
+   Usuwanie pobranych duplikatów.
+ \item \label{wp_npw}
+  Zasilanie tabel przejściowych wymiarów. W naszym przykładzie, dla uproszczenia będzie zasilana tabela wymiarów pokazana na listingu \ref{l:wymiar},
+ \item  \label{wp_promo}
+  Zamian klucza naturalnego, 
+   którym jest nazwa papieru wartościowego na wartość \textit{integer}, 
+   nadawaną przy użyciu  sekwencji dla każdej nowej nazwy pojawiającej się w tabeli.
+\end{enumerate}
+
+Aby osiągnąć cel wymieniony w  podpunkcie \ref{wp_stg}, 
+ musi zostać utworzona tabelka 
+ o identycznej strukturze co tabela \textit{intf\_gpw}, pokazana na listingu \ref{l:t_intf_gpw}.
+Kod realizujące owe zadanie został przedstawiony na listingu \ref{l:stg_gpw}
+\lstinputlisting[ label=l:stg_gpw, language=sql, caption ={ Usuwanie pobranych duplikatów.}] {"./sql/stg_gpw.sql"}
+
+
+W podpunkcie \ref{wp_npw}, zostało wspomnione, 
+ że dla uproszczenia przykładu do tabeli wymiarów ładowana jest tylko nazwa tabeli, 
+ więc z tego powodu w tym miejscu zasilamy tabele wymiarów nazw papierów wartościowych, 
+ a realizujemy to w sposób zaprezentowany na listingu \ref{l:npw_gpw}.
+W przypadku gdyby przykład nie został uproszczony to tabelka ta powinna zostać zasilona w warstwie docelowej opisanej na stronie
+\pageref{warstwa_docelowa} w podrozdziale  \ref{warstwa_docelowa}.
+
+\lstinputlisting[ label=l:npw_gpw, language=sql, caption = {Ładowanie danych do tabeli wymiaru -- papierów wartościowych.}] {"./sql/npw.sql"}  
+
+
+Kolejnym etapem jest nadawanie kluczy sztucznych w hurtowni, poprzez zastąpienie klucza naturlanego (nazwy papierów wartosciowych).
+W omawianej warstwie  dokonuje się również  łączenia danych pochodzących z różnych źródeł.
+Dane, które będą zasilać tabelę faktów w naszej hurtowni danych pochodzą z jednego źródła, 
+ z tego powodu tabela przejściowa będzie miała bardzo podobną strukturę do tabel opisanych poprzednio.
+Tabele tą będziemy nazywać \textit{promo\_gpw}, zaprezentowaną na listingu \ref{l:t_promo_gpw}
+\lstinputlisting[ label=l:t_promo_gpw, language=sql, caption = {Struktura tabelki promo\_gpw.}] {"./sql/tworz_promo_gpw.sql"} 
+Wykonanie zadania z podpunktu  \ref{wp_promo} ze strony \pageref{wp_promo} 
+zostało zaprezentowane na listingu \ref{l:promo_gpw}.
+\lstinputlisting[ label=l:promo_gpw, language=sql, caption = {Proces ładowania do tabeli promo\_gpw.}] {"./sql/promo_gpw.sql"} 
+
+
+
+\subsection{Warstwa docelowa} \label{warstwa_docelowa}
+Celem warstwy docelowej jest załadowanie danych do tabel faktów i wymiarów,
+ jak również udostępnianie ich dla użytkowników korzystających z hurtowni danych.
+
+Dane, które będą zasilać tabelę faktową w naszej hurtowni są dziennymi danymi podsumowującymi cały dzień notowań ciągłych na giełdzie. 
+Tego typu dane, z uwagi na swój charakter, nie zmieniają się po załadowaniu, dlatego
+ zostanie pominięty UPDATE danych. Wykona jedynie zostanie operacja INSERT z danych 
+ przygotowanych w tabel \textit{promo\_gpw}, do tabeli faktów \textit{gpw}, 
+ co zostało pokazane na listingu \ref{l:gpw}
+
+\lstinputlisting[ label=l:gpw, language=sql, caption = { Proces ładowania danych do tabeli gpw.}] {"./sql/gpw.sql"} 
+
+
+%\url{ http://bossa.pl/pub/ciagle/mstock/metacgl.lst} 
+%\url{http://bossa.pl/index.jsp?layout=3&page=0&news_cat_id=268&cl=przebieg&zakladka=akcje}.

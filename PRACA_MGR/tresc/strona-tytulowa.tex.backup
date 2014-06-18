@@ -1,0 +1,48 @@
+\begin{center}
+
+\begin{center}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[width=0.2\textwidth]{obrazy/logo_MiI.png}
+  \end{center}
+\end{figure}
+
+\end{center}
+\textsc{ \large Uniwersytet Łódzki\\
+Wydział Matematyki i Informatyki \\
+Instytut informatyki
+}
+\vskip 3cm
+\end{center}
+\begin{center}
+{\Large \bf Andrzej Krupa }\\
+ nr indeksu: 338689
+\end{center}
+\vskip 1cm
+\begin{center}
+{\Large \bf Język wysokiego poziomu do tworzenia procesów ETL w Hurtowniach danych.} \\
+{ \large High-level language to create ETL process in data warehouse. }
+
+\vskip 3cm
+\begin{flushright}
+Praca magisterska\\
+przygotowana w Zakładzie .................... \\
+promotor: dr Jan Pustelnik
+\vskip 3cm
+
+\end{flushright}
+%\end{center}
+%\vskip 4cm \hspace*{7cm}
+%\parbox{10cm}{\Large
+%Praca licencjacka\\
+%napisana pod kierunkiem\\
+%dr Jacek Krzaczkowski }
+%\vskip 4cm
+%\begin{center}
+{\large \bf Łódź 2014}
+\end{center}
+\thispagestyle{empty}
+\newpage\thispagestyle{empty}
+\mbox{}
+\newpage

@@ -1,0 +1,170 @@
+%\documentclass[a4paper,12pt]{ report}
+\documentclass[a4paper,12pt]{ report}
+\usepackage[ top=2.5cm, bottom=2.5cm, left=3 cm, right=2.5cm]{geometry}
+\usepackage{polski}
+\usepackage[utf8x]{inputenc}
+\usepackage{verbatim}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm} % do definicji
+\usepackage{indentfirst}
+%\usepackage{epsfig}
+\usepackage{graphicx}
+%\usepackage{epstopdf}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+\usepackage{url}
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{array} % tabulator
+
+%adres do obrazow
+\graphicspath{{./obrazy/}} 
+%\lstinputlisting{"./sql"}
+
+\definecolor{bgcolor}{rgb}{1.0,1.0,1.0} 		% kolor tla pod kodem
+\definecolor{numbercolor}{rgb}{0.35,0.35,0.35} 	% kolor nr linii kodu
+\definecolor{codecolor}{rgb}{0.20,0.20,0.20} 	% kolor kodu
+\definecolor{keywordcolor}{rgb}{0.00,0.00,0.55}	% kolor slowa kluczowego
+\definecolor{commentcolor}{rgb}{0.50,0.50,0.50}	% kolor komentarza w kodzie
+
+% wyglad kodu w dokumencie
+\lstset{
+  basicstyle=\scriptsize
+, keywordstyle=\color{keywordcolor}\bfseries
+, commentstyle=\color{commentcolor}\slshape
+, showstringspaces=false
+, tabsize=1
+, numbers=left
+, numbersep=1.5em
+, stepnumber=1
+, xleftmargin=1.2em
+, xrightmargin=1.2em
+, breaklines=true
+, breakatwhitespace=true
+, frameround=fttt
+, frame=BLtr
+, framextopmargin=1ex
+, framexbottommargin=1ex
+, framexleftmargin=1ex
+, framexrightmargin=1ex
+, backgroundcolor=\color{bgcolor}
+, breakautoindent=false
+, belowcaptionskip=1.5ex
+, inputencoding=utf8x
+, extendedchars=\true
+,   literate={ą}{{\k{a}}}1
+             {Ą}{{\k{A}}}1
+             {ę}{{\k{e}}}1
+             {Ę}{{\k{E}}}1
+             {ó}{{\'o}}1
+             {Ó}{{\'O}}1
+             {ś}{{\'s}}1
+             {Ś}{{\'S}}1
+             {ł}{{\l{}}}1
+             {Ł}{{\L{}}}1
+             {ż}{{\.z}}1
+             {Ż}{{\.Z}}1
+             {ź}{{\'z}}1
+             {Ź}{{\'Z}}1
+             {ć}{{\'c}}1
+             {Ć}{{\'C}}1
+             {ń}{{\'n}}1
+             {Ń}{{\'N}}1
+}
+
+\widowpenalty=10000 %nie pozostawia wdów na ko«cu strony
+\clubpenalty=10000 %nie pozostawia sierot
+\brokenpenalty 10000 %nie dzieli stron jeżeli podział wyrazu
+
+
+\def\noindentation{\let\@afterindentfalse}
+\pagestyle{plain}
+
+
+\linespread{1.5}
+\setlength{\parindent}{1cm}
+\newtheorem{mydef}{Definition}
+
+
+% pomonce polecenia
+\newcommand{\jezyk}		 {J($\mathbb{S} $)}
+\newcommand{\slownik}[1] {$\mathbb{S}_{#1}$}
+\newcommand{\zbior}	 	 {Z($\mathbb{S}$)}
+\newcommand{\gramatyka}[1] {$\mathbb{G}_{#1}$}
+
+\newcommand*\stdchapter{}
+\let\stdchapter\chapter
+\renewcommand*\chapter{%
+\clearpage\ifodd\value{page}\else\mbox{}\clearpage\fi
+\stdchapter}
+
+\newcommand{\ang}[1]{ \textit{(ang. #1})}
+\newcommand{\kategoria}[1]{$<$#1$>$}
+\newcommand{\cytat}[1] { ''#1''}
+\newcommand{\symlex}[1]{ \mbox{\uppercase{\textbf{#1}}}}
+\newcommand{\defp}[1]{\textit{#1}}
+%\newenvironment{akapit} %{} %{}
+
+\begin{document}
+
+\include{tresc/strona-tytulowa}
+
+\tableofcontents
+\setlength{\parskip}{2ex plus 0.5ex minus 0.5ex}
+
+
+\chapter*{Wstęp}
+\addcontentsline{toc}{chapter}{Wstęp}
+\input{./tresc/wstep}
+
+\input{./tresc/r1}
+\input{./tresc/r2}
+\input{./tresc/r3}
+
+
+
+  
+%\chapter*{Podsumowanie}
+%\addcontentsline{toc}{chapter}{Podsumowanie}
+
+%\listoffigures
+%\addcontentsline{toc}{chapter}{Spis rysunków}
+
+\renewcommand\lstlistlistingname{Listingi kodu}
+\addcontentsline{toc}{chapter}{Spis listingów}
+\lstlistoflistings
+
+\begin{thebibliography}{99}\addcontentsline{toc}{chapter}{Literatura}
+
+
+\bibitem{TodMan}
+Chris Todman, \textit{Projektowanie Hurtowni Danych. Wspomaganie zarządzania relacjami z klientem}, Wydawnictwa HELION 2011.
+\bibitem{Inmon}
+W.H. Inmon, \textit{Building the Data Warehouse, Fourth Edition}, Wydawnictwo Wiley Publishing, Inc. 2005
+\bibitem{Kimball}  
+Kimball R., Ross M., \textit{ The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling}, Wydawnictwo John Wiley and Sons, Inc. 2004
+\bibitem{Vincent_Rainardi}
+ Rainardi V.,  \textit{Building a data warehouse with exmaples in SQL server}, Wydawnictwo  Springer-Verlag New York, Inc. 2008
+\bibitem{aho}
+  Alfred V. Aho, Ravi Sethi, Jeffrey D. Ullman: \textit{Kompilatory}, Wydawnictwa Naukowo-Techniczne, Warszawa 2002
+
+\bibitem{cube}
+\url{http://etl-tools.info/pl/bi/hurtownia_danych_schemat-gwiazdy.htm}
+\bibitem{link_semantic}
+\url{http://dbs.informatik.uni-halle.de/sqllint/semerr_techrep.pdf}
+\bibitem{eng_chomsky}
+http://en.wikipedia.org/wiki/Chomsky\_hierarchy
+\bibitem{pl_chomsky}
+http://pl.wikipedia.org/wiki/Hierarchia\_Chomsky'ego
+
+
+
+\end{thebibliography}
+
+\end{document}
