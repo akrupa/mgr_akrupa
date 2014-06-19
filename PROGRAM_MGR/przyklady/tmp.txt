@@ -1,0 +1,5 @@
+save_dir tmp;
+user_name etl;
+base_name dwh;
+site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn gpw;
+pgloader gpw; 

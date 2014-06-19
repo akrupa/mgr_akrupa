@@ -1,0 +1,5 @@
+COPY error on lines 
+COPY error: extra data after last expected column
+CONTEXT:  COPY intf_npw, line 1: "2012-04-11 ,  2014-06-18  , KRKA            , Krka, d. d.         "
+
+

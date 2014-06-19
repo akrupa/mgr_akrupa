@@ -1,0 +1,37 @@
+save_dir etl_gwiazda;
+user_name etl;
+base_name dwh;
+
+CREATE DIMENSION wymiar1
+(
+ atrybut varchar key dimension
+);
+
+CREATE DIMENSION wymiar2
+(
+  atrybut_1 varchar key dimension
+, atrybut_2 numeric 
+);
+
+CREATE DIMENSION wymiar3
+(
+ atrybut varchar  key dimension
+);
+
+CREATE DIMENSION  wymiar4
+(
+ atrybut varchar key dimension
+);
+
+CREATE fact fakt 
+(
+  id_wymiar1 integer  dimension wymiar1  
+, id_wymiar2 integer  dimension wymiar2
+, id_wymiar3 integer  dimension wymiar3
+, id_wymiar4 integer  dimension wymiar4
+, data       timestamp
+, miara_1    integer 
+, miara_2    integer 
+);
+
+make;

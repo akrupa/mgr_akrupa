@@ -1,0 +1,3510 @@
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1994-04-14    2014-06-18    WIG20                                 "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1997-12-31    2014-06-18    MWIG40                                "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1991-04-16    2014-06-18    WIG                                   "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1997-12-31    2014-06-18    WIG-BANKI                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1997-12-31    2014-06-18    WIG-BUDOW                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-05-30    2014-06-18    WIG-CEE                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-09-22    2014-06-18    WIG-CHEMIA                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-06-18    2014-06-18    WIG-DEWEL                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-01-04    2014-06-18    WIG-ENERG                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1997-12-31    2014-06-18    WIG-INFO                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-12-31    2014-06-18    WIG-MEDIA                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-12-31    2014-03-21    WIG-PLUS                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1991-04-16    2014-06-18    WIG-POLAND                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1997-12-31    2014-06-18    WIG-SPOZYW                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-12-31    2014-06-18    WIG-SUROWC                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1997-12-31    2014-06-18    WIG-TELKOM                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-12-31    2014-06-18    WIG-UKRAIN                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    06MAGNA           Magna Polonia       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    08OCTAVA          Narodowy Fundusz Inwestycyjny Octava"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-11-30    2014-06-18    4FUNMEDIA         4Fun Media          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-06-17    2014-06-18    ABCDATA           ABC Data            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-09-21    2014-06-18    ABPL              AB                  "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-08-11    2014-06-18    ACAUTOGAZ         AC                  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-06-01    2014-06-18    ACE               Automotive Components Europe"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-07-24    2014-06-18    ACTION            Action              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1999-04-20    2014-06-18    AGORA             AGORA               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-11-08    2014-06-18    AGROTON           Agroton Public Limited"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-07-08    2014-06-12    AGROWILL          AB Agrowill Group   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-05-19    2014-06-18    ALCHEMIA          Alchemia            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-12-14    2014-06-18    ALIOR             Alior Bank          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-07-25    2014-06-18    ALMA              Alma Market         "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1999-01-20    2014-06-18    ALTA              Alta                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-02-17    2014-04-30    ALTERCO           Alterco             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-06-22    2014-06-18    AMBRA             Ambra               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-09-08    2014-06-18    AMICA             AMICA Wronki        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-04-27    2014-06-18    AMREST            AmRest Holdings SE  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-04-24    2014-06-18    APATOR            Apator              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-05-25    2014-06-18    APLISENS          Aplisens            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-10-23    2014-06-18    ARCTIC            Arctic Paper        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-09-10    2014-06-18    ARCUS             Arcus               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-07-31    2014-01-15    ARMATURA                              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-12-15    2014-06-18    ARTERIA           Arteria             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-30    2014-06-18    ASBIS             ASBISc Enterprises PLC"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-11-19    2014-06-18    ASSECOBS          Asseco Business Solutions"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1998-06-02    2014-06-18    ASSECOPOL                             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-10-28    2014-06-18    ASSECOSEE         Asseco South Eastern Europe"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-10-10    2014-06-18    ASSECOSLO         Asseco Central Europe a.s."
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-08-17    2014-06-18    ASTARTA           Astarta Holding NV  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-05-28    2014-06-18    ATENDE            Atende              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-01-10    2014-06-18    ATLANTAPL         Atlanta Poland      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-05    2014-06-18    ATLANTIS          ATLANTIS            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-02-12    2014-06-17    ATLASEST          Atlas Estates Limited"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-09-28    2014-06-18    ATM               ATM                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-01-09    2014-06-18    ATMGRUPA          ATM Grupa           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-12-18    2014-06-18    ATREM             Atrem               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-06-28    2014-06-18    AVIAAML           AviaAM Leasing AB   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-03-03    2014-06-18    AVIASG            Avia Solutions Group AB"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-06-01    2014-06-18    AWBUD             AWBUD               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-01-24    2014-06-18    B3SYSTEM          B3System            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-12-11    2014-06-18    BAKALLAND         Bakalland           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-06-30    2014-06-18    BALTONA           Przedsiebiorstwo Handlu Zagranicznego Baltona"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1995-02-07    2014-06-18    BANKBPH           Bank BPH            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-09-22    2014-01-07    BARLINEK                              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    BBIDEV            BBI Development     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-04-21    2014-06-18    BENEFIT           Benefit Systems     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-04-15    2014-06-13    BERLING           Berling             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-03-02    2014-06-18    BETACOM           Betacom             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-05-27    2014-06-18    BGZ               Bank Gospodarki Zywnosciowej"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-03-16    2014-06-18    BIOTON            Bioton              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-31    2014-06-18    BIPROMET          Bipromet            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    BLACKLION         Black Lion Fund     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-12-16    2014-06-18    BMPAG             bmp media investors AG"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-11-07    2014-06-18    BNPPL             BNP Paribas Bank Polska"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-06-25    2014-06-18    BOGDANKA          Lubelski Wegiel Bogdanka"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-08-20    2013-09-26    BOMI              Bomi                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-05-20    2014-06-18    BORYSZEW          Boryszew            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-02-03    2014-06-18    BOS               Bank Ochrony Srodowiska"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-01-25    2014-06-18    BOWIM             Bowim               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-08-10    2014-06-16    BRIJU             Briju               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-01-04    2014-06-18    BSCDRUK           BSC Drukarnia Opakowan"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1995-05-25    2014-06-18    BUDIMEX           BUDIMEX             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-04-09    2014-06-18    BUDOPOL           BUDOPOL-WROCLAW     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-01-14    2014-06-18    BUMECH            Bumech              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2014-04-29    2014-06-18    BUWOG             Buwog AG            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-12-22    2014-06-18    BYTOM             Bytom               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1993-06-22    2014-06-18    BZWBK             Bank Zachodni WBK   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-11-07    2014-06-18    CALATRAVA         Calatrava Capital   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-05-07    2014-06-18    CAMMEDIA          CAM Media           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-08-20    2014-06-18    CAPITAL           Capital Partners    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-05-16    2014-06-18    CASHFLOW          Cash Flow           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-12-02    2014-06-18    CCC               CCC                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-06-27    2014-06-18    CCENERGY          Clean&Carbon Energy "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-08-02    2014-06-18    CDPROJEKT         CD Projekt          "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-12-20    2013-04-12    CEDC                                  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-12-23    2014-06-18    CELTIC            Celtic Property Developments"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-10-25    2014-06-18    CEZ               CEZ a.s.            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-11-25    2014-06-18    CHEMOS            Chemoservis-Dwory   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-02-10    2014-06-18    CIECH             Ciech               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-11-30    2014-06-18    CIGAMES           CI Games            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-11-06    2014-06-18    CNT               Centrum Nowoczesnych Technologii"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-08-04    2014-06-18    COALENERG         Coal Energy         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-03-19    2014-06-18    COGNOR            Cognor              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1995-05-17    2014-06-18    COLIAN            Colian Holding      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1999-03-10    2014-06-18    COMARCH           Comarch             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-01-14    2014-06-18    COMP              Comp                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-12-05    2014-06-18    COMPERIA          Comperia.pl         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-08-20    2014-06-18    CORMAY            PZ Cormay           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2014-03-07    2014-06-18    CPGROUP           Capital Park        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-09-16    2014-06-18    CUBEITG           CUBE.ITG            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-05-06    2014-06-18    CYFRPLSAT         Cyfrowy Polsat      "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-12-28    2014-06-17    CZTOREBKA                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-08-28    2013-08-23    DBCOPS0813                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-01-29    2013-12-17    DBDAXS0614                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-05-12    2013-10-29    DBEWZP1113                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-01-24    2013-12-03    DBEWZP1213                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-04-17    2014-04-17    DBGBSH0118                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-02-21    2014-02-21    DBGBSH1117                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-10-09    2013-10-30    DBGOLD0114                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-04-03    2014-02-11    DBGOLD0314                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-11-07    2014-03-26    DBHSCE0314                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-08-08    2014-04-28    DBHSCE0414                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-05-10    2014-04-30    DBHSCE0514                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-12-29    2014-05-22    DBHSCE0714                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-01-17    2013-12-20    DBHSCE1213                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-06-18    2014-06-18    DBOESX1016                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-02-13    2013-08-08    DBOILB0913                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-01-10    2014-02-11    DBPLAT0414                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-07-31    2013-06-10    DBSILV1013                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-05-14    2014-06-17    DBSTXE0218                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-06-09    2014-06-09    DBSTXE0316                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-09-16    2014-06-18    DBSTXE0717                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-12-11    2014-06-18    DBSTXE0917                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-06-05    2014-05-23    DBW20S0317                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-09-13    2014-04-03    DBW20S0417                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-01-22    2013-11-26    DBW20S0514                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-05-06    2014-05-06    DBW20S0517                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-12-04    2014-06-05    DBW20S0817                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-03-16    2014-05-23    DBWIGI0714                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-08-01    2013-06-20    DBWSTX0114                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-10-04    2014-02-04    DBWSTX0314                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-11-07    2014-05-29    DBWSTX1115                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-11-24    2014-06-18    DEBICA            Firma Oponiarska DEBICA"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-06-21    2014-06-18    DECORA            Decora              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-09-18    2014-06-18    DELKO             Delko               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-04-20    2014-06-18    DGA               DGA                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-08-30    2014-06-18    DMWDM             Dom Maklerski WDM   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-10-24    2014-06-18    DOMDEV            Dom Development     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-09-29    2014-06-18    DRAGOWSKI         AD. Dragowski       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-05-15    2014-06-18    DREWEX            Drewex              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-12-04    2014-06-18    DROP              Drop                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-12-23    2014-06-18    DROZAPOL          Drozapol-Profil     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-05-17    2014-06-18    DSS               Dolnoslaskie Surowce Skalne"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-12-29    2014-06-18    DTP               DTP                 "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2002-12-20    2014-06-16    DUDA                                  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-10    2014-06-18    DUON              Grupa DUON          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-07-12    2014-06-18    ECARD             eCARD               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-03-05    2014-06-18    ECHO              Echo Investment     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-10-27    2014-06-16    EDINVEST          ED Invest           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1993-04-22    2014-06-18    EFEKT             Korporacja Gospodarcza EFEKT"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-12-21    2014-06-18    EFH               Europejski Fundusz Hipoteczny"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-04-06    2014-06-18    EKANCELAR         e-Kancelaria Grupa Prawno-Finansowa"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-07-16    2014-06-18    EKOEXPORT         Eko Export          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-02-09    2014-06-18    ELBUDOWA          Elektrobudowa       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-04-11    2014-06-18    ELEKTROTI         Elektrotim          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-07-12    2014-06-18    ELEMENTAL         Elemental Holding   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2001-03-07    2014-06-18    ELKOP             Elkop               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-05-13    2014-06-18    ELZAB             Zaklady Urzadzen Komputerowych ELZAB"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-07-29    2014-06-18    EMCINSMED         EMC Instytut Medyczny"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2002-01-03    2014-06-18    EMPERIA           Emperia Holding     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-08-20    2014-06-18    ENAP              ENERGOAPARATURA     "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-11-17    2014-06-18    ENEA              Enea                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-06-14    2014-06-18    ENELMED           Centrum Medyczne ENEL-MED"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-12-11    2014-06-18    ENERGA            Energa              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-09-25    2014-06-18    ENERGOINS         Energoinstal        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-11-13    2014-03-10    ENERGOPLD         ENERGOMONTAZ-POLUDNIE"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-05-11    2014-06-18    ERBUD             Erbud               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-02-18    2014-06-18    ERG               ERG                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-06-12    2014-06-18    ERGIS             Ergis-Eurofilms     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-03-09    2014-06-18    ESSYSTEM          ES-System           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-03-22    2012-09-28    ESTAR             ENEFI Energiahatekonysagi Nyrt."
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-12-29    2014-06-18    EUCO              Europejskie Centrum Odszkodowan"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-03-18    2014-06-18    EUIMPLANT         Euroimplant         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-02-04    2014-06-18    EUROCASH          Eurocash            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-12-15    2014-05-23    EUROHOLD          Eurohold Bulgaria AD"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-12-29    2014-06-18    EUROTEL           Eurotel             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-10-29    2014-05-23    EXILLON           Exillon Energy Plc  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-10-12    2014-06-18    FAM               FAM Grupa Kapitalowa"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-08-04    2014-06-18    FAMUR             Famur               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1999-04-23    2014-06-18    FARMACOL          Farmacol            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-09-18    2014-06-18    FASING            Fabryka Sprzetu i Narzedzi Gorniczych FASING"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-05-06    2014-06-18    FASTFIN           Fast Finance        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-05-31    2014-06-18    FEERUM            Feerum              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-04-14    2014-06-18    FERRO             Ferro               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-27    2014-06-18    FERRUM            Ferrum              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1999-05-27    2014-06-18    FON               Fon                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-07-24    2014-06-18    FORTE             Fabryki Mebli FORTE "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-10-28    2014-06-17    FORTUNA           Fortuna Entertainment Group N.V."
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-11-28    2014-06-18    FOTA              Fota                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-12-02    2014-06-18    GANT              Gant Development    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2001-05-10    2014-06-18    GETIN             Getin Holding       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-01-20    2014-06-18    GETINOBLE         Getin Noble Bank    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-06-26    2014-06-18    GINOROSSI         Gino Rossi          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-08-19    2014-06-18    GLCOSMED          Global Cosmed       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-03    2014-06-18    GLOBALNRG         Global Energy       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-12-08    2014-06-18    GLOBCITYHD        Global City Holdings NV"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-07-06    2014-06-10    GNFIBA0614                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-08-05    2014-06-16    GNFIBA0814                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-09-03    2014-06-17    GNFIBA0914                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-11-09    2014-06-18    GNFIBA1014                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-12-14    2014-06-17    GNFIBA1214                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-10-22    2014-06-03    GNFIBB0914                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-12-30    2014-06-18    GORENJE           Gorenje gospodinjski aparati d.d."
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-11-09    2014-06-18    GPW               Gielda Papierow Wartosciowych w Warszawie"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-02-11    2014-06-18    GRAAL             Graal               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-05-06    2014-06-18    GRAJEWO           Pfleiderer Grajewo  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-12-30    2014-06-18    GREENECO          Greeneco            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-12-30    2014-06-17    GREMMEDIA         Gremi Media         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-11-24    2014-06-18    GROCLIN           Inter Groclin Auto  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-06-30    2014-06-18    GRUPAAZOTY        Grupa Azoty         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-05-06    2014-06-18    GTC               Globe Trade Centre  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-30    2014-06-18    HANDLOWY          Bank Handlowy w Warszawie"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-07-23    2014-06-18    HARPER            Harper Hygienics    "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-02-14    2014-06-18    HAWE              Hawe                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-04-16    2014-06-18    HELIO             Helio               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-12-06    2014-06-18    HERKULES          Herkules            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-11-05    2014-06-18    HUTMEN            HUTMEN              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-03-17    2014-06-18    HYDROTOR          Przedsiebiorstwo Hydrauliki Silowej HYDROTOR"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-06-07    2014-06-18    HYGIENIKA         Hygienika           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-08-18    2014-06-18    HYPERION          Hyperion            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-02-22    2014-06-18    IDEATFI           Inventum Towarzystwo Funduszy Inwestycyjnych"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1999-09-29    2014-06-18    IDEON             Ideon               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-07-27    2014-06-18    IDMSA             Dom Maklerski IDM   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-02-28    2014-06-18    IFCAPITAL         Investment Friends Capital"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-05-07    2014-06-18    IIAAV             Immofinanz AG       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-05-04    2014-06-18    IMCOMPANY         Industrial Milk Company"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-07-11    2014-06-18    IMMOBILE          Grupa Kapitalowa Immobile"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2003-10-16    2014-06-18    IMPEL             IMPEL               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    IMPERA            Impera Capital      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-24    2014-06-18    IMPEXMET          Impexmetal          "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-07-20    2014-06-18    INC               INC                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-08-13    2014-06-18    INDYGO            IndygoTech Minerals "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-10-12    2014-06-18    INDYKPOL          Indykpol            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-01-25    2014-06-18    INGBSK            ING Bank Slaski     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-02-17    2014-06-18    INPRO             Inpro               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1999-04-28    2014-06-18    INSTALKRK         INSTAL KRAKOW       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-30    2014-06-18    INTEGERPL         Integer.pl          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-12-18    2014-06-18    INTERAOLT         INTER RAO Lietuva AB"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-10-12    2014-06-18    INTERBUD          Interbud-Lublin     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-05-26    2014-06-18    INTERCARS         Inter Cars          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-08-10    2014-06-09    INTERFERI         Interferie          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-07-11    2014-06-18    INTERSPPL         Intersport  Polska  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-11-08    2014-06-18    INTROL            Introl              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2002-12-31    2014-06-18    INVESTORMS                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-01-24    2014-06-18    INVISTA           Invista             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-05-26    2014-06-18    IPOPEMA           Ipopema Securities  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-12-04    2014-06-18    IQP               IQ Partners         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-01-11    2014-06-18    IVMX              Infovide-Matrix     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-23    2014-06-18    IZOLACJA          IZOLACJA-JAROCIN    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-01-11    2014-06-18    IZOSTAL           Izostal             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-08-09    2014-06-18    JHMDEV            JHM DEVELOPMENT     "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-06-18    2014-06-18    JJAUTO                                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-07-06    2014-06-18    JSW               Jastrzebska Spolka Weglowa"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    JUPITER           Jupiter             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-06-04    2014-06-18    JWCONSTR          J.W. Construction Holding"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-24    2014-06-18    K2INTERNT         K2 Internet         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-12-22    2014-06-18    KANIA             Zaklady Miesne Henryk Kania"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2001-07-17    2014-06-18    KBDOM             Korporacja Budowlana DOM"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1998-01-19    2014-06-16    KCI               KCI                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-08-09    2014-06-12    KDMSHIPNG         KDM Shipping Public Limited"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-11-23    2014-06-18    KERNEL            Kernel Holding      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-01-30    2014-06-18    KETY              Grupa KETY          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-07-10    2014-06-18    KGHM              KGHM Polska Miedz   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-04-12    2014-06-18    KINOPOL           Kino Polska TV      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2003-08-06    2014-06-18    KOFOLA            Kofola              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-05-26    2014-06-17    KOGENERA          Zespol Elektrocieplowni Wroclawskich KOGENERACJA"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-11-19    2014-06-18    KOMPAP            Przedsiebiorstwo Produkcyjno-Handlowe Kompap"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-07-09    2014-06-18    KOMPUTRON         Komputronik         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-12-06    2014-06-18    KONSSTALI         Konsorcjum Stali    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-06-04    2014-06-18    KOPEX             KOPEX               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-17    2014-06-17    KPPD              Koszalinskie Przedsiebiorstwo Przemyslu Drzewnego"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-08-23    2014-06-18    KRAKCHEM          Krakchemia          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-02-14    2014-06-18    KREC              Krynicki Recykling  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-06-11    2014-06-18    KREDYTIN          Kredyt Inkaso       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    KREZUS            Krezus              "
+
+
+COPY error on lines 
+COPY error: invalid input syntax for type date: " d. d.         "
+CONTEXT:  COPY intf_gpw, line 1, column data_notowania: " d. d.         "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-05-10    2014-06-18    KRUK              Kruk                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-01-06    2014-06-18    KRUSZWICA         Zaklady Tluszczowe KRUSZWICA"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-05-05    2014-05-02    KSGAGRO           KSG Agro            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-06-29    2014-06-18    LCCORP            LC Corp             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-06-01    2014-06-18    LENA              Lena Lighting       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-05-08    2014-06-18    LENTEX            Zaklady Lentex      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-04-28    2014-06-18    LIBET             Libet               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2014-04-11    2014-06-18    LIVECHAT          LiveChat Software   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-06-09    2014-06-18    LOTOS             Grupa Lotos         "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2001-05-16    2014-06-18    LPP               LPP                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-12-21    2014-06-18    LSISOFT           LSI Software        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-11-18    2014-06-18    LUBAWA            LUBAWA              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-08-10    2014-06-18    MABION            Mabion              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-01    2014-06-18    MAGELLAN          Magellan            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-04-18    2014-06-18    MAKARONPL         Makarony Polskie    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-06-19    2014-06-18    MARVIPOL          Marvipol            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1992-10-06    2014-06-18    MBANK             mBank               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2001-02-01    2014-06-18    MCI               MCI Management      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-05-31    2014-06-18    MCLOGIC           Macrologic          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-07-05    2014-06-18    MEDIATEL          Mediatel            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-11-09    2014-06-18    MEDICALG          Medicalgorithmics   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-04-02    2014-06-18    MENNICA           Mennica Polska      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2014-01-17    2014-06-18    MERCATOR          Mercator Medical    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-07-19    2014-06-18    MERCOR            Mercor              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-01-03    2014-06-18    MEWA              MEWA                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-05-25    2014-06-18    MEXPOLSKA         Mex Polska          "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-01-09    2014-06-18    MFO               MFO                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    MIDAS             Midas               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-17    2014-06-18    MIESZKO           Zaklady Przemyslu Cukierniczego MIESZKO"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-12-06    2014-06-18    MILKILAND         Milkiland NV        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1992-08-13    2014-06-18    MILLENNIUM        Bank Millennium     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-02-13    2014-06-18    MIRACULUM         Miraculum           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-12-29    2014-06-18    MIRBUD            Mirbud              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1994-12-29    2014-06-18    MIS80                                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-06-22    2014-02-10    MISPOL            Mispol              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-01-10    2014-06-18    MIT               MIT Mobile Internet Technology"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-10-28    2014-06-18    MLPGROUP          MLP Group           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1999-04-13    2014-06-18    MNI               MNI                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-06-29    2014-06-18    MOBRUK            Mo-Bruk             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-06-13    2014-06-16    MOJ               MOJ                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-12-22    2014-06-17    MOL               MOL Magyar Olaj - és Gázipari Részvénytársaság"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-12-20    2014-06-18    MONNARI           Monnari Trade       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-09-15    2014-06-18    MOSTALPLC         MOSTOSTAL Plock     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1993-10-14    2014-06-18    MOSTALWAR         Mostostal Warszawa  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-10-05    2014-06-18    MOSTALZAB         Mostostal Zabrze    "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1992-05-28    2014-06-04    MSXRESOUR                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1998-04-08    2014-06-17    MUZA              MUZA                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-09-28    2014-06-18    MWTRADE           M.W. Trade          "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-06-24    2014-06-18    NCINDEX30                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-08-30    2013-06-21    NCXLIFESCI                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-06-15    2014-06-18    NETIA             Netia               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-11-03    2014-06-18    NETMEDIA          Netmedia            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-09-30    2014-06-18    NEUCA             Neuca               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-12-05    2014-06-18    NEWAG             Newag               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-05-09    2014-06-18    NEWWORLDR         New World Resources Plc"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    NFIEMF            Narodowy Fundusz Inwestycyjny Empik Media & Fashion"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-03-14    2014-06-18    NOKAUT            Grupa Nokaut        "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1996-09-18    2014-04-30    NORDEABP                              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-04-10    2014-06-18    NORTCOAST         North Coast         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-05-11    2013-12-02    NOVAKBM           Nova Kreditna banka Maribor d.d."
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-12-16    2014-06-18    NOVITA            NOVITA              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-07-01    2014-06-17    NOWAGALA          Ceramika Nowa Gala  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-04-12    2014-06-18    NTTSYSTEM         NTT System          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-03-12    2014-06-17    ODLEWNIE          Odlewnie Polskie    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-09-26    2014-06-17    OLYMPIC           Olympic Entertainment Group AS"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-08-22    2014-06-18    ONE2ONE           One-2-One           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-04-05    2014-06-18    OPENFIN           Open Finance        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-09-12    2014-06-18    OPONEO.PL         Oponeo.pl           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-10-11    2014-06-12    OPTEAM            OPTeam              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-11-18    2014-06-18    ORANGEPL          Orange Polska       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-11-20    2014-06-18    ORBIS             Orbis               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-06-21    2014-06-18    ORCOGROUP         Orco Property Group "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-22    2014-06-12    ORZBIALY          Orzel Bialy         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-08-30    2014-06-18    OTLOG             OT Logistics        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-09-29    2014-06-18    OTMUCHOW          Zaklady Przemyslu Cukierniczego Otmuchow"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-06-29    2014-06-18    OVOSTAR           Ovostar Union N.V.  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-10-10    2014-06-18    PAGED             PAGED               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-06-20    2014-06-11    PAMAPOL           Pamapol             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-07-20    2014-06-18    PANOVA            P.A. Nova           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-11-09    2014-06-18    PATENTUS          Patentus            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-07-02    2014-06-18    PBG               PBG                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-05-18    2014-06-18    PBOANIOLA         PBO Aniola          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-03-09    2014-06-18    PBSFINANSE        PBS Finanse         "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-08-03    2014-06-18    PCCEXOL                               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-12-18    2014-06-18    PCCINTER          PCC Intermodal      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-10-05    2014-06-18    PCGUARD           PC Guard            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2014-04-16    2014-06-18    PCM               Prime Car Management"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-12-21    2014-06-13    PEGAS             Pegas Nonwovens     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-10-09    2014-06-17    PEIXIN            Peixin International Group NV"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-11-26    2014-06-18    PEKAES            PEKAES              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-06-30    2014-06-18    PEKAO             Bank Polska Kasa Opieki"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-02-17    2014-06-18    PELION            Pelion              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-05-13    2014-06-18    PEP               Polish Energy Partners"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-05-19    2014-06-18    PEPEES            Przedsiebiorstwo Przemyslu Spozywczego PEPEES"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-05-14    2013-12-12    PERMEDIA          Zaklady Chemiczne Permedia"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-07-16    2014-06-18    PETROLINV         Petrolinvest        "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-11-06    2014-06-18    PGE               PGE Polska Grupa Energetyczna"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-09-23    2014-06-18    PGNIG             Polskie Gornictwo Naftowe i Gazownictwo"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-10-10    2014-06-18    PGODLEW           Polska Grupa Odlewnicza"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-02-13    2014-06-18    PHN               Polski Holding Nieruchomosci"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1999-11-26    2014-06-18    PKNORLEN          Polski Koncern Naftowy ORLEN"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-11-10    2014-06-18    PKOBP             Powszechna Kasa Oszczednosci Bank Polski"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-10-30    2014-06-18    PKPCARGO          PKP Cargo           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-02-27    2014-06-18    PLASTBOX          Przetworstwo Tworzyw Sztucznych Plast-Box"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-19    2014-06-18    PLAZACNTR         Plaza Centers N.V.  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1995-12-22    2014-06-18    POINTGROUP        Platforma Mediowa Point Group"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-07-30    2013-10-17    POLAQUA                               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-07-14    2014-06-18    POLICE            Grupa Azoty Zaklady Chemiczne Police"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-10-15    2014-06-18    POLIMEXMS         Polimex-Mostostal   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-10-21    2014-06-18    POLMED            Polmed              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-05-22    2014-06-18    POLNA             Zaklady Automatyki POLNA"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-12-18    2014-06-18    POLNORD           Polnord             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-06-11    2014-06-18    POZBUD            Pozbud T&R          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-10-13    2014-06-18    PPG               Platinum Properties Group"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-06-14    2014-06-18    PRAGMAFA          Pragma Faktoring    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-14    2014-06-18    PRAGMAINK         Pragma Inkaso       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-07-29    2014-06-18    PRESCO            P.R.E.S.C.O. Group  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-11-20    2014-06-18    PRIMAMODA         Prima Moda          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-01-15    2014-06-18    PROCAD            Procad              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-06-30    2014-06-18    PROCHEM           Prochem             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1991-04-16    2014-06-18    PROCHNIK          Prochnik            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1999-08-10    2014-06-18    PROJPRZEM         PROJPRZEM           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-07-14    2014-06-18    PROTEKTOR         Protektor           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-03-27    2014-06-18    PROVIDENT         International Personal Finance PLC"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-05-18    2014-06-18    PTI               Powszechne Towarzystwo Inwestycyjne"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-10-19    2014-06-18    PULAWY            Grupa Azoty Zaklady Azotowe Pulawy"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-03-20    2014-06-17    PWRMEDIA          Power Media         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-05-12    2014-06-18    PZU               Powszechny Zaklad Ubezpieczen"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-08-16    2014-06-17    QUANTUM           Quantum Software    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-09-11    2014-06-18    QUERCUS           Quercus Towarzystwo Funduszy Inwestycyjnych"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-08-03    2014-06-18    QUMAK             Qumak               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-05-10    2014-06-18    RADPOL            Radpol              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-03-07    2014-06-18    RAFAKO            RAFAKO              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-06-25    2014-06-16    RAFAMET           Fabryka Obrabiarek RAFAMET"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-09    2014-06-18    RAINBOW           Rainbow Tours       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-07-08    2014-06-18    RANKPROGR         Rank Progress       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-11-30    2014-06-18    RAWLPLUG          Rawlplug            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-01-24    2014-06-06    RC6OGAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-10-17    2014-05-28    RCAGRB10918                           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-03-10    2014-03-12    RCATXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-07-09    2014-04-30    RCBIEAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-03-05    2014-05-07    RCBSLV10715                           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-12    2011-03-29    RCBTXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-07    2013-04-19    RCCBNAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-09-19    2012-12-05    RCCCXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-09-14    2013-11-18    RCCECAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-09-10    2013-09-10    RCCHCAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-14    2014-01-15    RCCMCAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-07-10    2014-06-16    RCCOFAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-02-23    2014-06-06    RCCORAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-01-16    2014-06-13    RCCPS10315                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-09-18    2014-06-17    RCCRUAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-06-19    2014-02-20    RCCTXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-08-02    2014-06-18    RCDACAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-02-08    2014-04-01    RCDAXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-12-29    2014-06-18    RCDGRAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-08-29    2013-04-19    RCDIEAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-08-04    2013-12-10    RCENGAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-10-10    2014-06-04    RCESXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-07-10    2014-04-30    RCFODAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-02-06    2014-06-11    RCGBSH11116                           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-02-06    2014-06-16    RCGBSH11217                           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-02-28    2014-06-04    RCGESX10119                           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-09-13    2014-06-17    RCGLDAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-05-21    2014-05-21    RCGSDG10219                           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-04-30    2014-04-30    RCGSDG10319                           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-07-21    2010-09-15    RCHTXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-11-22    2014-06-11    RCIDXB11018                           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-14    2012-09-07    RCIOBAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-07-10    2014-06-13    RCKAOAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-07-30    2014-06-18    RCKGH11214                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-01-07    2014-01-20    RCKTXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-09-30    2013-04-19    RCLCOAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-11-20    2014-05-22    RCLLCOOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-11-02    2014-06-17    RCLNAGOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-03-16    2014-04-23    RCNAGAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-07-17    2014-06-11    RCNDXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-08-05    2014-06-18    RCNIKAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-07-09    2014-06-06    RCNMBAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-10-30    2014-05-27    RCOGSB0818                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-06    2013-05-16    RCOSBAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-08-30    2013-10-21    RCPEO10215                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-08-30    2014-05-26    RCPGE10215                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-05-07    2014-06-13    RCPGN10315                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-02-04    2014-06-12    RCPGN10415                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-10-31    2014-04-30    RCPKN10315                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-12-17    2012-12-17    RCPKN445BC                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-08-07    2014-05-07    RCPKO11214                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-05-02    2013-08-07    RCPKO38DC2                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-09-15    2013-11-22    RCPTXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-02-04    2014-03-19    RCRCKGH11114                          "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-02-24    2014-02-24    RCRCPKO11214                          "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-10-08    2014-05-30    RCRDXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-04-26    2014-04-08    RCROGAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-25    2011-08-09    RCROXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-20    2014-06-17    RCRTMAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-03-18    2014-06-17    RCRTXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-02-16    2014-02-06    RCSABAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-02-04    2014-03-12    RCSAEAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-12    2011-05-06    RCSBIAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-08-31    2014-05-02    RCSBOAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-03-24    2014-06-10    RCSCEAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-06-01    2014-01-29    RCSCPAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-07-09    2014-06-17    RCSCRAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-09-24    2014-06-18    RCSDAXOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-05-29    2010-08-30    RCSDEAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-07-01    2014-06-09    RCSDGP0515                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-09-16    2014-06-12    RCSDGP0717                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-08-20    2012-12-10    RCSETAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-08-09    2014-06-12    RCSFW2OPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-07-10    2014-06-17    RCSILAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-03-11    2014-06-02    RCSOJAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-17    2014-05-05    RCSP5AOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-20    2013-05-16    RCSSBAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-07-18    2011-09-23    RCSSFAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-11-07    2014-06-18    RCSUGAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-01-27    2013-03-27    RCSWRAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-06-21    2013-11-04    RCTHYAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-03-11    2014-06-16    RCTVBAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-06-11    2014-06-06    RCTWW20001                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-01-23    2014-05-20    RCTWW20002                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-09-14    2014-03-31    RCUKBAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-10-16    2012-10-16    RCW20255DC                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-03-19    2013-07-02    RCW20265BC                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-10-16    2013-12-20    RCW20275DC                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-09-30    2014-05-06    RCW20AOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-03-18    2014-06-04    RCW20S0315                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-02-18    2014-06-17    RCWHTAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-01-11    2011-01-11    RCYKBAOPEN                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2003-12-09    2014-06-18    REDAN             Redan               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-11-14    2014-06-18    REDWOOD           Redwood Holding     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-12-13    2014-06-18    REINHOLD          Reinhold Europe AB  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-02-01    2014-06-18    RELPOL            Relpol              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-11-23    2014-06-18    REMAK             Przedsiebiorstwo Modernizacji Urzadzen Energetycznych ..."
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-09-27    2014-06-18    RESBUD            Resbud              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-12-31    2014-06-18    RESPECT                               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-11-03    2014-06-18    ROBYG             Robyg               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-11-05    2014-06-18    RONSON            Ronson Europe N.V.  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-12-16    2014-06-18    ROPCZYCE          Zaklady Magnezytowe ROPCZYCE"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-05-25    2014-06-18    ROVESE            Rovese              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    RUBICON           Rubicon Partners    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-12-30    2014-05-02    SADOVAYA          Sadovaya Group      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-01-16    2014-06-18    SANOK             Sanockie Zaklady Przemyslu Gumowego STOMIL SANOK"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-02-12    2014-06-18    SANWIL            Sanwil Holding      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-03-28    2014-06-18    SCOPAK            SCO-PAK             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-12-05    2014-06-18    SECOGROUP         Seco/Warwick        "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-03-15    2014-06-18    SEKO              Seko                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-18    2014-06-18    SELENAFM          Selena FM           "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-05-25    2014-06-18    SERINUS                               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-06-08    2014-06-18    SFINKS            Sfinks Polska       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-07-23    2014-06-18    SILVANO           Silvano Fashion Group AS"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-12-14    2014-06-18    SIMPLE            SIMPLE              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-05-09    2014-06-18    SKOK              Towarzystwo Finansowe Spoldzielczych Kas Oszczednoscio..."
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1999-01-11    2014-06-18    SKOTAN            SKOTAN              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-04    2014-06-18    SKYLINE           Skyline Investment  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-06-12    2014-06-18    SKYSTONE          Skystone Capital    "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-04-21    2014-06-18    SMT                                   "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2003-12-31    2014-06-18    SNIEZKA           Fabryka Farb i Lakierow SNIEZKA"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-21    2014-06-18    SOBIESKI          Belvedere           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-04-19    2014-06-18    SOLAR             SOLAR Company       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-06-23    2014-06-18    SONEL             Sonel               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-11-28    2014-06-05    SOPHARMA          Sopharma AD         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1994-10-26    2014-06-18    STALEXP           Stalexport Autostrady"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-08-06    2014-06-18    STALPROD          Stalprodukt         "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-04-26    2014-06-18    STALPROFI         STALPROFIL          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-08-03    2014-06-18    STAPORKOW         Zaklady Urzadzen Kotlowych Staporkow"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-10-14    2014-06-17    SUWARY            Suwary              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-10-15    2014-06-18    SWISSMED          Swissmed Centrum Zdrowia"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1995-10-27    2014-06-18    SYGNITY           Sygnity             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2004-12-20    2014-06-18    SYNTHOS           Synthos             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2014-04-23    2014-06-18    TALANX            Talanx AG           "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-11-20    2014-06-18    TALEX             Talex               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-07-08    2014-06-18    TARCZYNSKI        Tarczynski          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-10-15    2014-06-18    TATRY             Tatry Mountain Resorts AS"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-06-30    2014-06-18    TAURONPE          Tauron Polska Energia"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-10-20    2014-06-18    TELL              Tell                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-10-24    2014-06-16    TERESA            Pani Teresa Medica  "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-07-08    2014-06-18    TESGAS            Tesgas              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-03-29    2014-06-18    TFONE             TelForceOne         "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "1998-02-16    2014-06-18    TIM               TIM                 "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-08-12    2014-06-18    TOYA              Toya                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-01    2014-06-18    TRAKCJA           Trakcja PRKiI       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-09-12    2014-06-18    TRANSPOL          Trans Polonia       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-07-12    2014-06-16    TRAVELPL          Travelplanet.pl     "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-11-12    2014-06-18    TRITON            Triton Development  "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-12-07    2014-06-18    TVN               TVN                 "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-03-06    2012-04-23    UCATXINDOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-02-13    2013-11-15    UCBLXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-23    2012-04-23    UCCECEINOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-11-25    2013-11-25    UCCROINDOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-12-19    2013-12-20    UCDAXPEROE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-05-08    2014-01-24    UCHTXINDOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-02-13    2013-11-15    UCKTXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-11-14    2012-12-07    UCKTXINDOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-23    2014-03-03    UCNIKKEIOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-02-13    2014-03-06    UCPFTAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-02-13    2014-03-25    UCRDXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-06-18    2012-06-18    UCRDXEUROE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-11-28    2012-12-05    UCRDXOILOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-02-13    2013-11-18    UCROXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-05-10    2012-05-10    UCRTXMETOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-23    2012-04-23    UCSCLARGOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-23    2012-04-23    UCSCMIDOE                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-23    2013-09-05    UCSCSMALOE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-02-14    2014-02-25    UCSOFIXOE                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-02-13    2014-03-25    UCSOXAOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-07-11    2014-04-14    UCSP40OE                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-23    2012-09-24    UCSP500OE                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-23    2012-12-03    UCSTOX50OE                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-02-13    2014-02-13    UCW20AOPEN                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-11    2013-10-16    UCWIG20OE                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-10-01    2014-06-06    UCXUO30IOE                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-05-21    2014-06-17    ULMA              ULMA Construccion Polska"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-08    2014-06-18    UNIBEP            Unibep              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-12-20    2014-06-18    UNICREDIT         UniCredit S.p.A.    "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2006-09-13    2014-06-18    UNIMA             Unima 2000 Systemy Teleinformatyczne"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-12-27    2014-06-18    URSUS             Ursus               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-03-26    2014-06-18    VANTAGE           Vantage Development "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-07-11    2014-06-18    VARIANT           Variant             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2009-03-23    2014-06-18    VINDEXUS          Gielda Praw Majatkowych Vindexus"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2014-01-08    2014-06-18    VISTAL            Vistal Gdynia       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1993-09-30    2014-06-18    VISTULA           Vistula Group       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2010-12-20    2014-06-18    VOTUM             Votum               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-10-11    2014-06-18    VOXEL             Voxel               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-06-03    2014-06-18    WADEX             Przedsiebiorstwo Produkcyjno Handlowe Wadex"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2000-11-29    2014-06-18    WANDALEX          Wandalex            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-01-29    2014-06-18    WARIMPEX          Warimpex Finanz & und Beteiligungs AG"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2001-05-24    2014-06-18    WASKO             Wasko               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-03-11    2014-06-18    WAWEL             WAWEL               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-06-15    2014-06-18    WESTAISIC         Westa ISIC          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-11-28    2014-06-18    WIELTON           Wielton             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-12-30    2014-06-18    WIG20LEV                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-12-30    2014-06-18    WIG20SHORT                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-12-31    2014-06-18    WIG20TR                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-12-28    2014-06-18    WIG250                                "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-12-28    2014-06-18    WIG30                                 "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-01-02    2014-06-18    WIG30LEV                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-01-02    2014-06-18    WIG30SHORT                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-12-28    2014-06-18    WIG30TR                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-12-28    2014-06-18    WIG50                                 "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-01-03    2014-06-18    WIGDIV                                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1997-02-20    2014-04-30    WIKANA            Wikana              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-01-08    2014-06-18    WILBO             Wilbo               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1996-10-14    2014-06-18    WINVEST           W Investments       "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-02    2014-06-18    WOJAS             Wojas               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-04-26    2014-06-18    WORKSERV                              "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1998-06-26    2014-06-17    YAWAL             Yawal               "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2011-10-10    2014-06-18    ZAMET             Zamet Industry      "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2007-08-27    2014-06-18    ZASTAL            ZASTAL              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-01-27    2013-04-11    ZELMER                                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2012-10-30    2014-06-18    ZEPAK             Zespol Elektrowni Patnow-Adamow-Konin"
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2005-03-04    2014-06-18    ZETKAMA           Zetkama             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2000-08-23    2014-06-18    ZPUE              ZPUE                "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2008-04-25    2014-06-18    ZREMB             Zaklad Budowy Maszyn Zremb-Chojnice"
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-10-01    2014-06-18    ZUE               ZUE                 "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "1991-09-24    2014-06-18    ZYWIEC            Grupa Zywiec        "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-09-15    2014-06-18    ARK2FRN15                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-08-24    2014-06-18    ARKAFRN12                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-09-29    2014-06-18    ARKASWE17                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-09-27    2013-12-13    BPHFIZBI1                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-05-18    2014-03-11    BPHFIZBI2                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-01-30    2014-06-09    BPHFIZBI3                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-04-10    2014-06-16    BPHFIZBI4                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-06-22    2013-11-29    BPHFIZBI5                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-10-19    2013-10-18    BPHFIZBI6                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-08-23    2013-12-09    BPHFIZDS                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-05-26    2014-06-11    BPHFIZKK                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-07-01    2014-06-06    BPHFIZMLI                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-09-02    2014-06-18    BPHFIZSN                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-09-29    2014-06-13    BPHFIZSN2                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-05-31    2014-06-18    ETFDAX                                "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-05-31    2014-06-18    ETFSP500                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-09-22    2014-06-18    ETFW20L                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-07-06    2014-06-17    INVCEEFIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-01-22    2014-06-16    INVFIZ                                "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-05-21    2014-06-18    INVGLDFIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-11-09    2014-06-18    INVPEFIZ                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-12-10    2014-05-13    INVPRFIZ                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-01-19    2014-06-18    IPERMFIZ                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-12-20    2010-12-20    KBCDB1FIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-03-03    2006-03-03    KBCDOLAR                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-10-08    2012-07-27    KBCINDFIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-09-27    2011-09-27    KBCKJ1FIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-11-10    2009-11-10    KBCNEUFIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-02-03    2010-02-03    KBCRAZFIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-04-20    2011-04-18    KBCRP1FIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2009-09-15    2014-05-15    LMASFIZ                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2010-11-17    2014-03-06    LMBSFIZ                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2011-08-10    2014-03-31    LMCSFIZ                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-11-05    2014-06-16    LMDSFIZ                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-05-12    2014-05-12    LMESFIZ                               "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-05-29    2014-06-16    OPERA3GR                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2008-09-25    2013-08-02    OPERATERR                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2006-12-05    2014-06-17    PKOBL1                                "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-08-26    2014-06-18    PKOGS                                 "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-04-16    2014-06-16    PKOSO                                 "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2007-02-06    2013-07-19    SECUSIFIZ                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2004-12-17    2014-06-18    SRNFIZ                                "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-01-15    2014-06-12    UNISYS1AB                             "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2005-12-30    2014-06-18    WIG-PALIWA                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2014-05-16    2014-06-10    BNPPL-PDA                             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-12-13    2014-03-06    CPGROUP-PDA       Capital Park        "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-12-18    2014-01-31    ELEMENTAL-PDA                         "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-12-17    2014-01-20    ALIOR-PDA                             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-11-21    2014-01-16    MERCATOR-PDA      Mercator Medical    "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-11-26    2013-12-03    POLNORD-PP                            "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-10-28    2013-11-15    MLPGROUP-PDA                          "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-07-18    2013-08-29    OTLOG-PDA         OT Logistics        "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-06-20    2013-08-27    DMWDM-PDA                             "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-07-10    2013-08-16    GLCOSMED-PDA      Global Cosmed       "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-06-07    2013-07-10    IMPERA-PDA                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-06-18    2013-07-05    TARCZYNSKI-PDA    Tarczynski          "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-04-23    2013-06-14    MABION-PDA                            "
+
+
+COPY error on lines 
+COPY error: value too long for type character varying(50)
+CONTEXT:  COPY intf_gpw, line 1, column nazwa: "2013-05-10    2013-05-29    FEERUM-PDA        Feerum              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-04-22    2013-05-02    BBIZENNFI-PP                          "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2013-04-24    2013-04-30    DMWDM-PP                              "
+
+
+COPY error on lines 
+COPY error: missing data for column "data_notowania"
+CONTEXT:  COPY intf_gpw, line 1: "2012-12-20    2013-04-29    URSUS-PDA                             "
+
+
