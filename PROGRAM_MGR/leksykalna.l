@@ -36,8 +36,9 @@ save_dir|SAVE_DIR			{return SAVE_DIR;}
 table_name|TABLE_NAME			{return TABLE_NAME;}
 base_name|BASE_NAME			{return BASE_NAME; }
 user_name|USER_NAME			{return USER_NAME;}
-site_web				{return SITE_WEB;}
-"http://"[^;]+    			{
+site_web|SITE_WEB			{return SITE_WEB;}
+pgloader|PGLOADER			{return PGLOADER;}
+"http://"[^;\ ]+    			{
 						p=(char *)calloc(strlen(yytext)+1,sizeof(char));
 						strcpy(p,yytext);
 						yylval= (int) p;
@@ -49,7 +50,7 @@ site_web				{return SITE_WEB;}
 						yylval= (int) p;
 						return NUMBER;
 					}
-{alpha}+(\.{alpha})?{alpha}* 	 	{
+{alpha}+(\.{alpha})?({alpha}|{digit})* 	 	{
 						p=(char *)calloc(strlen(yytext)+1,sizeof(char));
 						strcpy(p,yytext);
 						yylval= (int) p;

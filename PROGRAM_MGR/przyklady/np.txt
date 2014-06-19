@@ -1,7 +1,7 @@
-save_dir etl_np;
+save_dir etl_a;
 user_name etl;
 base_name dwh;
-fact site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn;
+site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn gpw;
 
  create fact gpw ( 
   nazwa varchar(50) dimension npw 

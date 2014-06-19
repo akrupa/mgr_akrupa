@@ -27,9 +27,9 @@ void Tworz::download() {
   cout << "download" << endl;
   string fact_name = w->getFact()->getName_tab();
 
-  download(w->getFact()->getWeb_site(), fact_name );
+  // download(w->getFact()->getWeb_site(), fact_name );
 
-   pgloader(fact_name);
+  //  pgloader(fact_name);
   //cout <<  w->getFact()->getName_tab() << endl;
   //w->getFact()->pokazTab(cout);
 
@@ -38,7 +38,7 @@ cout << "koniec donload "<< endl;
 
 
 
-void Tworz::download(string address, string dane_do_pgloadera) {
+void Tworz::script(string address, string dane_do_pgloadera) {
 
     string file_address= create_file_address(f_script,  "" ,dane_do_pgloadera ,r_sh);
     ofstream& out= getZapis(file_address);
@@ -107,8 +107,8 @@ out << "copy_every=15000" << endl;
 out << "empty_string=\"\\ \"" << endl;
 out << "max_parallel_sections=4" << endl;
 out << "null=NULL" << endl;
-out << "[gpw]" << endl;
-out << "table=intf_gpw" << endl;
+out << "["<< tab <<"]" << endl;
+out << "table=intf_"<< tab   << endl;
 out << "format=csv" << endl;
 out << "datestyle=ymd" << endl;
 out << "field_size_limit=512kB" << endl;
@@ -118,23 +118,13 @@ out << "columns=*" << endl;
 out << "skip_header_lines=0" << endl;
 out << "truncate=True" << endl;
 out << "filename=dane_"+tab+".txt" << endl;
-out << "reject_log=sesja.reject_log" << endl;
-out << "reject_data=sesja.reject_data" << endl;
+out << "reject_log=" << tab << ".reject_log" << endl;
+out << "reject_data=" << tab <<".reject_data" << endl;
 
 out.close();
 	
    message_file_create(file_address);
 }
-
-
-
-//void Tabela::pokazTab(ostream& out) {
-//   for (vector<Columna*>::iterator it= this->tab.begin(); it != this->tab.end(); ++it) {
-//                  (*it)->pokazKolumne(out);
-//                  out << endl;
-//          }
-
-//}
 
 
 
@@ -173,7 +163,7 @@ string Tworz::create_file_address(string prefix_file, string prefix_tab,  string
 
 
 void Tworz::create_table() {
-cout << "----------------------------- Tworzy tabele ---------------------- " << endl;
+//cout << "----------------------------- Tworzy tabele ---------------------- " << endl;
    create_tab_intf(w->getFact());  
    create_tab_stg(w->getFact());
    create_tab_promo(w->getFact());
@@ -181,7 +171,7 @@ cout << "----------------------------- Tworzy tabele ---------------------- " <<
 
    create_all_dimensions_tab(w->getFact());
 
-cout << "----------------------------- Tworzy tabele ---------------------- " << endl;
+//cout << "----------------------------- Tworzy tabele ---------------------- " << endl;
 }
 
 void Tworz::create_tab_intf(Tabela* tab) {
@@ -313,7 +303,7 @@ void Tworz::create_tab_dimension(Tabela* tab) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////     Główna funkcja sterujące 
 void Tworz::insert() {
-cout << "Tworzenie  procesów dotyczące warstwy pośredniej i docelowej " << endl; 
+//cout << "Tworzenie  procesów dotyczące warstwy pośredniej i docelowej " << endl; 
 
 Tabela* dimension= NULL;
 string name_dim;
@@ -353,7 +343,7 @@ insert_promo(w->getFact());
 
 insert_fact(w->getFact());
 
-cout << "Koniec  Tworzenia procesów dotyczące warstwy pośredniej i docelowej \n\n\n" << endl; 
+//cout << "Koniec  Tworzenia procesów dotyczące warstwy pośredniej i docelowej \n\n\n" << endl; 
 }
 
 

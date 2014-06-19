@@ -17,6 +17,8 @@ string int2str(int a);
 extern int a_exit;
 extern int a_error_yacc;
 extern int a_yacc_polecenie;
+extern string a_yacc_string;
+extern string a_yacc_string_dwa;
 
 extern "C"
 {
@@ -31,6 +33,8 @@ int polecenie(string s);
 void preambula();
 int program();
 void tworz();
+void tworz_pgloader();
+void towrz_script();
 
 
 

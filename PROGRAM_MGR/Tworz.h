@@ -53,7 +53,7 @@ ofstream& getZapis(string s);
 void create_table();
 
 void download();
-void download(string site, string dane_do_pgloader);
+void script(string site, string dane_do_pgloader);
 
 void pgloader();
 void pgloader(string tab);

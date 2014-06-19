@@ -15,6 +15,8 @@ int a_yacc_polecenie=0;
 string str_rob;
 Columna* wsk_k=NULL;
 Tabela* wsk_tabela=NULL;
+string a_yacc_string="";
+string a_yacc_string_dwa="";
 
 extern "C" int yyparse(void);
 extern "C" int yylex(void);  
@@ -33,7 +35,7 @@ a_error_yacc=1;
 %token EXIT  SAVE_DIR TABLE_NAME BASE_NAME USER_NAME
 %token MAKE
 %token NUMBER IDENTIFIER 
-%token CREATE KEY FACT DIMENSION SITE_WEB SITE_WEB_ADDRESS
+%token CREATE KEY FACT DIMENSION SITE_WEB SITE_WEB_ADDRESS PGLOADER
 %token  LEFTPARENTHESIS RIGHTPARENTHESIS  SEMICOLON COMMA  LEX_ERROR 
 
 
@@ -43,7 +45,7 @@ a_error_yacc=1;
 %%
 
 y_polecenie_srednik:
-  y_polecenie SEMICOLON {printf("Polecenie semicolon\n"); }   
+  y_polecenie SEMICOLON { }   
 ;
 y_polecenie:
   EXIT {  a_exit=1;   }
@@ -56,8 +58,15 @@ y_polecenie:
   |
   BASE_NAME IDENTIFIER	{w->setName_base((char*) $2);}
   |
-  FACT SITE_WEB SITE_WEB_ADDRESS {w->getFact()->setWeb_site( (char*) $3 );  a_yacc_polecenie=4;  }
+  SITE_WEB SITE_WEB_ADDRESS IDENTIFIER 
+	{ 
+	 a_yacc_string = (char*) $2;
+	 a_yacc_string_dwa= (char*) $3;
+	 a_yacc_polecenie=2; 
+	 }
   |
+  PGLOADER IDENTIFIER  {a_yacc_string = (char*) $2; a_yacc_polecenie=3; }
+  | 
   y_fakt_polecenie 
   |
   y_wymiar_polecenie
