@@ -6,7 +6,7 @@ int main(int argc,char** argv)
 {
 
 
-cout << "Program rozpoczoł działąnie" << endl;
+cout << "Program rozpoczął działąnie" << endl;
 
 program();
 cout << "Koniec programu"  << endl; 

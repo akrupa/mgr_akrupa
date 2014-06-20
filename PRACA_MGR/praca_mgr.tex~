@@ -1,6 +1,6 @@
 %\documentclass[a4paper,12pt]{ report}
 \documentclass[a4paper,12pt]{ report}
-\usepackage[ top=2.5cm, bottom=2.5cm, left=3 cm, right=2.6cm]{geometry}
+\usepackage[ top=2.5cm, bottom=2.6cm, left=3 cm, right=2.5cm]{geometry}
 \usepackage{polski}
 \usepackage[utf8x]{inputenc}
 \usepackage{verbatim}
