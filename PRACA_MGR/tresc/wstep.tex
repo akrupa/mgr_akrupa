@@ -1,16 +1,19 @@
 
-Ojcem koncepcji hurtowni danych jest Bill Inmon, napisał on ponad 40 książek związanych z tą tematyką.
-Koncepcja ta dotyczy, jak wspomóc osoby zarządzające firmą, korporacją w podejmowaniu działań strategicznych.
-Hurtownie danych odniosły sukces związany z  problemem biznesowym związanym z zarządzaniem relacjami z~klientem,
+Ojcem koncepcji hurtowni danych jest Bill Inmon,
+ napisał on ponad 40 książek związanych z tą tematyką.
+Koncepcja ta dotyczy,
+ jak wspomóc osoby zarządzające firmą,
+ korporacją w podejmowaniu działań strategicznych.
+Hurtownie danych odniosły sukces związany z problemami biznesowymi związanymi z zarządzaniem relacjami z~klientem,
  w~skrócie CRM, \ang{Customer Relationship Management}
-
-
-Projektowanie jaki i tworzenie hurtowni danych jest procesem bardzo złożonym i~kosztownych, który trwa od pół roku do dwóch lat.
-Firmy podejmujące decyzje o inwestycji utworzenia hurtowni danych, są świadome, 
+Projektowanie jaki i tworzenie hurtowni danych jest procesem bardzo złożonym i~kosztownych,
+ który trwa od pół roku do dwóch lat.
+Firmy podejmujące decyzje o inwestycji utworzenia hurtowni danych,
+ są świadome, 
  że nie produkt zakupiony ma generować zyski tylko dostarczać wiarygodnych i rzetelnych informacji, 
  na~podstawie których możliwe jest podjęcie decyzji strategicznych. 
 Jeżeli projekt hurtowni danych jest nie ukierunkowany pod danego klienta lub przechowuje niepoprawne dane, 
- to staje się dużą stratą dla firmy.
+ to staje się dużą stratą dla firmy.\cite{TodMan}
 
 Celem pracy jest napisanie języka wysokiego poziomu, 
  który pomoże programistą w tworzeniu procesów zasilających hurtownie danych.
@@ -23,22 +26,33 @@ Celem pracy jest napisanie języka wysokiego poziomu,
  \item kodu języka SQL zasilającego table.
 \end{itemize}
 
+
 Pierwszy rozdział pracy opisuje hurtownie danych i powody jej budowanie,
  jak również  została przedstawiona w nim  architektura hurtowni danych.
 Kolejny rozdział opisuje, czym są procesy zasilania hurtowni danych, 
  oraz omawia przykładowe procesy zasilania, które są realizowane w ramach niniejszej pracy.
+Trzeci rozdział niniejszej pracy został poświęcony teorii związanej 
+z~tworzeniem języków interpretowanych.
 
-
-(
-Zastanawiam się jeszcze, czy w tym miejscu napisać o bazie PostgreSQL 8.4.14 ,czy na samym końcu wstępu.
-Język wysokiego poziomu,który mam napisać, planuje testować na tej bazie. 
-)
-
- 
-(zarys 3,4,5)
-Trzeci rozdział zawiera definicję i pojęcia, które są niezbędne są do 
-zrozumienia czwartego rozdziału pracy, opisującą tematykę tworzenia języków interpretowanych .
 Ostatni rozdział niniejszej pracy dotyczy opisu programu wraz z przykładem.
+ Wszystkie przykłady zamieszczone w niniejszej pracy zostały testowane 
+w składni języka SQL akceptowanego 
+przez PostgreSQL 8.4.14 na systemie ubuntu 10.04LTS.
+Powodami wybrania bazy danych PstgresSQL jest:
+\begin{itemize}
+ \item oprogramowaniem bezpłatnym i~uznanym za dobre do zastosowań komercyjnych,
+ \item obecnie wykorzystywane w firmie,
+    w której zdobywam doświadczenie zawodowe pracując przy tworzeniu warstwy pośredniej hurtowni bazy danych.
+\end{itemize}
+
+Analizator składniowy i leksykalny został utworzony przy użyciu otwartego oprogramowania LEX i YACC, 
+ które w znaczący sposób ułatwiają tworzenie pierwszych dwóch etapów tworzenia języków interpretowanych i kompilatorów.
+Lex i Yacc są programami,
+ które wymagają dużego nakładu pracy,
+ aby dobrze zrozumieć ich działanie
+ i co tak naprawdę zyskujemy dzięki użyciu ich.
+Ponieważ nie jest celem niniejszej pracy tworzenie języków wysokiego poziomu,
+ lecz napisanie go i aby nie odbiegać od głównego celu pracy
+ opis działania jak również składni zostanie pominięty.
+
   
-
-

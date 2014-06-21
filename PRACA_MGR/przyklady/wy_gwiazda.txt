@@ -1,0 +1,68 @@
+Program rozpoczął działąnie
+=> save_dir etl_gwiazda;
+=> user_name etl;
+=> base_name dwh;
+=> 
+=> CREATE DIMENSION wymiar1
+-> (
+->  atrybut varchar key dimension
+-> );
+=> 
+=> CREATE DIMENSION wymiar2
+-> (
+->   atrybut_1 varchar key dimension
+-> , atrybut_2 numeric 
+-> );
+=> 
+=> CREATE DIMENSION wymiar3
+-> (
+->  atrybut varchar  key dimension
+-> );
+=> 
+=> CREATE DIMENSION  wymiar4
+-> (
+->  atrybut varchar key dimension
+-> );
+=> 
+=> CREATE fact fakt 
+-> (
+->   id_wymiar1 integer  dimension wymiar1  
+-> , id_wymiar2 integer  dimension wymiar2
+-> , id_wymiar3 integer  dimension wymiar3
+-> , id_wymiar4 integer  dimension wymiar4
+-> , data       timestamp
+-> , miara_1    integer 
+-> , miara_2    integer 
+-> );
+=> 
+=> make;
+Utworzono: ./etl_gwiazda/create_intf_fakt.sql
+Utworzono: ./etl_gwiazda/create_stg_fakt.sql
+Utworzono: ./etl_gwiazda/create_promo_fakt.sql
+Utworzono: ./etl_gwiazda/create_fakt.sql
+Utworzono: ./etl_gwiazda/create_intf_wymiar1.sql
+Utworzono: ./etl_gwiazda/create_stg_wymiar1.sql
+Utworzono: ./etl_gwiazda/create_wymiar1.sql
+Utworzono: ./etl_gwiazda/create_intf_wymiar2.sql
+Utworzono: ./etl_gwiazda/create_stg_wymiar2.sql
+Utworzono: ./etl_gwiazda/create_wymiar2.sql
+Utworzono: ./etl_gwiazda/create_intf_wymiar3.sql
+Utworzono: ./etl_gwiazda/create_stg_wymiar3.sql
+Utworzono: ./etl_gwiazda/create_wymiar3.sql
+Utworzono: ./etl_gwiazda/create_intf_wymiar4.sql
+Utworzono: ./etl_gwiazda/create_stg_wymiar4.sql
+Utworzono: ./etl_gwiazda/create_wymiar4.sql
+Utworzono: ./etl_gwiazda/stg_fakt.sql
+Utworzono: ./etl_gwiazda/stg_wymiar1.sql
+Utworzono: ./etl_gwiazda/stg_wymiar2.sql
+Utworzono: ./etl_gwiazda/stg_wymiar3.sql
+Utworzono: ./etl_gwiazda/stg_wymiar4.sql
+Utworzono: ./etl_gwiazda/promo_fakt.sql
+Utworzono: ./etl_gwiazda/wymiar1.sql
+Utworzono: ./etl_gwiazda/wymiar2.sql
+Utworzono: ./etl_gwiazda/wymiar3.sql
+Utworzono: ./etl_gwiazda/wymiar4.sql
+Utworzono: ./etl_gwiazda/fakt.sql
+=> 
+=> exit;
+Koniec działania programu

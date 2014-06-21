@@ -1,7 +1,12 @@
-save_dir etl_a;
+save_dir etl_b;
 user_name etl;
 base_name dwh;
+
 site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn gpw;
+site_web http://bossa.pl/pub/ciagle/mstock/metacgl.lst npw;
+
+pgloader gpw;
+pgloader npw;
 
  create fact gpw ( 
   nazwa varchar(50) dimension npw 
@@ -13,5 +18,14 @@ site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn gpw;
 , wartosc decimal(20,3)    
 ); 
 
+create dimension npw 
+(
+  data_od timestamp
+, data_do timestamp
+, nazwa varchar (50) key dimension 
+, opis varchar(200)
+);
+
 make;
 
+exit;

@@ -59,7 +59,7 @@ int program() {
    // Warunek utworzony w przypadku, gdy przekierunkowany jest plik na standardowe wejście
       if (cin.eof())
       {
-	  cout <<"koniec pliku" << endl;
+	 // cout <<"koniec pliku" << endl;
 	  return 0;
       }
 

@@ -1,0 +1,32 @@
+Program rozpoczął działąnie
+=> save_dir etl_a;
+=> user_name etl;
+=> base_name dwh;
+=> site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn gpw;
+Utworzono: ./etl_a/script_gpw.sh
+=> pgloader gpw;
+Utworzono: ./etl_a/pgloader_gpw.conf
+=> 
+=>  create fact gpw ( 
+->   nazwa varchar(50) dimension npw 
+-> , data_notowania date key
+-> , otwarcie decimal(20, 2)
+-> , max decimal(20, 2)
+-> , min decimal(20, 2)
+-> , zamkniecie decimal(20, 2)
+-> , wartosc decimal(20,3)    
+-> ); 
+=> 
+=> make;
+Utworzono: ./etl_a/create_intf_gpw.sql
+Utworzono: ./etl_a/create_stg_gpw.sql
+Utworzono: ./etl_a/create_promo_gpw.sql
+Utworzono: ./etl_a/create_gpw.sql
+Utworzono: ./etl_a/create_npw.sql
+Utworzono: ./etl_a/stg_gpw.sql
+Utworzono: ./etl_a/kmap_from_gpw_to_npw.sql
+Utworzono: ./etl_a/promo_gpw.sql
+Utworzono: ./etl_a/gpw.sql
+=> 
+=> exit;
+Koniec działania programu

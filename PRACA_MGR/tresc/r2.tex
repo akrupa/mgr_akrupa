@@ -1,4 +1,4 @@
-\chapter{Procesy zasilania hurtowni danych}
+\chapter{Procesy zasilania hurtowni danych} \label{r_procesy}
 
 \section{Ogólna koncepcja zasilania hurtowni}
 Hurtownia danych jako system magazynujący dane i wspierający raportowanie stawia sobie 
@@ -122,7 +122,7 @@ Najbardziej istotne jest, aby wszystkie dane faktowe dostępne dla użytkownika 
 więc ładowanie wymiarów w pierwszej kolejności zapewnia ten stan rzeczy. 
 
 
-\section{Analiza przykładowego procesu zasilania}
+\section{Analiza przykładowego procesu zasilania} \label{p_r_analiza_procesu}
 Dla zilustrowania koncepcji języka do budowy hurtowni danych oraz jego praktycznego zastosowania,
  zostanie zbudowane przykładowa,
  uproszczona hurtownia danych wraz z procesami zasilania. 
@@ -253,7 +253,7 @@ W przypadku gdyby przykład nie został uproszczony to tabelka ta powinna zosta�
 \lstinputlisting[ label=l:npw_gpw, language=sql, caption = {Ładowanie danych do tabeli wymiaru -- papierów wartościowych.}] {"./sql/npw.sql"}  
 
 Kolejnym etapem jest nadawanie kluczy sztucznych w hurtowni,
- poprzez zastąpienie klucza naturlanego (nazwy papierów wartościowych).
+ poprzez zastąpienie klucza naturalnego (nazwy papierów wartościowych).
 W omawianej warstwie  dokonuje się również  łączenia danych pochodzących z różnych źródeł.
 Dane, które będą zasilać tabelę faktów w naszej hurtowni danych pochodzą z jednego źródła, 
  z tego powodu tabela przejściowa będzie miała bardzo podobną strukturę do tabel opisanych poprzednio.

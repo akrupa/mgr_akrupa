@@ -483,8 +483,8 @@ static const yytype_int8 yyrhs[] =
 static const yytype_uint8 yyrline[] =
 {
        0,    48,    48,    51,    53,    55,    57,    59,    61,    68,
-      70,    72,    76,    83,    85,    91,    93,    99,   109,   125,
-     130,   138,   140,   151,   153,   163
+      70,    72,    76,    83,    85,    90,    92,    98,   108,   124,
+     129,   137,   139,   150,   152,   162
 };
 #endif
 
@@ -1497,14 +1497,14 @@ yyreduce:
   case 15:
 
 /* Line 1455 of yacc.c  */
-#line 91 "skladniowa.y"
+#line 90 "skladniowa.y"
     {(yyval)=(yyvsp[(1) - (1)]);}
     break;
 
   case 16:
 
 /* Line 1455 of yacc.c  */
-#line 94 "skladniowa.y"
+#line 93 "skladniowa.y"
     {
 	((Columna*) (yyvsp[(1) - (2)]))->setTyp(1);
 	(yyval)=(yyvsp[(1) - (2)]);
@@ -1514,7 +1514,7 @@ yyreduce:
   case 17:
 
 /* Line 1455 of yacc.c  */
-#line 100 "skladniowa.y"
+#line 99 "skladniowa.y"
     {
 	((Columna*) (yyvsp[(1) - (3)]))->setTyp(2);
 	((Columna*) (yyvsp[(1) - (3)]))->setNameColumnaWymiar((char*) (yyvsp[(3) - (3)]) );
@@ -1525,7 +1525,7 @@ yyreduce:
   case 18:
 
 /* Line 1455 of yacc.c  */
-#line 110 "skladniowa.y"
+#line 109 "skladniowa.y"
     {
 	  if (wsk_tabela==NULL) {
 		cout << "ERROR YACC: Błąd tworzenia tablicy wymiarów " << endl;
@@ -1541,7 +1541,7 @@ yyreduce:
   case 19:
 
 /* Line 1455 of yacc.c  */
-#line 126 "skladniowa.y"
+#line 125 "skladniowa.y"
     {
  	 wsk_tabela->add((Columna*) (yyvsp[(1) - (3)]));
  	}
@@ -1550,7 +1550,7 @@ yyreduce:
   case 20:
 
 /* Line 1455 of yacc.c  */
-#line 131 "skladniowa.y"
+#line 130 "skladniowa.y"
     {
 	wsk_tabela= new Tabela();
 	wsk_tabela->add( (Columna*) (yyvsp[(1) - (1)]) );
@@ -1560,14 +1560,14 @@ yyreduce:
   case 21:
 
 /* Line 1455 of yacc.c  */
-#line 138 "skladniowa.y"
+#line 137 "skladniowa.y"
     { (yyval)=(yyvsp[(1) - (1)]); }
     break;
 
   case 22:
 
 /* Line 1455 of yacc.c  */
-#line 141 "skladniowa.y"
+#line 140 "skladniowa.y"
     { 
 	((Columna*) (yyvsp[(1) - (3)]))->setTyp(10);
 	(yyval)=(yyvsp[(1) - (3)]);
@@ -1577,14 +1577,14 @@ yyreduce:
   case 23:
 
 /* Line 1455 of yacc.c  */
-#line 151 "skladniowa.y"
+#line 150 "skladniowa.y"
     { (yyval)= (int) new Columna((char*) (yyvsp[(1) - (2)]), (char*) (yyvsp[(2) - (2)]));  }
     break;
 
   case 24:
 
 /* Line 1455 of yacc.c  */
-#line 154 "skladniowa.y"
+#line 153 "skladniowa.y"
     {
 	str_rob="";
 	str_rob+= (char*) (yyvsp[(2) - (5)]) ;
@@ -1598,7 +1598,7 @@ yyreduce:
   case 25:
 
 /* Line 1455 of yacc.c  */
-#line 164 "skladniowa.y"
+#line 163 "skladniowa.y"
     {
 	str_rob="";
 	str_rob+= (char*) (yyvsp[(2) - (7)]) ;

@@ -86,7 +86,6 @@ y_list_fact_kolumn:
 ;
 
 
-
 y_fact_kolumna:
  y_prosta  {$$=$1;}
 |

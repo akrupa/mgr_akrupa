@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  21 JUN 2014 00:43
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  21 JUN 2014 23:29
 entering extended mode
  %&-line parsing enabled.
 **praca_mgr.tex
@@ -341,20 +341,20 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (./tresc/strona-tytulowa.aux))
 \openout1 = `praca_mgr.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -470,12 +470,12 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
  [4]
 (./tresc/wstep.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
  [5
 
 
@@ -493,21 +493,21 @@ File: ./obrazy/AHD.png Graphic file (type png)
 File: ./obrazy/AHD_ODS.png Graphic file (type png)
 
 <use ./obrazy/AHD_ODS.png> [12 <./obrazy/AHD_ODS.png (PNG copy)>] [13]
-<./obrazy/gwiazda.png, id=54, 668.4975pt x 582.175pt>
-File: ./obrazy/gwiazda.png Graphic file (type png)
+<./obrazy/gwiazda.pdf, id=54, 613.29124pt x 455.7025pt>
+File: ./obrazy/gwiazda.pdf Graphic file (type pdf)
 
-<use ./obrazy/gwiazda.png> [14]
+<use ./obrazy/gwiazda.pdf> [14]
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-) (./sql/gwiazda.sql [15 <./obrazy/gwiazda.png (PNG copy)>])
-<./obrazy/platek_sniegu.png, id=64, 919.435pt x 601.24625pt>
-File: ./obrazy/platek_sniegu.png Graphic file (type png)
+) (./sql/gwiazda.sql [15 <./obrazy/gwiazda.pdf>]) <./obrazy/platek_sniegu.pdf, 
+id=74, 907.39pt x 546.04pt>
+File: ./obrazy/platek_sniegu.pdf Graphic file (type pdf)
 
-<use ./obrazy/platek_sniegu.png> [16]) (./tresc/r2.tex [17 <./obrazy/platek_sni
-egu.png (PNG copy)>] [18
+<use ./obrazy/platek_sniegu.pdf> [16]) (./tresc/r2.tex [17 <./obrazy/platek_sni
+egu.pdf>] [18
 
 ]
 Rozdzia\PlPrIeC {\l } 2.
@@ -569,7 +569,7 @@ Rozdzia\PlPrIeC {\l } 3.
 
 
 ] [34] [35] [36] [37]
-Overfull \hbox (4.18008pt too wide) in paragraph at lines 185--186
+Overfull \hbox (4.18008pt too wide) in paragraph at lines 184--185
 []\OT4/cmr/m/n/12 wyra»enie re-gu-lar-ne $(\OMS/plsy/m/n/12 ^^@j\OT4/cmr/m/n/12
  +)((1\OMS/plsy/m/n/12 j\OT4/cmr/m/n/12 2\OMS/plsy/m/n/12 j\OT4/cmr/m/n/12 3\OM
 S/plsy/m/n/12 j\OT4/cmr/m/n/12 4\OMS/plsy/m/n/12 j\OT4/cmr/m/n/12 5\OMS/plsy/m/
@@ -582,43 +582,68 @@ OT4/cmr/m/n/12 8\OMS/plsy/m/n/12 j\OT4/cmr/m/n/12 9)\OMS/plsy/m/n/12 ^^C\OT4/cm
 r/m/n/12 )\OMS/plsy/m/n/12 j\OT4/cmr/m/n/12 0$ ozna-cza zbiór
  []
 
-[38] <./obrazy/etapy.pdf, id=147, 398.3382pt x 455.24078pt>
+[38] <./obrazy/etapy.pdf, id=167, 398.3382pt x 455.24078pt>
 File: ./obrazy/etapy.pdf Graphic file (type pdf)
 
 <use ./obrazy/etapy.pdf> [39 <./obrazy/etapy.pdf>] [40]
-Overfull \hbox (0.21059pt too wide) in paragraph at lines 264--269
+Overfull \hbox (0.21059pt too wide) in paragraph at lines 263--268
 []\OT4/cmr/m/n/12 Najpopularniejszymi me-to-da-mi wy-ko-rzy-sty-wa-ny-mi w ana-
 li-za-to-rach skªa-dnio-wych
  []
 
-[41]) [42] (./praca_mgr.lol)
+[41]) (./tresc/r4.tex [42]
+Rozdzia\PlPrIeC {\l } 4.
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+) (./skrypt/leksykalna.l
+[43
+
+
+]) [44] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)
+(./skrypt/skladniowa.y [45]) [46] [47]
+Overfull \hbox (4.85095pt too wide) in paragraph at lines 105--110
+\OT4/cmr/m/n/12 dla ta-be-li fak-tów do-dat-ko-wo two-rzo-na jest jed-na ta-be-
+la cre-ate[]promo[]nazwa[]faktu,
+ []
+
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+) (./przyklady/wy_gwiazda.txt
+[48] [49]) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)
+(./przyklady/wy_np.txt [50]) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+) (./przyklady/wy_np2.txt [51])) [52] (./praca_mgr.lol)
 \tf@lol=\write4
 \openout4 = `praca_mgr.lol'.
 
- [43
+ [53
 
 
-] [44
+] [54
 
 ]
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 159
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 160
 .
 
 (/usr/share/texmf-texlive/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-) [45
+) [55
 
 
 ] (./praca_mgr.aux
 (./tresc/strona-tytulowa.aux)) ) 
 Here is how much of TeX's memory you used:
- 6960 strings out of 495020
- 90714 string characters out of 1181528
- 238053 words of memory out of 3000000
- 9918 multiletter control sequences out of 15000+50000
+ 7210 strings out of 495020
+ 94327 string characters out of 1181528
+ 238261 words of memory out of 3000000
+ 10136 multiletter control sequences out of 15000+50000
  18245 words of font info for 53 fonts, out of 3000000 for 9000
  48 hyphenation exceptions out of 8191
- 33i,8n,43p,330b,1551s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,8n,43p,330b,1547s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/pl/pl
 tt.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texmf-
 texlive/fonts/enc/dvips/pl/plms.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/p
@@ -640,9 +665,9 @@ e/texmf-texlive/fonts/type1/public/pl/plr12.pfb></usr/share/texmf-texlive/fonts
 f-texlive/fonts/type1/public/pl/plsy10.pfb></usr/share/texmf-texlive/fonts/type
 1/public/pl/plsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plti12.pf
 b></usr/share/texmf-texlive/fonts/type1/public/pl/pltt12.pfb>
-Output written on praca_mgr.pdf (45 pages, 417656 bytes).
+Output written on praca_mgr.pdf (55 pages, 443890 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
+ 298 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

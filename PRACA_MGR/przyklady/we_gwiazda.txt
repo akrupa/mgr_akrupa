@@ -35,3 +35,6 @@ CREATE fact fakt
 );
 
 make;
+
+exit;
+

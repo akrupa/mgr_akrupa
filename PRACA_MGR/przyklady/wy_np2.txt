@@ -1,0 +1,49 @@
+Program rozpoczął działąnie
+=> save_dir etl_b;
+=> user_name etl;
+=> base_name dwh;
+=> 
+=> site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn gpw;
+Utworzono: ./etl_b/script_gpw.sh
+=> site_web http://bossa.pl/pub/ciagle/mstock/metacgl.lst npw;
+Utworzono: ./etl_b/script_npw.sh
+=> 
+=> pgloader gpw;
+Utworzono: ./etl_b/pgloader_gpw.conf
+=> pgloader npw;
+Utworzono: ./etl_b/pgloader_npw.conf
+=> 
+=>  create fact gpw ( 
+->   nazwa varchar(50) dimension npw 
+-> , data_notowania date key
+-> , otwarcie decimal(20, 2)
+-> , max decimal(20, 2)
+-> , min decimal(20, 2)
+-> , zamkniecie decimal(20, 2)
+-> , wartosc decimal(20,3)    
+-> ); 
+=> 
+=> create dimension npw 
+-> (
+->   data_od timestamp
+-> , data_do timestamp
+-> , nazwa varchar (50) key dimension 
+-> , opis varchar(200)
+-> );
+=> 
+=> make;
+Utworzono: ./etl_b/create_intf_gpw.sql
+Utworzono: ./etl_b/create_stg_gpw.sql
+Utworzono: ./etl_b/create_promo_gpw.sql
+Utworzono: ./etl_b/create_gpw.sql
+Utworzono: ./etl_b/create_intf_npw.sql
+Utworzono: ./etl_b/create_stg_npw.sql
+Utworzono: ./etl_b/create_npw.sql
+Utworzono: ./etl_b/stg_gpw.sql
+Utworzono: ./etl_b/stg_npw.sql
+Utworzono: ./etl_b/promo_gpw.sql
+Utworzono: ./etl_b/npw.sql
+Utworzono: ./etl_b/gpw.sql
+=> 
+=> exit;
+Koniec działania programu

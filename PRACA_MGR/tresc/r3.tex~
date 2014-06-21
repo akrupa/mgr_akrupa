@@ -168,7 +168,6 @@ Język opisywany przez wyrażenie regularne ma następującą postać:
    \item L($\epsilon$) = \{$\epsilon$\}
    \item L($a$) = \{$a$\}, gdzie $a$ jest dowolnym symbolem z alfabetu $\Sigma$
   \end{itemize}
-
 Załóżmy, że $r$ i $s$ jest wyrażeniami regularnymi oznaczającymi języki $L(r)=M$ i $L(s)=L$, wtedy
     \begin{itemize}
      \item $r|s = M\bigcup L$

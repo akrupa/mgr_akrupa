@@ -1,4 +1,4 @@
-\chapter{Procesy zasilania hurtowni danych}
+\chapter{Procesy zasilania hurtowni danych} \label{r_procesy}
 
 \section{Ogólna koncepcja zasilania hurtowni}
 Hurtownia danych jako system magazynujący dane i wspierający raportowanie stawia sobie 
@@ -122,7 +122,7 @@ Najbardziej istotne jest, aby wszystkie dane faktowe dostępne dla użytkownika 
 więc ładowanie wymiarów w pierwszej kolejności zapewnia ten stan rzeczy. 
 
 
-\section{Analiza przykładowego procesu zasilania}
+\section{Analiza przykładowego procesu zasilania} \label{p_r_analiza_procesu}
 Dla zilustrowania koncepcji języka do budowy hurtowni danych oraz jego praktycznego zastosowania,
  zostanie zbudowane przykładowa,
  uproszczona hurtownia danych wraz z procesami zasilania. 
@@ -187,7 +187,8 @@ W naszym rozważanym przykładzie pobieramy plik o nazwie \textit{sesjacgl.prn},
 Pliki muszą zostać załadowane do bazy danych w niezmienionej formie celem ich udostępnienia do dalszych przekształceń.
 Czyli trafiają do tabelki interfejsowej,
  która ma typ zmiennych zgodny z pobranymi danymi źródłowymi. 
-Tabelkę te nazywać będziemy \textit{intf\_pgw}, a ma ona strukturę zaprezentowaną na listingu \ref{l:t_intf_gpw} .
+Tabelkę te nazywać będziemy \textit{intf\_pgw},
+ a ma ona strukturę zaprezentowaną na listingu \ref{l:t_intf_gpw} .
 
 \lstinputlisting[ label=l:t_intf_gpw, language=sql, caption = {Kod tworzący tabelkę interfejsową.}] {"./sql/tworz_intf_gpw.sql"} 
 
@@ -203,17 +204,16 @@ W rozwiązaniu zbudowanym na potrzeby niniejszej pracy,
  
 W komercyjnych rozwiązaniach, jeśli archiwizacja danych odbywa się za pomocą plików,
  najczęściej stosowane są specjalistyczne narzędzia do backupów,
- a dane ostatecznie nagrywane są na taśmy. Z uwagi na wysoką cenę tego typu urządzeń 
-oraz łatwą publiczną dostępność danych źródłowych użytych na potrzeby niniejszej pracy, 
-taki poziom dbałości o bezpieczeństwo danych nie jest konieczny. 
+ a dane ostatecznie nagrywane są na taśmy.
+Z uwagi na wysoką cenę tego typu urządzeń 
+ oraz łatwą publiczną dostępność danych źródłowych użytych na potrzeby niniejszej pracy, 
+ taki poziom dbałości o bezpieczeństwo danych nie jest konieczny. 
 
 W celu załadowania danych do bazy danych zostanie użyte narzędzie pgloader,
  które dobrze współpracuje z systemem zarządzania bazą danych Postgres.
 Na listingu \ref{l:pgloader} został pokazany skrypt pgloader'a , który realizuje to zadanie.
 
-
 \lstinputlisting[ label=l:pgloader, language=sh, caption = {Skrypt pgloader'a ładujący dane do tabelki interfejsowej.}] {"./skrypt/pgloader.conf"}
-
 
 
 \subsection{Warstwa pośrednia}
@@ -228,7 +228,8 @@ W przykładzie stworzonym na potrzeby naszej pracy będą to:
  \item \label{wp_stg}
    Usuwanie pobranych duplikatów.
  \item \label{wp_npw}
-  Zasilanie tabel przejściowych wymiarów. W naszym przykładzie, dla uproszczenia będzie zasilana tabela wymiarów pokazana na listingu \ref{l:wymiar},
+  Zasilanie tabel przejściowych wymiarów.
+  W naszym przykładzie, dla uproszczenia będzie zasilana tabela wymiarów pokazana na listingu \ref{l:wymiar},
  \item  \label{wp_promo}
   Zamian klucza naturalnego, 
    którym jest nazwa papieru wartościowego na wartość \textit{integer}, 
@@ -251,8 +252,8 @@ W przypadku gdyby przykład nie został uproszczony to tabelka ta powinna zosta�
 
 \lstinputlisting[ label=l:npw_gpw, language=sql, caption = {Ładowanie danych do tabeli wymiaru -- papierów wartościowych.}] {"./sql/npw.sql"}  
 
-
-Kolejnym etapem jest nadawanie kluczy sztucznych w hurtowni, poprzez zastąpienie klucza naturlanego (nazwy papierów wartosciowych).
+Kolejnym etapem jest nadawanie kluczy sztucznych w hurtowni,
+ poprzez zastąpienie klucza naturalnego (nazwy papierów wartościowych).
 W omawianej warstwie  dokonuje się również  łączenia danych pochodzących z różnych źródeł.
 Dane, które będą zasilać tabelę faktów w naszej hurtowni danych pochodzą z jednego źródła, 
  z tego powodu tabela przejściowa będzie miała bardzo podobną strukturę do tabel opisanych poprzednio.
@@ -269,8 +270,11 @@ Celem warstwy docelowej jest załadowanie danych do tabel faktów i wymiarów,
  jak również udostępnianie ich dla użytkowników korzystających z hurtowni danych.
 
 Dane, które będą zasilać tabelę faktową w naszej hurtowni są dziennymi danymi podsumowującymi cały dzień notowań ciągłych na giełdzie. 
-Tego typu dane, z uwagi na swój charakter, nie zmieniają się po załadowaniu, dlatego
- zostanie pominięty UPDATE danych. Wykona jedynie zostanie operacja INSERT z danych 
+Tego typu dane, 
+ z uwagi na swój charakter,
+ nie zmieniają się po załadowaniu,
+ dlatego zostanie pominięty UPDATE danych. 
+Wykona jedynie zostanie operacja INSERT z danych 
  przygotowanych w tabel \textit{promo\_gpw}, do tabeli faktów \textit{gpw}, 
  co zostało pokazane na listingu \ref{l:gpw}
 

@@ -7,9 +7,8 @@ int main(int argc,char** argv)
 
 
 cout << "Program rozpoczął działąnie" << endl;
-
 program();
-cout << "Koniec programu"  << endl; 
+cout << "Koniec działania programu"  << endl; 
 return 0;
 }
 

@@ -9,3 +9,8 @@
 \contentsline {lstlisting}{\numberline {2.8}Struktura tabelki promo\_gpw.}{29}
 \contentsline {lstlisting}{\numberline {2.9}Proces \IeC {\l }adowania do tabeli promo\_gpw.}{30}
 \contentsline {lstlisting}{\numberline {2.10} Proces \IeC {\l }adowania danych do tabeli gpw.}{30}
+\contentsline {lstlisting}{\numberline {4.1}Analiza leksykalna przy u\IeC {\.z}yciu LEX'a.}{43}
+\contentsline {lstlisting}{\numberline {4.2}Analiza sk\IeC {\l }adniowa przy u\IeC {\.z}yciu YACC.}{45}
+\contentsline {lstlisting}{\numberline {4.3} Temat .}{48}
+\contentsline {lstlisting}{\numberline {4.4} Temat .}{50}
+\contentsline {lstlisting}{\numberline {4.5} Temat .}{51}

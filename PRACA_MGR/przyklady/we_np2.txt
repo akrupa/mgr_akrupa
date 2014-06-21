@@ -2,7 +2,6 @@ save_dir etl_b;
 user_name etl;
 base_name dwh;
 
-
 site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn gpw;
 site_web http://bossa.pl/pub/ciagle/mstock/metacgl.lst npw;
 
@@ -29,4 +28,4 @@ create dimension npw
 
 make;
 
-
+exit;
