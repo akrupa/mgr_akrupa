@@ -2,7 +2,7 @@
 
 
 Definicję Hurtowni Danych \ang{Data Warehouse}  przypisuje się Bill'owi Inmon'owi w 1992 roku.
-Zgodnie z tą definicją Hurtownią danych jest bazą danych mającą następujące cztery cechy.
+Zgodnie z tą definicją Hurtownią danych jest bazą danych mającą następujące cztery cechy. \cite{TodMan}
 
 \begin{itemize}
  \item Zorientowaną na temat \ang{ Subject-oriented} --- 
@@ -26,7 +26,7 @@ Zgodnie z tą definicją Hurtownią danych jest bazą danych mającą następuj�
 
 
 \section{Powody budowania hurtowni danych.}
-   
+  
       Uzasadnieniem budowania hurtowni danych może być:
 \begin{itemize}
  \item \textbf{Przeprowadzanie analizy danych bez ingerencji w operacyjną pracę systemów transakcyjnych.} --
@@ -64,7 +64,7 @@ Zgodnie z tą definicją Hurtownią danych jest bazą danych mającą następuj�
 \subsection{OLAP a OLTP}
 Przetwarzanie analityczne danych \ang{On-Line Analytical Processing, OLAP} 
  i~przetwarzanie transakcyjne \ang{On-Line Transactional Processing,  OLTP}
- są to systemy optymalizowane pod kątem przetwarzania danych.
+ są to systemy optymalizowane pod kątem przetwarzania danych. \cite{Vincent_Rainardi} \cite{TodMan}
 
 System OLTP jest przeznaczony dla pracowników, komunikujących się 
  z Systemem bazodanowym w celu uzyskania informacji 
@@ -97,7 +97,7 @@ Systemy wspomagania decyzji \ang{decision support systems} tworzone są
  w celu szukania minimalizacji kosztów prowadzonej działalności,
  lepszego przewidywania ryzyka podejmowanych działań, podniesienia jakości obsługi klienta. System OLAP jest 
  jednym z takich narzędzi, które wspierają podejmowanie decyzji.
-Przykładowymi pytaniami na które system powinien odpowiedzieć są:
+Przykładowymi pytaniami na które system powinien odpowiedzieć są\cite{TodMan} :
  \begin{enumerate}
   \item Jaki był dochód w rozbiciu na poszczególnych klientów?
   \item Jaki był procentowy wzrost lub spadek dochodu w porównaniu z zeszył miesiącem?
@@ -116,7 +116,7 @@ Hurtownie danych odniosły sukces związanym z zarządzanie relacjami z klientem
    i~żeby osiągnął sukces musi on być ukierunkowany na klienta, czyli pod jego wymagania, 
    które opierają się na intuicji.
    Na rysunku \ref{fig:AHD} przedstawia główne elementy hurtowni danych oraz kierunek przepływu danych. Przy użyciu 
-   strzałek został pokazany przepływ danych.
+   strzałek został pokazany przepływ danych.\cite{TodMan} \cite{link_hd}
 
 \begin{center}
 \begin{figure}[H]
@@ -151,7 +151,7 @@ Strukturę przepływu danych możemy podzielić na:
 Tworzenie hurtowni danych jest stosunkowo młodą dziedziną, która się dynamicznie rozwija.
 Dzięki zastosowaniom CRM odniosły one sukces co spowodowało większe zapotrzebowanie na przechowywanie
  i~analizowanie danych historycznych. Przedstawiona architektura danych na rysunku \ref{fig:AHD}, 
- nie spełnia swojej roli dla Hurtowni Danych, w których przyrost  danych jest bardzo duży.
+ nie spełnia swojej roli dla Hurtowni Danych, w których przyrost  danych jest bardzo duży.\cite{link_hd}
 Poniżej została przedstawione inna architektura danych.
 \begin{center}
 \begin{figure}[H]
@@ -169,7 +169,7 @@ Kolejnym etapem jest załadowanie danych w sposób zagregowany do centralnej hur
 
 
 \section{Projektowanie hurtowni danych.}
-Projektowanie hurtowni danych tak jak relacyjnych baz danych polega na utworzeniu następujących modeli:
+Projektowanie hurtowni danych tak jak relacyjnych baz danych polega na utworzeniu następujących modeli\cite{TodMan}:
 
 \begin{itemize}
  \item \textbf{Model pojęciowy} --- 
@@ -236,7 +236,7 @@ Podstawowymi schematami wielowymiarowego modelu danych są:
 Schemat gwiazdy jest podstawowym schematem wielowymiarowego modelu danych,
  w którym znajduje się jedna tabela faktów połączona z wieloma tabelami wymiarów.
 Tabela faktów w tym schemacie jest w trzeciej postaci normalnej, a tabela wymiarów jest w drugiej postaci normalnej,
-dzięki takiej strukturze możliwe jest szybsze przeglądanie danych poprzez:
+dzięki takiej strukturze możliwe jest szybsze przeglądanie danych poprzez \cite{TodMan} \cite{link_hd}:
 \begin{itemize}
  \item poszczególne wymiary,
  \item sumowanie danych,
@@ -248,7 +248,7 @@ Na rysunku  \ref{fig:gwiazda} został przedstawiona przykładowa architektura sc
 \begin{center}
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{gwiazda.png}
+    \includegraphics[width=0.7\textwidth]{gwiazda.pdf}
   \end{center}
   \caption{Przykładowy schemat gwiazdy w postaci abstrakcyjnej. }
     \label{fig:gwiazda}
@@ -267,14 +267,14 @@ Normalizuję się tabele wymiarów, aby zmniejszyć jej liczebność, dzięki cz
 powinien się znacząco skrócić. 
 Wadą tego podejścia jest, że im bardziej znormalizowana jest tabela wymiarów,  
 to tym bardziej skomplikowane łączenia SQL muszę zostać użyte, aby pobrać odpowiednie
-dane z hurtowni danych. \cite{cube}
+dane z hurtowni danych. \cite{TodMan} \cite{cube}
 
 Przykładowa architektura płatka śniegu został przedstawiona na rysunku \ref{fig:platek_sniegu} .
 
 \begin{center}
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{platek_sniegu.png}
+    \includegraphics[width=0.7\textwidth]{platek_sniegu.pdf}
   \end{center}
   \caption{Przykładowy schemat płatka śniegu w postaci abstrakcyjnej. }
     \label{fig:platek_sniegu}

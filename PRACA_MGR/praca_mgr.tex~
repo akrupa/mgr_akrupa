@@ -134,6 +134,7 @@
   
 \chapter*{Podsumowanie}
 \addcontentsline{toc}{chapter}{Podsumowanie}
+\input{./tresc/podsumowanie}
 
 \listoffigures
 \addcontentsline{toc}{chapter}{Spis rysunków}
