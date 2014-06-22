@@ -32,5 +32,7 @@
 \contentsline {section}{\numberline {4.2}Przyk\IeC {\l }adowe dzia\IeC {\l }ania programu.}{48}
 \contentsline {subsection}{\numberline {4.2.1}Abstrakcyjny przyk\IeC {\l }ad schematu gwiazdy}{48}
 \contentsline {subsection}{\numberline {4.2.2}Realizacja przyk\IeC {\l }adu opisanego w rozdziale 2\hbox {} }{50}
-\contentsline {chapter}{Spis listing\IeC {\'o}w}{52}
-\contentsline {chapter}{Literatura}{55}
+\contentsline {chapter}{Podsumowanie}{53}
+\contentsline {chapter}{Spis rysunk\IeC {\'o}w}{55}
+\contentsline {chapter}{Spis listing\IeC {\'o}w}{55}
+\contentsline {chapter}{Literatura}{59}

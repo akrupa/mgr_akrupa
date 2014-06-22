@@ -16,32 +16,31 @@ Jeżeli projekt hurtowni danych jest nie ukierunkowany pod danego klienta lub pr
  to staje się dużą stratą dla firmy.\cite{TodMan}
 
 Celem pracy jest napisanie języka wysokiego poziomu, 
- który pomoże programistą w tworzeniu procesów zasilających hurtownie danych.
+ który pomoże programistom w tworzeniu procesów zasilających hurtownie danych.
  Zadaniem owego języka, na podstawie podanych poleceń jest wygenerowanie:
 
 \begin{itemize}
  \item szablonu pobierającego dane (źródło),
- \item szablonu pgloader lub gotowe polecenia insert,
+ \item szablonu pgloader lub gotowego polecenia insert,
  \item kodu umożliwiającego utworzenie tabeli,
- \item kodu języka SQL zasilającego table.
+ \item kodu języka SQL zasilającego tabele.
 \end{itemize}
 
-
-Pierwszy rozdział pracy opisuje hurtownie danych i powody jej budowanie,
- jak również  została przedstawiona w nim  architektura hurtowni danych.
+Pierwszy rozdział pracy opisuje hurtownie danych i powody jej budowania,
+ jak również została przedstawiona w nim architektura hurtowni danych.
 Kolejny rozdział opisuje, czym są procesy zasilania hurtowni danych, 
  oraz omawia przykładowe procesy zasilania, które są realizowane w ramach niniejszej pracy.
-Trzeci rozdział niniejszej pracy został poświęcony teorii związanej 
+Trzeci rozdział niniejszej pracy został natomiast poświęcony teorii związanej 
 z~tworzeniem języków interpretowanych.
 
-Ostatni rozdział niniejszej pracy dotyczy opisu programu wraz z przykładem.
- Wszystkie przykłady zamieszczone w niniejszej pracy zostały testowane 
+Ostatni rozdział pracy dotyczy opisu programu wraz z przykładem.
+ Wszystkie przykłady zamieszczone w niniejszej były testowane 
 w składni języka SQL akceptowanego 
-przez PostgreSQL 8.4.14 na systemie ubuntu 10.04LTS.
+przez PostgreSQL 8.4.14 na systemie ubuntu 10.04 LTS.
 Powodami wybrania bazy danych PstgresSQL jest:
 \begin{itemize}
- \item oprogramowaniem bezpłatnym i~uznanym za dobre do zastosowań komercyjnych,
- \item obecnie wykorzystywane w firmie,
+ \item bezpłatne oprogramowanie i uznane za dobre do zastosowań komercyjnych,
+ \item wykorzystywane obecnie w firmie,
     w której zdobywam doświadczenie zawodowe pracując przy tworzeniu warstwy pośredniej hurtowni bazy danych.
 \end{itemize}
 
@@ -49,9 +48,8 @@ Analizator składniowy i leksykalny został utworzony przy użyciu otwartego opr
  które w znaczący sposób ułatwiają tworzenie pierwszych dwóch etapów tworzenia języków interpretowanych i kompilatorów.
 Lex i Yacc są programami,
  które wymagają dużego nakładu pracy,
- aby dobrze zrozumieć ich działanie
- i co tak naprawdę zyskujemy dzięki użyciu ich.
-Ponieważ nie jest celem niniejszej pracy tworzenie języków wysokiego poziomu,
+ by móc dobrze zrozumieć ich działanie i zalety jakich nam dostarczają w tworzeniu języka wysokiego poziomu.
+Ponieważ celem niniejszej pracy nie jest tworzenie języków wysokiego poziomu,
  lecz napisanie go i aby nie odbiegać od głównego celu pracy
  opis działania jak również składni zostanie pominięty.
 

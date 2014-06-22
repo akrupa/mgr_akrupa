@@ -40,7 +40,7 @@
 , keywordstyle=\color{keywordcolor}\bfseries
 , commentstyle=\color{commentcolor}\slshape
 , showstringspaces=false
-, morekeywords={create, CREATE, fact, FACT ,dimension,DIMENSION, pgloader,make, save_dir, user_namem, user_name, base_name, site_web,  exit},
+, morekeywords={create, CREATE, fact, FACT ,dimension,DIMENSION,key,KEY pgloader,make, save_dir, user_namem, user_name, base_name, site_web,  exit},
 , tabsize=1
 , numbers=left
 , numbersep=1.5em
@@ -132,11 +132,11 @@
 
 
   
-%\chapter*{Podsumowanie}
-%\addcontentsline{toc}{chapter}{Podsumowanie}
+\chapter*{Podsumowanie}
+\addcontentsline{toc}{chapter}{Podsumowanie}
 
-%\listoffigures
-%\addcontentsline{toc}{chapter}{Spis rysunków}
+\listoffigures
+\addcontentsline{toc}{chapter}{Spis rysunków}
 
 \renewcommand\lstlistlistingname{Listingi kodu}
 \addcontentsline{toc}{chapter}{Spis listingów}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  21 JUN 2014 23:29
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  22 JUN 2014 15:38
 entering extended mode
  %&-line parsing enabled.
 **praca_mgr.tex
@@ -616,29 +616,44 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 (./przyklady/wy_np.txt [50]) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-) (./przyklady/wy_np2.txt [51])) [52] (./praca_mgr.lol)
-\tf@lol=\write4
-\openout4 = `praca_mgr.lol'.
-
- [53
+) (./przyklady/wy_np2.txt [51])) [52] (./tresc/podsumowanie.tex) [53
 
 
 ] [54
 
 ]
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 160
+(./praca_mgr.lof)
+\tf@lof=\write4
+\openout4 = `praca_mgr.lof'.
+
+ [55
+
+
+] [56
+
+] (./praca_mgr.lol)
+\tf@lol=\write5
+\openout5 = `praca_mgr.lol'.
+
+ [57
+
+
+] [58
+
+]
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 161
 .
 
 (/usr/share/texmf-texlive/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-) [55
+) [59
 
 
 ] (./praca_mgr.aux
 (./tresc/strona-tytulowa.aux)) ) 
 Here is how much of TeX's memory you used:
- 7210 strings out of 495020
- 94327 string characters out of 1181528
+ 7216 strings out of 495020
+ 94419 string characters out of 1181528
  238261 words of memory out of 3000000
  10136 multiletter control sequences out of 15000+50000
  18245 words of font info for 53 fonts, out of 3000000 for 9000
@@ -665,9 +680,9 @@ e/texmf-texlive/fonts/type1/public/pl/plr12.pfb></usr/share/texmf-texlive/fonts
 f-texlive/fonts/type1/public/pl/plsy10.pfb></usr/share/texmf-texlive/fonts/type
 1/public/pl/plsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plti12.pf
 b></usr/share/texmf-texlive/fonts/type1/public/pl/pltt12.pfb>
-Output written on praca_mgr.pdf (55 pages, 443890 bytes).
+Output written on praca_mgr.pdf (59 pages, 446207 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
+ 310 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -46,14 +46,11 @@ void poltest1::testName_base() {
 }
 
 void poltest1::testFact_web_site() {
-     polecenie("fact site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn;");
+     polecenie("site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn npw;");
      CPPUNIT_ASSERT(0==a_error_yacc);
-     polecenie("fact site_web http://i ;");
+     polecenie("site_web http://i gpw;");
      CPPUNIT_ASSERT(0==a_error_yacc);
 
-     polecenie("fact site_web http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn;");
-     CPPUNIT_ASSERT_MESSAGE( w->getFact()->getWeb_site(),  w->getFact()->getWeb_site()=="http://bossa.pl/pub/ciagle/mstock/sesjacgl/sesjacgl.prn") ;
-     CPPUNIT_ASSERT(0==a_error_yacc);
 }
 
 void poltest1::testFact_table() {

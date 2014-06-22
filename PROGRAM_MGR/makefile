@@ -13,16 +13,15 @@ TESTOBJS= test.o p.o testrunner.o
 
 
 LIBS = 
-TESTLIBS =  -lcppunit  -lpthread  -lpqxx -lpq
+TESTLIBS =  
 
 TARGET=main
-TABELA= Tabela.cpp
 app: 
 	$(LEX)  leksykalna.l
 	$(YACC) skladniowa.y
 	$(CC)  -c lex.yy.c
 	$(GCC) -c program.cpp
-	$(GCC) -c $(TABELA)
+	$(GCC) -c Tabela.cpp
 	$(GCC) -c Wprowadzone.cpp
 	$(GCC) -c Tworz.cpp
 	$(GCC) -o main  Tabela.o   Wprowadzone.o Tworz.o program.o lex.yy.o y.tab.c main.cpp 
@@ -34,9 +33,10 @@ t:
 	$(YACC) skladniowa.y
 	$(CC)  -c lex.yy.c
 	$(GCC) -c program.cpp
-	$(GCC) -c $(TABELA)
+	$(GCC) -c Tabela.cpp
 	$(GCC) -c Wprowadzone.cpp
-	$(GCC) -o test Tabela.o  Wprowadzone.o program.o lex.yy.o y.tab.c test.cpp testrunner.cpp -lcppunit
+	$(GCC) -c Tworz.cpp
+	$(GCC) -o test Tabela.o  Wprowadzone.o Tworz.cpp program.o lex.yy.o y.tab.c test.cpp testrunner.cpp -lcppunit
 
 clean:
 	rm -f $(file_analiza)
