@@ -25,8 +25,8 @@
 \contentsline {subsection}{\numberline {3.1.4}Wyra\IeC {\.z}enia regularne}{37}
 \contentsline {section}{\numberline {3.2}J\IeC {\k e}zyk wysokiego poziomu }{38}
 \contentsline {subsection}{\numberline {3.2.1}Analiza leksykalna}{40}
-\contentsline {subsection}{\numberline {3.2.2}Analiza sk\IeC {\l }adniowa}{40}
-\contentsline {subsection}{\numberline {3.2.3}Analiza semantyczna}{41}
+\contentsline {subsection}{\numberline {3.2.2}Analiza sk\IeC {\l }adniowa}{41}
+\contentsline {subsection}{\numberline {3.2.3}Analiza semantyczna}{42}
 \contentsline {chapter}{\numberline {4}Program}{43}
 \contentsline {section}{\numberline {4.1}Opis implementacji programu}{43}
 \contentsline {section}{\numberline {4.2}Przyk\IeC {\l }adowe dzia\IeC {\l }ania programu.}{48}

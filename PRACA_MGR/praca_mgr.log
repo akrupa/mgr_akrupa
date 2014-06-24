@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  22 JUN 2014 19:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  23 JUN 2014 21:32
 entering extended mode
  %&-line parsing enabled.
 **praca_mgr.tex
@@ -585,8 +585,8 @@ r/m/n/12 )\OMS/plsy/m/n/12 j\OT4/cmr/m/n/12 0$ ozna-cza zbiór
 [38] <./obrazy/etapy.pdf, id=167, 398.3382pt x 455.24078pt>
 File: ./obrazy/etapy.pdf Graphic file (type pdf)
 
-<use ./obrazy/etapy.pdf> [39 <./obrazy/etapy.pdf>] [40]
-Overfull \hbox (0.21059pt too wide) in paragraph at lines 263--268
+<use ./obrazy/etapy.pdf> [39] [40 <./obrazy/etapy.pdf>]
+Overfull \hbox (0.21059pt too wide) in paragraph at lines 262--267
 []\OT4/cmr/m/n/12 Najpopularniejszymi me-to-da-mi wy-ko-rzy-sty-wa-ny-mi w ana-
 li-za-to-rach skªa-dnio-wych
  []
@@ -652,10 +652,10 @@ File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 ] (./praca_mgr.aux
 (./tresc/strona-tytulowa.aux)) ) 
 Here is how much of TeX's memory you used:
- 7217 strings out of 495020
- 94428 string characters out of 1181528
- 238265 words of memory out of 3000000
- 10137 multiletter control sequences out of 15000+50000
+ 7218 strings out of 495020
+ 94443 string characters out of 1181528
+ 238276 words of memory out of 3000000
+ 10138 multiletter control sequences out of 15000+50000
  18245 words of font info for 53 fonts, out of 3000000 for 9000
  48 hyphenation exceptions out of 8191
  33i,8n,43p,330b,1547s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -680,7 +680,7 @@ e/texmf-texlive/fonts/type1/public/pl/plr12.pfb></usr/share/texmf-texlive/fonts
 f-texlive/fonts/type1/public/pl/plsy10.pfb></usr/share/texmf-texlive/fonts/type
 1/public/pl/plsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plti12.pf
 b></usr/share/texmf-texlive/fonts/type1/public/pl/pltt12.pfb>
-Output written on praca_mgr.pdf (59 pages, 445862 bytes).
+Output written on praca_mgr.pdf (59 pages, 446751 bytes).
 PDF statistics:
  310 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -191,7 +191,7 @@ Językiem wysokiego poziomu \ang{High-level language} nazywamy język,
 którego składnia i słowa kluczowe języka ułatwiają użytkownikom  napisanie programu, bądź skrypty,
 jak również powinien być on wolny od zależności sprzętowych i systemowych.
 
-Celem niniejszej pracy jest napisanie języka wysokiego poziomu, który będzie językiem interpretowany.
+Celem niniejszej pracy jest napisanie języka wysokiego poziomu, który będzie językiem interpretowanym.
 Na rysunku \ref{fig:etapy} został przedstawione etapy budowania, są to:
 \begin{enumerate}
  \item Analizator leksykalny  --- czynności związane z analizą leksykalną, które  została przedstawiona w podrozdziale  \ref{p_leksykalna},
@@ -199,7 +199,7 @@ Na rysunku \ref{fig:etapy} został przedstawione etapy budowania, są to:
  \item Analizator semantyczny --- czynności związane z analizą semantyczną, które  została przedstawiona w podrozdziale \ref{p_semantyczna},
  \item Wykonywanie instrukcji --- Po przekazaniu polecenia jest ono wykonywane, zgodnie z założeniem programisty lub zwracany jest błąd.
 \end{enumerate}
-Pierwsze trzy etapy budowania oprogramowania są takie samie jak dla kompilatorów i~nazywane tzw. kompilatora.\cite{aho}
+Pierwsze trzy etapy budowania oprogramowania są takie samie jak dla kompilatorów.\cite{aho}
 
  \begin{center}
 \begin{figure}[H]
@@ -229,12 +229,11 @@ czyli jeżeli przesłany strumień znaków należy do  n-tego wyrażenie regular
  \item przesłanie symbolu leksykalnego wraz z modyfikowanym ciągiem znaków
 \end{itemize}
 
-Podczas analiz leksykalne możemy zaprojektować analizator leksykalny, 
-aby mógł wykrywać następujące błędy:
+Moduł analizy leksykalnej może wykrywać następujące błędy
       \begin{itemize}
 	\item   znaki pojawiające się na wejściu nie stanowią żadnego symbolu leksykalnego
-	\item   jeśli na wejściu pojawi się znak nie nieobsługiwany 
-	\item   gdy istniej możliwość przewidzenia błędnych ciągów znaków odpowiadające jakiemuś symbolowi leksykalnemu.
+	\item   jeśli na wejściu pojawi się znak nieobsługiwany 
+	\item   jeśli istniej możliwość przewidzenia błędnych ciągów znaków odpowiadające jakiemuś symbolowi leksykalnemu.
 		Np. operator mniejszy równy \textquotedblleft$>=$\textquotedblright, 
 		często jest pisany niepoprawnie w następujący sposób \textquotedblleft$=<$\textquotedblright.
 		
@@ -250,7 +249,7 @@ Analizator składniowy otrzymuje od analizatora ciąg symboli leksykalnych,
  z regułami gramatyki. 
 Wynikiem działania analizatora składniowego jest drzewo składniowe lub wyświetlenie komunikatów o błędach.
 
-Drzewem składniowy \ang{parse tree} nazywamy hierarchiczną strukturą danych,
+Drzewem składniowym \ang{parse tree} nazywamy hierarchiczną strukturą danych,
  w której węzły odpowiadają:
 \begin{itemize}
   \item  
@@ -261,7 +260,7 @@ Drzewem składniowy \ang{parse tree} nazywamy hierarchiczną strukturą danych,
 
 
 Najpopularniejszymi metodami wykorzystywanymi w analizatorach składniowych
- dla gramatyk są to metody zstępujące i wstępujące.
+ dla gramatyk są zstępujące i wstępujące.
 W metodzie zstępującej drzewo jest tworzone od korzenia do liści,
  a wstępującej odwrotnie od liści do korzenia.
 W obu metodach wejście jest przeglądane od lewej strony.
@@ -270,7 +269,7 @@ Analizator składniowy może wykryć błędy w przypadku,
  gdy strumień symboli leksykalnych nie jest akceptowany przez gramatykę języka.
 Jeżeli zostanie wykryty błąd to analizator składniowy powinien próbować odzyskać kontrolę w celu wykrycia kolejnych błędów
  i~poinformować o nich użytkownika.
-Poniżej zostały następujące strategie\cite{aho}:
+Poniżej zostały  wymienione następujące strategie\cite{aho}:
 \begin{description}
   \item[Tryb paniki] --- 
      Po natrafieniu na błąd,
@@ -296,7 +295,7 @@ Wejściem do analizy semantycznej jest poprawnie zbudowane drzewo składniowe we
 \begin{description}
  \item[Błędy krytyczne] ---
     błędy uniemożliwiające dalszą analizę 
- \item[Błędy tworzące nieoczekiwany] --- 
+ \item[Błędy tworzące nieoczekiwany stan] --- 
     istnieją błędy, które nie zostaną przechwycone i zostanie zwrócony nie oczekiwany wynik. Bardzo,
     częstym przykładem tego typu jest program napisany w języku C, który czyta nie ze swojej pamięci,
  \item[Niepotrzebnie rozbudowane polecenia] --- są to polecenia, które zostały podane nadmiarowe dane.
