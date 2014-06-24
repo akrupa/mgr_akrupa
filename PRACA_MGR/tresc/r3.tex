@@ -188,7 +188,7 @@ Rozważmy przykłady. Niech alfabet $\Sigma$ będzie zbiór liter języka polski
 \section{Język wysokiego poziomu }
 
 Językiem wysokiego poziomu \ang{High-level language} nazywamy język, 
-którego składnia i słowa kluczowe języka ułatwiają użytkownikom  napisanie programu, bądź skrypty,
+którego składnia i słowa kluczowe języka ułatwiają użytkownikom  napisanie programu, bądź skryptu,
 jak również powinien być on wolny od zależności sprzętowych i systemowych.
 
 Celem niniejszej pracy jest napisanie języka wysokiego poziomu, który będzie językiem interpretowanym.
@@ -218,36 +218,33 @@ Zadaniem analizatora leksykalnego jest tworzenie symboli leksykalnych
 z przesłanego przez użytkownika strumienia znaków na wejście. 
 Symbole te są następnie przesyłane  do analizatora składniowego. 
 Symbole leksykalne tworzone są na podstawie tablicy wyrażeń regularnych i odpowiadającym i zadaniom,
-czyli jeżeli przesłany strumień znaków należy do  n-tego wyrażenie regularne w tabeli 
+czyli jeżeli przesłany strumień znaków należy do  n-tego wyrażenie regularne w tabeli, 
  to zostanie wykonana powierzone mu zadanie, 
- którym na przykład
- może być \cite{aho}:
+ którym  może być na przykład \cite{aho}:
 \begin{itemize}
- \item Nie wykonanie żadnego działania (strumień znaków zostanie pominięty)
+ \item nie wykonanie żadnego działania (strumień znaków zostanie pominięty)
  \item przesłanie symbolu leksykalnego do analizatora
- \item przesłanie symbolu leksykalnego do analizatora wraz z ciągiem znaków, które należą do wyrażeniami
- \item przesłanie symbolu leksykalnego do analizatora wraz z modyfikowanym ciągiem znaków
+ \item przesłanie symbolu leksykalnego wraz z ciągiem znaków, które należą do wyrażenia,
+ \item przesłanie symbolu leksykalnego wraz z modyfikowanym ciągiem znaków.
 \end{itemize}
 
-Moduł analizy leksykalnej może wykrywać następujące błędy
-      \begin{itemize}
-	\item   znaki pojawiające się na wejściu nie stanowią żadnego symbolu leksykalnego
-	\item   jeśli na wejściu pojawi się znak nieobsługiwany 
-	\item   jeśli istniej możliwość przewidzenia błędnych ciągów znaków odpowiadające jakiemuś symbolowi leksykalnemu.
-		Np. operator mniejszy równy \textquotedblleft$>=$\textquotedblright, 
-		często jest pisany niepoprawnie w następujący sposób \textquotedblleft$=<$\textquotedblright.
-		
-		
-      \end{itemize}
+Podczas analizy leksykalnej możemy zaprojektować analizator leksykalny, aby mógł wykrywać następujące błędy:
+\begin{itemize}
+ \item  znaki pojawiające się na wejściu nie stanowiące żadnego symbolu leksykalnego,
+ \item  przypadków, w których na wejściu pojawia się znak nieobsługiwany,
+ \item  sytuacji, w których istnieje możliwość przewidywania błędnych ciągów znakowych odpowiadających danemu symbolowi leksykalnemu.
+        Np. operator mniejszy równy \textquotedblleft$>=$\textquotedblright 
+        jest często pisany niepoprawnie w następujący sposób \textquotedblleft$=<$\textquotedblright.
+\end{itemize}
 
 \subsection{Analiza składniowa} \label{p_skladniowa}
 
 
 Analizator składniowy otrzymuje od analizatora ciąg symboli leksykalnych,
- które traktowane są jak symbole terminalne w gramatyce. Zadaniem analizatora składniowego,
+ które traktowane są jak symbole terminalne w gramatyce. Zadaniem analizatora składniowego --
  jest grupowanie symboli leksykalnych i tworzenie drzewa składniowego zgodnie
  z regułami gramatyki. 
-Wynikiem działania analizatora składniowego jest drzewo składniowe lub wyświetlenie komunikatów o błędach.
+ Zatem wynikiem działania analizatora składniowego jest drzewo składniowe lub wyświetlenie komunikatów o błędach.
 
 Drzewem składniowym \ang{parse tree} nazywamy hierarchiczną strukturą danych,
  w której węzły odpowiadają:
@@ -272,33 +269,35 @@ Jeżeli zostanie wykryty błąd to analizator składniowy powinien próbować od
 Poniżej zostały  wymienione następujące strategie\cite{aho}:
 \begin{description}
   \item[Tryb paniki] --- 
-     Po natrafieniu na błąd,
-      analizator usuwa symbole leksykalne z wejścia, 
-      aż natrafi na symbol z ustalonego zbioru od których może rozpocząć się dalsze poszukiwanie błędów.
+     po natrafieniu na błąd,
+     analizator usuwa symbole leksykalne z wejścia, 
+     aż natrafi na symbol z ustalonego zbioru,
+     od których może rozpocząć dalsze poszukiwanie błędów.
   \item[Poziom frazy] --- 
-     Pozwala zmienić lub dodać symbole leksykalne,
+      pozwala zmienić lub dodać symbole leksykalne,
       które umożliwią dalsze dopasowania,
   \item [Produkcja dla błędu] --- 
-     Jeżeli wiemy, 
-      gdzie pojawiają się najczęściej błędy,
-      to możemy dopisać odpowiednią regułę produkcji w gramatyce.
+     jeżeli wiemy, 
+     gdzie pojawiają się najczęściej błędy,
+     to możemy dopisać odpowiednią regułę produkcji w gramatyce.
 \end{description}
 
 \subsection{Analiza semantyczna} \label{p_semantyczna}
 Kolejnym etapem z rysunku \ref{fig:etapy} na stronie \pageref{fig:etapy} jest analiza semantyczna,
  której zadaniem jest sprawdzenie, 
- czy każdy identyfikator jakiegoś działania nazywany operatorem ma odpowiednią ilość składników nazywane argumentami.
+ czy każdy identyfikator jakiegoś działania nazywany operatorem, ma odpowiednią ilość składników nazywanych argumentami.
 Zadaniem analizatora semantycznego jest również sprawdzenie, czy każdy argument ma odpowiedni typ danych.
 Wejściem do analizy semantycznej jest poprawnie zbudowane drzewo składniowe według gramatyk. \cite{aho}
 
  Błędy semantyczne możemy sklasyfikować w następujący sposób \cite{link_semantic}:
 \begin{description}
  \item[Błędy krytyczne] ---
-    błędy uniemożliwiające dalszą analizę 
+    błędy uniemożliwiające dalszą analizę. 
  \item[Błędy tworzące nieoczekiwany stan] --- 
-    istnieją błędy, które nie zostaną przechwycone i zostanie zwrócony nie oczekiwany wynik. Bardzo,
-    częstym przykładem tego typu jest program napisany w języku C, który czyta nie ze swojej pamięci,
- \item[Niepotrzebnie rozbudowane polecenia] --- są to polecenia, które zostały podane nadmiarowe dane.
+    istnieją błędy, które nie zostaną przechwycone i zostanie zwrócony nieoczekiwany wynik.
+   Bardzo częstym przykładem tego typu błędu jest program napisany w języku C,
+    który czyta nie ze swojej pamięci,
+ \item[Niepotrzebnie rozbudowane polecenia] --- są to polecenia, w które zostały podane nadmiarowe dane.
 \end{description}
 
 

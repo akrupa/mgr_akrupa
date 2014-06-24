@@ -1,14 +1,14 @@
-Głównym celem niniejszej pracy było utworzenie języka wysokiego poziomu do tworzenia procesów zasilających hurtownie danych,
- który zautomatyzuje część pracy programisty najbardziej powtarzalną, a więc najmniej ciekawą i najbardziej podatną na błędy.
+Głównym celem niniejszej pracy było utworzenie języka wysokiego poziomu do tworzenia procesów zasilających hurtownie danych, 
+ którego zadaniem będzie częsciowa automatyzacja pracy programisty,
+ która jest najbardziej powtarzalna,
+ a więc najmniej ciekawa i zarazem najbardziej podatna na błędy.
 
-Udało się osiągnąć zamierzony efekt,
- który doprowadził do zmniejszenia ilość kodu do napisania, 
- a więc zwiększenia produktywności,
- świadczą o tym przykłady zamieszczone w podrozdziale \ref{p_r_przyklady}
-
-Program, który został napisany, może być używany jako język generujący hurtownie danych "w locie",
- albo może tylko usprawnić pracę programisty.
-
-Znajomość zasad programowania C++ pozwala na dodanie nowych etapów przetwarzania lub ich usunięcie.
-Natomiast użycie Postgessql i Bash nie umniejsza ogólności utworzonego języka wysokiego poziomu do tworzenia procesów zasilających hurtownie danych.
-
+Dzięki pracy nad projektem języka wysokiego poziomu udało się osiągnąć zamierzony efekt,
+ który doprowadził do zminimalizowania ilości napisanego kodu, 
+ a więc tym samym do zwiększenia produktywności.
+Osiągnięty cel potwierdzają przykłady zamieszczone w podrozdziale \ref{p_r_przyklady}.
+Program, który został stworzony na potrzeby pracy dyplomowej może być używany jako język generujący
+ hurtownie danych "w locie" albo może po prostu usprawnić pracę programisty.
+Znajomość zasad programowania C++ pozwala na dodanie nowych etapów przetwarzania lub ich usunięcie,
+ natomiast użycie PostgreSQL i Bash nie umniejsza ogólności utworzonego języka wysokiego poziomu
+ do tworzenia procesów zasilających hurtownie danych.

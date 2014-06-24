@@ -11,6 +11,6 @@
 \contentsline {lstlisting}{\numberline {2.10} Proces \IeC {\l }adowania danych do tabeli gpw.}{30}
 \contentsline {lstlisting}{\numberline {4.1}Analiza leksykalna przy u\IeC {\.z}yciu LEX'a.}{43}
 \contentsline {lstlisting}{\numberline {4.2}Analiza sk\IeC {\l }adniowa przy u\IeC {\.z}yciu YACC.}{45}
-\contentsline {lstlisting}{\numberline {4.3}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Schemat gwiazdy}{48}
-\contentsline {lstlisting}{\numberline {4.4}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Notowania GPW bez tabeli wymiar\IeC {\'o}w.}{50}
-\contentsline {lstlisting}{\numberline {4.5}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Notowania GPW.}{51}
+\contentsline {lstlisting}{\numberline {4.3}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Schemat gwiazdy}{49}
+\contentsline {lstlisting}{\numberline {4.4}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Notowania GPW bez tabeli wymiar\IeC {\'o}w.}{51}
+\contentsline {lstlisting}{\numberline {4.5}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Notowania GPW.}{52}

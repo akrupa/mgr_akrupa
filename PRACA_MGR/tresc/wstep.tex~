@@ -1,63 +1,39 @@
+Ojcem koncepcji hurtowni danych jest Bill Inmon.
+Napisał on ponad 40 książek związanych z tematyką hurtowni danych.
+Koncepcja ta tłumaczy,
+ w jaki sposób wspomagać osoby zarządzające firmą lub korporacją w podejmowaniu działań strategicznych.
+Hurtownie danych odniosły sukces związany w rozwiązywaniu problemów biznesowych w zarządzaniu relacjami z~klientem,
+ w~skrócie CRM \ang{Customer Relationship Management}.
+Projektowanie jak i tworzenie hurtowni danych jest procesem bardzo złożonym i~kosztownym,
+ który trwa od pół roku do dwóch lat. Firmy podejmujące się inwestowania w rynek hurtowni danych są świadome, 
+ że głównym zadaniem zakupionego produktu nie jest genrowanie zysków tylko dostarczanie wiarygodnych i rzetelnych informacji, 
+ na~podstawie których możliwe jest podjęcie decyzji strategicznych.
+Jeżeli projekt hurtowni danych przechowuje niepoprawne dane, 
+ bądź nie jest odpowiednio przygotowany pod danego klienta, staje się dużą stratą dla firmy.\cite{TodMan}
 
-Ojcem koncepcji hurtowni danych jest Bill Inmon,
- napisał on ponad 40 książek związanych z tą tematyką.
-Koncepcja ta dotyczy,
- jak wspomóc osoby zarządzające firmą,
- korporacją w podejmowaniu działań strategicznych.
-Hurtownie danych odniosły sukces związany z problemami biznesowymi związanymi z zarządzaniem relacjami z~klientem,
- w~skrócie CRM, \ang{Customer Relationship Management}
-Projektowanie jaki i tworzenie hurtowni danych jest procesem bardzo złożonym i~kosztownym,
- który trwa od pół roku do dwóch lat.
-Firmy podejmujące decyzje o inwestycji w utworzenie hurtowni danych,
- są świadome, 
- że nie produkt zakupiony ma generować zyski tylko dostarczać wiarygodnych i rzetelnych informacji, 
- na~podstawie których możliwe jest podjęcie decyzji strategicznych. 
-Jeżeli projekt hurtowni danych jest nie ukierunkowany pod danego klienta lub przechowuje niepoprawne dane, 
- to staje się dużą stratą dla firmy.\cite{TodMan}
-
-Celem pracy jest napisanie języka wysokiego poziomu, 
+Głównym celem tej pracy dyplomowej jest stworzenie języka wysokiego poziomu,
  który pomoże programistom w tworzeniu procesów zasilających hurtownie danych.
- Zadaniem owego języka, na podstawie podanych poleceń jest wygenerowanie:
+ Jednym z najważniejszych założeń owego języka, jest generowanie:
 
 \begin{itemize}
  \item szablonu pobierającego dane (źródło),
  \item szablonu pgloader lub gotowego polecenia insert,
- \item kodu umożliwiający utworzenie tabel,
+ \item kodu umożliwiającego utworzenie tabeli,
  \item kodu języka SQL zasilającego tabele.
 \end{itemize}
 
-Pierwszy rozdział pracy opisuje hurtownie danych i powody jej budowania,
- jak również została przedstawiona w nim architektura hurtowni danych.
-Kolejny rozdział pracy opisuje, czym są procesy zasilania hurtowni danych, 
- oraz omawia przykładowe procesy zasilania, które są realizowane w ramach niniejszej pracy.
-Trzeci rozdział niniejszej pracy został natomiast poświęcony teorii związanej 
-z~tworzeniem języków interpretowanych.
-
-Ostatni rozdział pracy dotyczy opisu programu wraz z przykładem.
- Wszystkie przykłady zamieszczone w niniejszej były testowane 
-w składni języka SQL akceptowanego 
-przez PostgreSQL.
-Powodami wybrania tej bazy danych są:
-\begin{enumerate}
- \item Jest oprogramowaniem bezpłatnym i uznanym za dobre do zastosowań komercyjnych
- \item Baza danych PostgresSQL jest obecnie wykorzystywana w firmie,
-    w której zdobywam doświadczenie zawodowe pracując przy tworzeniu warstwy pośredniej hurtowni bazy danych
-\end{enumerate}
-
-Powodami wybrania bazy danych PstgresSQL są:
+Pierwszy rozdział pracy opisuje hurtownie danych jej architekturę oraz przykłady wykorzystania hurtowni danych.
+Rozdział drugi opisuje, czym są procesy zasilania hurtowni danych oraz omawia przykładowe procesy zasilania, które zostały realizowane w ramach niniejszej pracy.
+Trzeci rozdział został w całości poświęcony teorii związanej z~tworzeniem języków interpretowanych.
+Rozdział czwarty, to opis programu poparty przykładem. Wszystkie przykłady zamieszczone w niniejszej pracy zostały przetestowane w składni języka SQL akceptowanego 
+przez PostgreSQL 8.4.14 na systemie Ubuntu 10.04 LTS. 
+Baza danych PstgresSQL została wybrana z następujących powodów:
 \begin{itemize}
- \item bezpłatne oprogramowanie i uznane za dobre do zastosowań komercyjnych,
- \item wykorzystywane obecnie w firmie,
-    w której zdobywam doświadczenie zawodowe pracując przy tworzeniu warstwy pośredniej hurtowni bazy danych.
+ \item bezpłatne, dobre oprogramowanie do zastosowań komercyjnych,
+ \item wykorzystywane obecnie w firmie, w której zdobywam doświadczenie zawodowe pracując przy tworzeniu warstwy pośredniej hurtowni bazy danych.
 \end{itemize}
 
-%Analizator składniowy i leksykalny został utworzony przy użyciu otwartego oprogramowania LEX i YACC, 
-%które w znaczący sposób ułatwiają tworzenie pierwszych dwóch etapów tworzenia języków interpretowanych i kompilatorów.
-%Lex i Yacc są programami,
-% które wymagają dużego nakładu pracy,
-% by móc dobrze zrozumieć ich działanie i zalety jakich nam dostarczają w tworzeniu języka wysokiego poziomu.
-%Ponieważ celem niniejszej pracy nie jest tworzenie języków wysokiego poziomu,
-% lecz napisanie go i aby nie odbiegać od głównego celu pracy
-% opis działania jak również składni zostanie pominięty.
-
-  
+Analizator składniowy i leksykalny został utworzony przy użyciu otwartego oprogramowania LEX i YACC, 
+które w znaczący sposób ułatwiły pracę w pierwszych dwóch etapach tworzenia języków interpretowanych i kompilatorów.
+Dobre zrozumienie specyfiki działania programów Lex i Yacc, wymaga dużego zaangażowania ze strony programisty i sporego nakładu pracy.
+Aby nie odbiegać od głównego celu pracy opis działania, jak również składni języka zostanie pominięty.

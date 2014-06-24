@@ -23,17 +23,15 @@ itd.
 Językiem formalnym (językiem) nazywamy podzbiór zbioru wszystkich słów nad skończonym alfabetem.
     
 Przykładami języków formalnych mogą być:
-   \begin{itemize}
-     \item zbiór pusty, oznaczany jako \O,
-     \item zbiór zawierający tylko słowo puste  \{$\epsilon$\}
-      \item zbiór programów, które po skompilowaniu i uruchomieniu zawieszą dany komputer,
-      \item zbiór wszystkich poprawnie napisanych nierówności.
-    \end{itemize}
+\begin{itemize}
+ \item zbiór pusty, oznaczany jako \O,
+ \item zbiór zawierający tylko słowo puste  \{$\epsilon$\}
+ \item zbiór programów, które po skompilowaniu i uruchomieniu zawieszą dany komputer,
+ \item zbiór wszystkich poprawnie napisanych nierówności.
+\end{itemize}
 
+W tabeli \ref{refoperacje} zostały zdefiniowane prawa na językach.
   
-  W tabeli \ref{refoperacje} zostały zdefiniowane prawa na językach.
-  
-
 \begin{longtable}{| >{\centering}m{4.5cm}<{\centering} |m{9.5cm}|}
 \caption{Definicja operacji na językach.} \label{refoperacje} \\
 \hline 
@@ -72,28 +70,35 @@ domknięcie $L$ zapisywane $L*$ 	& $$ L* = \bigcup_{i=0}^{+\inf} L^i $$	 $L*$  o
 Języki formalne opisywane są przez \defp{gramatyki formalne},
 to jest uporządkowane czwórki (T,N,P,S), gdzie\cite{aho,link_gramatyka}:
 \begin{itemize}
-     \item T jest skończonym zbiorem symboli terminalnych (inaczej alfabetem), 
-     \item N jest skończonym zbiorem symboli nieterminalnych, przy czym, N$\bigcap$T=\O,
-     \item P jest skończonym zbiorem reguł produkcji postaci  $R_1$: $R_2 ;$, gdzie $R_1$ i $R_2$, 
-	      to symbole które reprezentują ciągi, o skończonej długości, \defp{symboli terminalnych} i \defp{symboli nieterminalnych},
-	      przy czym, symbol $R_1$ musi zawierać co najmniej jeden symbol nieterminalny.	    
-     \item S jest symbolem startowym i należy do zbioru symboli nieterminalnych.  Od symbolu startowego  zaczyna się wyprowadzanie wszystkich słów danego \defp{języka formalnego}.
+ \item T 
+    jest skończonym zbiorem symboli terminalnych (inaczej alfabetem), 
+ \item N 
+    jest skończonym zbiorem symboli nieterminalnych, przy czym, N$\bigcap$T=\O,
+ \item P 
+    jest skończonym zbiorem reguł produkcji postaci  $R_1$: $R_2 ;$,
+    gdzie $R_1$ i $R_2$,
+    to symbole które reprezentują ciągi, o skończonej długości,
+    \defp{symboli terminalnych} i \defp{symboli nieterminalnych},
+    przy czym, symbol $R_1$ musi zawierać co najmniej jeden symbol nieterminalny.	    
+ \item S 
+    jest symbolem startowym i należy do zbioru symboli nieterminalnych.
+   Od symbolu startowego  zaczyna się wyprowadzanie wszystkich słów danego \defp{języka formalnego}.
 \end{itemize}
 
-  
-  Rozpatrzmy przykład gramatyki G, która opisuje język akceptujący słowa postaci \{ $(^n)^n: n \in \mathbb{N}$ \},
-  Gramatyka G ma postać: 
+Rozpatrzmy przykład gramatyki G, która opisuje język akceptujący słowa postaci \{ $(^n)^n: n \in \mathbb{N}$ \},
+ Gramatyka G ma postać: 
 
     G = (  \{ (,) \} , \{S\} , \{S:(S), S: $\epsilon$ \} ,S )
     
-  Słowo ((())) możemy wyprowadzić:
+Słowo ((())) możemy wyprowadzić:
     S: (S) : ((S)) : (((S))) : ((()))
 
-    Do tak opisanego języka należy każde słowo, dla którego możliwe jest wyprowadzenie (utworzenie), przy użyciu reguł produkcji.
-    Jeżeli nie jest możliwe wyprowadzenie słowa to nie należy do języka.
+Do tak opisanego języka należy każde słowo,
+ dla którego możliwe jest wyprowadzenie (utworzenie),
+ przy użyciu reguł produkcji.
+Jeżeli nie jest możliwe wyprowadzenie słowa to nie należy do języka.
 
 \subsection{Klasyfikacja języków} \label{pKlasy}
-   
     
 Avram Noam Chomsky badał języki formalne, czyli podzbiór wszystkich słów nad skończonym alfabetem 
 wyniku tych badań w 1956r. podał klasyfikację języków formalnych, która powszechnie uznawana jest za standard.
@@ -101,34 +106,42 @@ wyniku tych badań w 1956r. podał klasyfikację języków formalnych, która po
 
 Hierarchia ta składa się z czterech klas \cite{aho, link_eng_chomsky, link_pl_chomsky}:
 \begin{itemize}
-\item języki typu 3 - regularne, są to języki opisywane za pomocą gramatyki regularnej,
-		      w której reguły produkcji mogą mieć postać:
-		      \begin{itemize}
-			\item   N:TN
-			\item   N:T
-			\item   N:N
-			\item   N:$\epsilon$
-		      \end{itemize}
-		      gdzie N jest symbolem terminalnym, a T symbolem nieterminalnym.
-\item języka typu 2 - bezkontekstowe, są to języki opisane za pomocą gramatyk bezkontekstowych,
-		      w której reguły produkcji mogą mieć postać:
-				\begin{itemize}
-				 \item N:C
-				\end{itemize}
-		gdzie N jest symbolem nieterminalnym, a C  to symbole które reprezentują ciągi,
-		o skończonej długości, symboli terminalnych i symboli nieterminalnych,	  
-			   
-\item języka typu 1 - kontekstowe, opisywany jest przez gramatykę kontekstową, w~której lewa strona produkcji nie może
-		      zawierać mniej symboli terminalnych i~nieterminalnych niż prawa strona,
+ \item języki typu 3 - regularne,
+   są to języki opisywane za pomocą gramatyki regularnej,
+   w której reguły produkcji mogą mieć postać:
+      \begin{itemize}
+        \item   N:TN
+        \item   N:T
+        \item   N:N
+        \item   N:$\epsilon$
+      \end{itemize}
+  gdzie N jest symbolem terminalnym, a T symbolem nieterminalnym.
 
-\item języka typu 0 - rekurencyjnie przeliczalne, opisywany przez gramatykę rekurencyjnie przeliczalną,  
-		      w której reguły produkcji nie zostały ograniczone. 
+ \item języka typu 2 - bezkontekstowe,
+    są to języki opisane za pomocą gramatyk bezkontekstowych,
+    w której reguły produkcji mogą mieć postać:
+      \begin{itemize}
+	\item N:C
+      \end{itemize}
+    gdzie N jest symbolem nieterminalnym,
+    a C to symbole które reprezentują ciągi,
+    o skończonej długości,
+    symboli terminalnych i symboli nieterminalnych,	  
+			   
+\item języka typu 1 - kontekstowe,
+   opisywany jest przez gramatykę kontekstową, w~której lewa strona produkcji nie może
+   zawierać mniej symboli terminalnych i~nieterminalnych niż prawa strona,
+
+\item języka typu 0 - rekurencyjnie przeliczalne,
+  opisywany przez gramatykę rekurencyjnie przeliczalną,
+  w której reguły produkcji nie zostały ograniczone. 
   
 \end{itemize}
  
-Mówimy, że język należy do danej klasy wtedy, gdy jest możliwe zbudowanie gramatyki, która generuje dany język, 
-a reguły produkcji nie wykraczają poza ograniczenia dla danej klasy.
-
+Mówimy, że język należy do danej klasy wtedy,
+ gdy jest możliwe zbudowanie gramatyki,
+ która generuje dany język,
+ a reguły produkcji nie wykraczają poza ograniczenia dla danej klasy.
 
 \subsection{Wyrażenia regularne}
 
@@ -139,27 +152,22 @@ a reguły produkcji nie wykraczają poza ograniczenia dla danej klasy.
  \item wszystkie symbole należące do alfabetu są wyrażeniami regularnymi,
  \item niech $r$ i $s$ będą wyrażeniami regularnymi, to są nimi również:
       \begin{itemize}
-	\item	$r|s$  (suma),
-	\item	$rs$   (łączność) ,
-	\item   $r*$   (domknięcie),
-	\item   $r+$   (dodatnie domknięcie)
-	\item   $(r)$  (grupowanie).
+       \item $r|s$  (suma),
+       \item $rs$   (łączność) ,
+       \item $r*$   (domknięcie),
+       \item $r+$   (dodatnie domknięcie)
+       \item $(r)$  (grupowanie).
       \end{itemize}
-\item wszystkie wyrażenia regularne są postaci opisanej w punkcie 1 -- 3.
-    
-
-
-
-      
+ \item wszystkie wyrażenia regularne są postaci opisanej w punkcie 1 -- 3.      
 \end{enumerate}
-\defp{Wyrażenie regularne} $r$ służy do opisywania języka regularnego, który będziemy oznaczać $L(r)$.
+
+\defp{Wyrażenie regularne} $r$ służy do opisywania języka regularnego,
+ który będziemy oznaczać $L(r)$.
 Język opisywany przez wyrażenie regularne ma następującą postać:
-  \begin{itemize}
-   
+  \begin{itemize}  
    \item L($\epsilon$) = \{$\epsilon$\}
    \item L($a$) = \{$a$\}, gdzie $a$ jest dowolnym symbolem z alfabetu $\Sigma$
   \end{itemize}
-
 Załóżmy, że $r$ i $s$ jest wyrażeniami regularnymi oznaczającymi języki $L(r)=M$ i $L(s)=L$, wtedy
     \begin{itemize}
      \item $r|s = M\bigcup L$
@@ -183,7 +191,7 @@ Językiem wysokiego poziomu \ang{High-level language} nazywamy język,
 którego składnia i słowa kluczowe języka ułatwiają użytkownikom  napisanie programu, bądź skrypty,
 jak również powinien być on wolny od zależności sprzętowych i systemowych.
 
-Celem niniejszej pracy jest napisanie języka wysokiego poziomu, który będzie językiem interpretowany.
+Celem niniejszej pracy jest napisanie języka wysokiego poziomu, który będzie językiem interpretowanym.
 Na rysunku \ref{fig:etapy} został przedstawione etapy budowania, są to:
 \begin{enumerate}
  \item Analizator leksykalny  --- czynności związane z analizą leksykalną, które  została przedstawiona w podrozdziale  \ref{p_leksykalna},
@@ -191,7 +199,7 @@ Na rysunku \ref{fig:etapy} został przedstawione etapy budowania, są to:
  \item Analizator semantyczny --- czynności związane z analizą semantyczną, które  została przedstawiona w podrozdziale \ref{p_semantyczna},
  \item Wykonywanie instrukcji --- Po przekazaniu polecenia jest ono wykonywane, zgodnie z założeniem programisty lub zwracany jest błąd.
 \end{enumerate}
-Pierwsze trzy etapy budowania oprogramowania są takie samie jak dla kompilatorów i~nazywane tzw. kompilatora.\cite{aho}
+Pierwsze trzy etapy budowania oprogramowania są takie samie jak dla kompilatorów.\cite{aho}
 
  \begin{center}
 \begin{figure}[H]
@@ -217,16 +225,15 @@ czyli jeżeli przesłany strumień znaków należy do  n-tego wyrażenie regular
 \begin{itemize}
  \item Nie wykonanie żadnego działania (strumień znaków zostanie pominięty)
  \item przesłanie symbolu leksykalnego do analizatora
- \item przesłanie symbolu leksykalnego wraz z ciągiem znaków, które należą do wyrażeniami
- \item przesłanie symbolu leksykalnego wraz z modyfikowanym ciągiem znaków
+ \item przesłanie symbolu leksykalnego do analizatora wraz z ciągiem znaków, które należą do wyrażeniami
+ \item przesłanie symbolu leksykalnego do analizatora wraz z modyfikowanym ciągiem znaków
 \end{itemize}
 
-Podczas analiz leksykalne możemy zaprojektować analizator leksykalny, 
-aby mógł wykrywać następujące błędy:
+Moduł analizy leksykalnej może wykrywać następujące błędy
       \begin{itemize}
 	\item   znaki pojawiające się na wejściu nie stanowią żadnego symbolu leksykalnego
-	\item   jeśli na wejściu pojawi się znak nie nieobsługiwany 
-	\item   gdy istniej możliwość przewidzenia błędnych ciągów znaków odpowiadające jakiemuś symbolowi leksykalnemu.
+	\item   jeśli na wejściu pojawi się znak nieobsługiwany 
+	\item   jeśli istniej możliwość przewidzenia błędnych ciągów znaków odpowiadające jakiemuś symbolowi leksykalnemu.
 		Np. operator mniejszy równy \textquotedblleft$>=$\textquotedblright, 
 		często jest pisany niepoprawnie w następujący sposób \textquotedblleft$=<$\textquotedblright.
 		
@@ -242,7 +249,7 @@ Analizator składniowy otrzymuje od analizatora ciąg symboli leksykalnych,
  z regułami gramatyki. 
 Wynikiem działania analizatora składniowego jest drzewo składniowe lub wyświetlenie komunikatów o błędach.
 
-Drzewem składniowy \ang{parse tree} nazywamy hierarchiczną strukturą danych,
+Drzewem składniowym \ang{parse tree} nazywamy hierarchiczną strukturą danych,
  w której węzły odpowiadają:
 \begin{itemize}
   \item  
@@ -253,7 +260,7 @@ Drzewem składniowy \ang{parse tree} nazywamy hierarchiczną strukturą danych,
 
 
 Najpopularniejszymi metodami wykorzystywanymi w analizatorach składniowych
- dla gramatyk są to metody zstępujące i wstępujące.
+ dla gramatyk są zstępujące i wstępujące.
 W metodzie zstępującej drzewo jest tworzone od korzenia do liści,
  a wstępującej odwrotnie od liści do korzenia.
 W obu metodach wejście jest przeglądane od lewej strony.
@@ -262,7 +269,7 @@ Analizator składniowy może wykryć błędy w przypadku,
  gdy strumień symboli leksykalnych nie jest akceptowany przez gramatykę języka.
 Jeżeli zostanie wykryty błąd to analizator składniowy powinien próbować odzyskać kontrolę w celu wykrycia kolejnych błędów
  i~poinformować o nich użytkownika.
-Poniżej zostały następujące strategie\cite{aho}:
+Poniżej zostały  wymienione następujące strategie\cite{aho}:
 \begin{description}
   \item[Tryb paniki] --- 
      Po natrafieniu na błąd,
@@ -288,7 +295,7 @@ Wejściem do analizy semantycznej jest poprawnie zbudowane drzewo składniowe we
 \begin{description}
  \item[Błędy krytyczne] ---
     błędy uniemożliwiające dalszą analizę 
- \item[Błędy tworzące nieoczekiwany] --- 
+ \item[Błędy tworzące nieoczekiwany stan] --- 
     istnieją błędy, które nie zostaną przechwycone i zostanie zwrócony nie oczekiwany wynik. Bardzo,
     częstym przykładem tego typu jest program napisany w języku C, który czyta nie ze swojej pamięci,
  \item[Niepotrzebnie rozbudowane polecenia] --- są to polecenia, które zostały podane nadmiarowe dane.

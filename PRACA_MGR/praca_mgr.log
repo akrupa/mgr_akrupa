@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  23 JUN 2014 21:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  24 JUN 2014 23:52
 entering extended mode
  %&-line parsing enabled.
 **praca_mgr.tex
@@ -470,12 +470,12 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
  [4]
 (./tresc/wstep.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
  [5
 
 
@@ -522,7 +522,13 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ) (./sql/fakt_tabela.sql) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ) (./sql/wymiar_tabela.sql
-[23]) (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+[23])
+Overfull \hbox (1.09392pt too wide) in paragraph at lines 172--175
+[]\OT4/cmr/m/n/12 Cel ten zo-sta-nie zre-ali-zo-wa-ny za po-mo-c¡ skryp-tów po-
+wªo-ki sys-te-mu Li-nux, (przed-
+ []
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
@@ -555,9 +561,9 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ) (./sql/tworz_promo_gpw.sql)
-(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+[29] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-) [29] (./sql/promo_gpw.sql)
+) (./sql/promo_gpw.sql)
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ) (./sql/gpw.sql [30]))
@@ -586,7 +592,7 @@ r/m/n/12 )\OMS/plsy/m/n/12 j\OT4/cmr/m/n/12 0$ ozna-cza zbiór
 File: ./obrazy/etapy.pdf Graphic file (type pdf)
 
 <use ./obrazy/etapy.pdf> [39] [40 <./obrazy/etapy.pdf>]
-Overfull \hbox (0.21059pt too wide) in paragraph at lines 262--267
+Overfull \hbox (0.21059pt too wide) in paragraph at lines 259--264
 []\OT4/cmr/m/n/12 Najpopularniejszymi me-to-da-mi wy-ko-rzy-sty-wa-ny-mi w ana-
 li-za-to-rach skªa-dnio-wych
  []
@@ -603,42 +609,46 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 (./skrypt/skladniowa.y [45]) [46] [47]
-Overfull \hbox (4.85095pt too wide) in paragraph at lines 105--110
-\OT4/cmr/m/n/12 dla ta-be-li fak-tów do-dat-ko-wo two-rzo-na jest jed-na ta-be-
-la cre-ate[]promo[]nazwa[]faktu,
+Overfull \hbox (31.4493pt too wide) in paragraph at lines 101--106
+\OT4/cmr/m/n/12 Dla ta-be-li fak-tów do-dat-ko-wo utwo-rzo-na zo-sta-je jed-na 
+ta-be-la cre-ate[]promo[]nazwa[]faktu,
  []
 
-(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
-File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-) (./przyklady/wy_gwiazda.txt
-[48] [49]) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+[48] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-(./przyklady/wy_np.txt [50]) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+(./przyklady/wy_gwiazda.txt [49])
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-) (./przyklady/wy_np2.txt [51])) [52] (./tresc/podsumowanie.tex) [53
+) [50] (./przyklady/wy_np.txt) [51] (/usr/share/texmf-texlive/tex/latex/ucs/utf
+8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)
+(./przyklady/wy_np2.txt [52])) [53] [54
 
+] (./tresc/podsumowanie.tex) [55
 
-] [54
 
 ]
-(./praca_mgr.lof)
+[56
+
+] (./praca_mgr.lof)
 \tf@lof=\write4
 \openout4 = `praca_mgr.lof'.
-
- [55
-
-
-] [56
-
-] (./praca_mgr.lol)
-\tf@lol=\write5
-\openout5 = `praca_mgr.lol'.
 
  [57
 
 
 ] [58
+
+] (./praca_mgr.lol)
+\tf@lol=\write5
+\openout5 = `praca_mgr.lol'.
+
+ [59
+
+
+] [60
 
 ]
 LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 160
@@ -646,7 +656,7 @@ LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 160
 
 (/usr/share/texmf-texlive/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-) [59
+) [61
 
 
 ] (./praca_mgr.aux
@@ -654,7 +664,7 @@ File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 Here is how much of TeX's memory you used:
  7218 strings out of 495020
  94443 string characters out of 1181528
- 238276 words of memory out of 3000000
+ 237278 words of memory out of 3000000
  10138 multiletter control sequences out of 15000+50000
  18245 words of font info for 53 fonts, out of 3000000 for 9000
  48 hyphenation exceptions out of 8191
@@ -680,9 +690,9 @@ e/texmf-texlive/fonts/type1/public/pl/plr12.pfb></usr/share/texmf-texlive/fonts
 f-texlive/fonts/type1/public/pl/plsy10.pfb></usr/share/texmf-texlive/fonts/type
 1/public/pl/plsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plti12.pf
 b></usr/share/texmf-texlive/fonts/type1/public/pl/pltt12.pfb>
-Output written on praca_mgr.pdf (59 pages, 446751 bytes).
+Output written on praca_mgr.pdf (61 pages, 449525 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
+ 317 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

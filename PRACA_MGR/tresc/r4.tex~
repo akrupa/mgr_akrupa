@@ -5,12 +5,12 @@
 
 
 Analiza leksykalna została zrealizowana, 
-  przy użyciu narzędziu \textit{Lex},
-  który został napisany  przez M. E. Lesk and E. Schmidt. \cite{link_lex}.
-Oprogramowanie to, w znaczący sposób ułatwia tworzenie pierwszego etapu,
- przedstawionego na rysunku \ref{fig:etapy} na stronie \pageref{fig:etapy} 
- i opisanego  w podrozdziale \ref{p_leksykalna}
-Poniżej został przedstawiony cały listing skryptu lex'a,
+  przy użyciu narzędzia \textit{Lex},
+  który został stworzony przez M. E. Lesk and E. Schmidt. \cite{link_lex}.
+Oprogramowanie to w znaczący sposób ułatwia tworzenie pierwszego etapu analizy,
+ który został przedstawiony na rysunku \ref{fig:etapy} na stronie \pageref{fig:etapy} 
+ i dodatkowo opisany  w podrozdziale \ref{p_leksykalna}
+Poniżej został przedstawiony listing skryptu lex'a,
  który w całości realizuje owe zadanie.
 
 \lstinputlisting[ label=l:lex, language=, caption = {Analiza leksykalna przy użyciu LEX'a.}] {"./skrypt/leksykalna.l"}
@@ -20,98 +20,94 @@ Tworzone symbole leksykalne są przekazywane do kolejnego etapu,
  który nazywamy analiza składniową. 
 Etap ten został zrealizowany przy użyciu programu YACC,
  utworzonego przez Stephen C. Johnson.
-Programy LEX i YACC, współpracują ze sobą dzięki czemu tworzenie drzewa składniowego,
+Programy LEX i YACC, współpracują ze sobą, dzięki czemu tworzenie drzewa składniowego,
  którego definicja został podana w rozdziale \ref{p_skladniowa}, 
- staje się znacznie proste.
+ staje się znacznie prostsza.
 Na początku listingu  \ref{l:yacc},
  po słowach kluczowych token zostały przedstawione symbole leksykalne,
 a w dalszej części pełna gramatyka tworzonego języka.
 \lstinputlisting[ label=l:yacc, language=, caption = {Analiza składniowa przy użyciu YACC.}] {"./skrypt/skladniowa.y"}  
 
 
-W niniejszym programie sprawdzenie czy program buduje poprawne drzewo składniowe,
+W niniejszym programie sprawdzenie poprawności budowania drzewa składniowego,
  zostało zrealizowane przy użyciu testów jednostkowych \textit{cppunit}, 
- które postały przy użyciu biblioteki \textit{log4cpp}
+ które powstały z wykorzystaniem biblioteki \textit{log4cpp}.
 
-Program nie sprawdza poprawności atrybutów, ponieważ systemy zarządzające bazą danych sprawdzą je 
- i jeżeli będą nie poprawne,
- zwrócą odpowiedni komunikat,
- a dzięki czemu program utworzony na potrzeby niniejszej pracy staje się wolny od ograniczeń związany 
- z dostępnymi typami w dowolnej bazie danych.
-Odpowiedzialność za poprawne wpisanie typów danych 
- zrzucona jest na programistę,
- ponieważ to on powinien wiedzieć jakiego typu danych oczekuje 
- i czy jest obsługiwany przez dany system zarządzania bazą danych.
+Program nie sprawdza poprawności atrybutów,
+ ponieważ zajmują się tym systemy zarządzające bazą danych. 
+Jeśli atrybuty będą nie poprawne,
+ system zwróci odpowiedni komunikat. 
+Dzięki takiemu rozwiązaniu program utworzony na potrzeby niniejszej pracy
+ staje się wolny od ograniczeń związanych z dostępnymi typami w dowolnej bazie danych.
+Odpowiedzialność za poprawne wpisywanie typów danych, zostaje przeniesiona na programistę,
+ ponieważ to on powinien wiedzieć jakiego typu danych się oczekuje 
+ i czy oczekiwany typ danych jest obsługiwany przez dany system zarządzania bazą danych.
 
-
-Ostatnim etapem jest wykorzystanie drzewa składniowego w zamierzony sposób.
-W naszym programie węzłem może być:
+Ostatnim etapem jest wykorzystanie drzewa składniowego w określony sposób. W naszym programie węzłem może być:
 
  \begin{itemize}
   \item ciąg znaków,
-  \item Klasa Tabela,
-  \item Klasa Kolumna,
+  \item klasa Tabela,
+  \item klasa Kolumna,
  \end{itemize}
-które są umieszczane w klasie Wprowadzone lub od razu wykonywane są na nich działanie.
+które są umieszczane w klasie Wprowadzone lub od razu zostają wykonywane na nich działania.
 
-Działanie programu polega na przyjmowaniu ciągu znaków zakończonych symbolem średnika (;),
- które będziemy nazywać poleceniem, są to np:
+Działanie programu polega na przyjmowaniu ciągu znaków zakończonych symbolem średnika (;), które będziemy nazywać poleceniem.
+Przykładowe polecenia mogą wyglądać następująco:
+
 \begin{itemize}
  \item exit; --- 
-    wyjście z programu;
+    wyjście z programu.
  \item save\_dir --- 
-    nazwa katalogu do zapisu w folderze,
-    w którym został uruchomiony program
- \item user\_name  login;  ---
-    login użytkownika bazy użyty przez skrypt pgloadera,
+    nazwa katalogu do zapisu, w folderze w którym został uruchomiony program.
+ \item user\_name login;  ---
+    login użytkownika bazy danych wykorzystywany przez skrypt pgloadera.
  \item base\_name nazwa; ---
-    nazwa bazy danych użyty przez skrypt pgloadera,
+    nazwa bazy danych wykorzystywana przez skrypt pgloadera.
  \item pgloader nazwa --- 
-    tworzenie skryptu pgloadera, nazwa odpowiada nazwie tabeli w hurtowni danych bez prefiksu inf\_, czyli przed użyciem 
-    wygenerowanego skryptu musi być zdefiniowana tabela intf\_nazwa.
- \item site\_web adres\_strony  nazwa\_pliku ---
-    tworzy skrypt linux o rozszerzeniu *.sh z prefiksem dane, 
-    przedstawiony na listingu \ref{l:skrypt} na stronie \pageref{l:skrypt}
+    utworzenie skryptu pgloadera. Nazwa odpowiada nazwie tabeli w hurtowni danych bez prefiksu inf\_. Przed użyciem wygenerowanego skryptu musi być zdefiniowana tabela intf\_nazwa.
+ \item site\_web adres\_strony nazwa\_pliku ---
+    tworzy skrypt linux'owy o rozszerzeniu *.sh z prefiksem dane, który został przedstawiony na listingu \ref{l:skrypt}, na stronie \pageref{l:skrypt}.
  \item make; ---
-   Na podstawie zgromadzonych tabel wymiarów 
-   i jednej tabeli faktów wygenerowanie plików sql, tworzących tabelki i kolejnych procesów zasilania 
+   Na podstawie zgromadzonych tabel wymiarów i jednej tabeli faktów wygenerowane zostają pliki sql, odpowiedzialne za tworzenie tabeli i kolejnych procesów zasilania.
 \end{itemize}
-Przesyłane są one do analizy leksykalnej i składniowej.
-Wynikiem tych działań jest dodanie odpowiednich wartości do klasy Wyprowadzone 
-lub odrazy wykonanie działania. 
+
+Powyższe polecenia przesyłane są do analizy leksykalnej i składniowej. 
+Wynikiem tych działań jest dodanie odpowiednich wartości do klasy Wyprowadzone lub od razu wykonanie danego działania.
 
  
 \section{Przykładowe działania programu.}  \label{p_r_przyklady}
 
 \subsection{Abstrakcyjny przykład schematu gwiazdy}
-Na listingu \ref{l:wy_gwiazda} został przedstawiony abstrakcyjny przykład zaprezentowany na rysunku \ref{fig:gwiazda}.
-Pierwsze trzy linie zostały wyjaśnione w poprzednim podrozdziale. 
-Następnie tworzone są cztery tabelki wymiarów i jedną faktową
- (kolejność nie ma znaczenia),
+Na listingu \ref{l:wy_gwiazda} został przedstawiony abstrakcyjny przykład,
+ którego schemat widoczny jest na rysunku \ref{fig:gwiazda}.
+Pierwsze trzy linie zostały wyjaśnione w poprzednim podrozdziale.
+Następnie utworzone zostają cztery tabele wymiarów i jedna faktowa (kolejność tutaj nie ma znaczenia). 
 Zapisywane są one w klasie Wprowazdzone.
-
-W linii 30 na omawianym listingu zostało użyte plecenie \textit{make;},
+W linii 30 na omawianym listingu zostało wykorzystane plecenie \textit{make;},
  które generuje następujące pliki:
+ 
   \begin{itemize}
    \item 
-      pliki z prefiksem \textit{create\_} są to pliki tworzące tabele dla odpowiednich procesów
-      dla każdej tabeli wymiarów są to pliki 
+      pliki z prefiksem \textit{create\_} są to pliki tworzące tabele dla odpowiednich procesów.
+      Dla każdej tabeli wymiarów są to pliki 
         \begin{itemize}
          \item  create\_intf\_nazwa\_wymiaru,
          \item  create\_stg\_nazwa\_wymiaru,
          \item  create\_nazwa\_wymiaru,
-      w naszym przykładzie mamy 4 tabelki, więc powinniśmy otrzymać 12 plików, które tworzą dwanaście tabel
+            w naszym przykładzie mamy 4 tabele, więc powinniśmy otrzymać 12 plików 
+            odpowiedzialnych za utworzenie dwunastu tabel
         \end{itemize}
-      dla tabeli faktów dodatkowo tworzona jest jedna tabela create\_promo\_nazwa\_faktu,
+      Dla tabeli faktów dodatkowo utworzona zostaje  jedna tabela create\_promo\_nazwa\_faktu,
       związku z tym otrzymujemy 4 pliki,
-      łącznie mając ich 16. Program poinformuje nas o tworzonych plikach,
+      łącznie mając ich 16. Program poinformuje nas o utworzonych plikach,
       tak jak zostało to zaprezentowane na listingu.
    \item 
       pliki, które nie zaczynają się od \textit{create\_},
-      są to pliki, które są używane co cyklicznego zasilania,
-      kolejność tworzenia plików nie jest przypadkowa,
-      powinny one być uruchamiane w kolejność tworzenia ich,
-      a jest ich łącznie 11, po dwa dla każdego wymiaru i trzy dla faktu.
+      są plikami, wykorzystywanymi do cyklicznego zasilania.
+     Kolejność tworzenia plików nie jest tutaj przypadkowa.
+     Powinny być one uruchamiane w takiej kolejności, w jakiej zostały utworzone.
+     Jest ich łącznie 11, po dwa dla każdego wymiaru i trzy dla faktu.
   \end{itemize}
 
 
@@ -121,7 +117,7 @@ W linii 30 na omawianym listingu zostało użyte plecenie \textit{make;},
 
 W niniejszym podrozdziale został zaprezentowana realizacja omówionego przykładu w podrozdziale \ref{p_r_analiza_procesu}.
 Poprzednim podrozdziale zostało wspomniane, że kolejność tworzenia tabel nie ma znaczenia,
- jest to, spowodowane tym, że po słowach kluczowych  \textit{dimension} i  \textit{key} 
+ jest to spowodowane tym, że po słowach kluczowych  \textit{dimension} i  \textit{key} 
  podczas tworzenia kolumny musi wystąpić nazwa wymiaru. 
 Jeżeli wymiar o tej nazwie nie zostanie zdefiniowany wcześniej to zostanie wygenerowany omówiony przykład.
 
@@ -134,13 +130,13 @@ W ten sposób sygnalizujemy,
 \lstinputlisting[ label=l:wy_np, caption = {Przykład działania programu -- Notowania GPW bez tabeli wymiarów.}] {"./przyklady/wy_np.txt"}
 
 
-Na listingu \ref{l:wy_np2} został przedstawione pełna realizacja owego przykładu.
-Zostało w nim dodana tabela wymiarów,
+Na listingu \ref{l:wy_np2} została przedstawiona pełna realizacja owego przykładu.
+Została w nim dodana tabela wymiarów,
  polecenie tworzące skrypt do pobierania
  i skrypt pgloadera.
 Niestety pobierane dane do tabeli wymiarów wymagają modyfikacji,
- aby mogły być one załadowane do bazy danych przy użyciu skryptu pgloadera,
- a są nimi: 
+ aby mogły być one załadowane do bazy danych przy użyciu skryptu pgloadera.
+ Modyfikacje obejmują: 
 \begin{itemize}
  \item usunięcie trzech pierwszych linii
  \item usunięcie ostatniej linii
