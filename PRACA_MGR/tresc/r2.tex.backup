@@ -1,4 +1,4 @@
-\chapter{Procesy zasilania hurtowni danych}
+\chapter{Procesy zasilania hurtowni danych} \label{r_procesy}
 
 \section{Ogólna koncepcja zasilania hurtowni}
 Hurtownia danych jako system magazynujący dane i wspierający raportowanie stawia sobie 
@@ -92,16 +92,22 @@ Przenoszenie takich rozwiązań do hurtowni danych stwarza potencjał dla proble
  gdyż są sprawdzane wiersz po wierszu,
  a transakcje czasami wręcz nie są możliwe do użycia 
  z uwagi na ograniczenia techniczne przy dużej ilości danych przetwarzanych w hurtowniach. 
-Przykładowo, w systemie zarządzania bazą danych Oracle, transakcje standardowo generują UNDO i REDO, więc zawarcie całości ładowania w jednej transakcji,
- nawet gdyby było technicznie możliwe (bazę można skonfigurować, aby udostępniała wystarczająco dużo miejsca na UNDO i REDO), 
+Przykładowo, w systemie zarządzania bazą danych Oracle,
+ transakcje standardowo generują UNDO i REDO,
+ więc zawarcie całości ładowania w jednej transakcji,
+ nawet gdyby było technicznie możliwe 
+ (bazę można skonfigurować, aby udostępniała wystarczająco dużo miejsca na UNDO i REDO), 
  stwarzałoby olbrzymie problemy wydajnościowe z uwagi na kilkukrotne zwiększenie ilości operacji wejścia/wyjścia 
  (należy pamiętać, że UNDO też jest chronione przez REDO,
  więc ilość operacji dyskowych może wzrosnąć nawet czterokrotnie). 
 Typową „sztuczką” praktyczną bywa np. wyłączenie generowania REDO na poziomie bazy danych. 
- Jeśli chodzi o UNDO, to typowym rozwiązaniem jest podzielenie transakcji na mniejsze części,
- co redukuje ilość UNDO, które musi być przechowywane (każde zatwierdzenie transakcji pozwala na pozbycie się UNDO,
+Jeśli chodzi o UNDO,
+ to typowym rozwiązaniem jest podzielenie transakcji na mniejsze części,
+ co redukuje ilość UNDO, które musi być przechowywane 
+ (każde zatwierdzenie transakcji pozwala na pozbycie się UNDO,
  które zostało wygenerowane przez daną transakcję), 
- ale to już oznacza, że zapewnienie spójności musi leżeć po stronie procesów zasilania. 
+ ale to już oznacza,
+ że zapewnienie spójności musi leżeć po stronie procesów zasilania. 
 Na szczęście zasilanie hurtowni danych jest procesem wsadowym, który w razie czego może zostać powtórzony,
  więc większość tradycyjnych mechanizmów bazodanowych zapewniających ochronę transakcji nie jest potrzebna. 
 Zapewnienie spójności danych jest realizowane w samych procesach ładowania, 
@@ -115,17 +121,19 @@ Wynika to z faktu, że w modelu gwiazdy wymiary są używane do interpretacji da
 Najbardziej istotne jest, aby wszystkie dane faktowe dostępne dla użytkownika były opisane przez wymiary, 
 więc ładowanie wymiarów w pierwszej kolejności zapewnia ten stan rzeczy. 
 
-\section{Analiza przykładowego procesu zasilania}
+
+\section{Analiza przykładowego procesu zasilania} \label{p_r_analiza_procesu}
 Dla zilustrowania koncepcji języka do budowy hurtowni danych oraz jego praktycznego zastosowania,
- zostanie zbudowane przykładowa,
+ zostanie zbudowana przykładowa,
  uproszczona hurtownia danych wraz z procesami zasilania. 
-Tematyką hurtowni będą dane giełdowe, a konkretnie notowania ciągłe z warszawskiej Giełdy Papierów Wartościowych (GPW).
+Tematyką hurtowni będą dane giełdowe,
+ a konkretnie notowania ciągłe z warszawskiej Giełdy Papierów Wartościowych (GPW).
 Wybór ten jest umotywowany powszechną dostępnością danych ---
  każdy może sobie w dowolnej chwili pobrać publicznie dostępne dane z wielu różnych stron internetowych.
 Nie bez znaczenia jest również prostota danych, które są intuicyjnie zrozumiałe dla większości osób 
  i~nie będą wymagały wyjaśniania.
 
-Do zbudowanie hurtowni danych zostanie użyty schemat gwiazdy, 
+Do zbudowania hurtowni danych zostanie użyty schemat gwiazdy, 
  w którym występować będzie jedna tabela faktów, zaprezentowana na listingu \ref{l:fakt},
  wraz z towarzyszącym jej wymiarem pokazanym na listingu \ref{l:wymiar}.
 \lstinputlisting[ label=l:fakt,  language=sql, caption ={Kod tworzący tabelę faktów. }]{"./sql/fakt_tabela.sql"} 
@@ -158,26 +166,29 @@ Dane o cenach akcji GPW są publicznie dostępne w internecie
  i są już wyekstraktowane w postaci gotowych do ściągnięcia plików tekstowych.
 Zatem nie jest konieczne, aby procesy zasilania wykonywały ekstrakcję ze źródła (jakiegoś systemu operacyjnego).
 Zamiast tego, przydatne będzie wykrywanie,
-czy od ostatniego wykonania procesów zasilania pojawiły się nowe pliki z danymi 
+ czy od ostatniego wykonania procesów zasilania pojawiły się nowe pliki z danymi 
  i pobranie wyłącznie nowych danych.
  
-Cel ten zostanie zrealizowany za pomocą skryptów powłoki systemu Linux, przedstawiony na listingu 
-oraz podstawowych narzędzi systemowych dostępnych z poziomu systemu operacyjnego. 
+Cel ten zostanie zrealizowany za pomocą skryptów powłoki systemu Linux,
+ (przedstawiony na listingu)
+ oraz podstawowych narzędzi systemowych dostępnych z poziomu systemu operacyjnego. 
 
 
 \lstinputlisting[ label=l:skrypt, language=sh, caption = {Skrypt pobierający dane serwera bossa.pl .}] {"./skrypt/skrypt_gpw.sh"} 
 
 
-Procesy ETL muszą pobrać dane i przygotować do ładowania, 
- są to wszystkie czynności, które programiści uznają za potrzebne 
+Procesy ETL muszą pobrać dane i przygotować do ładowania. 
+Są to wszystkie czynności, które programiści uznają za potrzebne 
  w celu przygotowania danych do poprawnego załadowania danych do tabelki interfejsowej.
-Czynnościami tymi chociażby może być rozpakowanie danych i rozmieszenie ich w odpowiednich katalogach.
+Czynnościami tymi może być chociażby rozpakowanie danych i rozmieszenie ich w odpowiednich katalogach.
 W naszym rozważanym przykładzie pobieramy plik o nazwie \textit{sesjacgl.prn},
  który jest plikiem tekstowym.
 
-Pliki muszą zostać załadowane do bazy danych w niezmienionej formie celem ich udostępnienia do dalszych przekształceń.
-Czyli trafiają do tabelki interfejsowej, która ma typ zmiennych zgodny z pobranymi danymi źródłowymi. 
-Tabelkę te nazywać będziemy \textit{intf\_pgw}, a ma ona strukturę zaprezentowaną na listingu \ref{l:t_intf_gpw} .
+Pliki muszą zostać załadowane do bazy danych w niezmienionej formie, celem ich udostępnienia do dalszych przekształceń.
+Trafiają one do tabelki interfejsowej,
+ która ma typ zmiennych zgodny z pobranymi danymi źródłowymi. 
+Tabelkę te nazywać będziemy \textit{intf\_pgw},
+ a ma ona strukturę zaprezentowaną na listingu \ref{l:t_intf_gpw} .
 
 \lstinputlisting[ label=l:t_intf_gpw, language=sql, caption = {Kod tworzący tabelkę interfejsową.}] {"./sql/tworz_intf_gpw.sql"} 
 
@@ -193,62 +204,61 @@ W rozwiązaniu zbudowanym na potrzeby niniejszej pracy,
  
 W komercyjnych rozwiązaniach, jeśli archiwizacja danych odbywa się za pomocą plików,
  najczęściej stosowane są specjalistyczne narzędzia do backupów,
- a dane ostatecznie nagrywane są na taśmy. Z uwagi na wysoką cenę tego typu urządzeń 
-oraz łatwą publiczną dostępność danych źródłowych użytych na potrzeby niniejszej pracy, 
-taki poziom dbałości o bezpieczeństwo danych nie jest konieczny. 
+ a dane ostatecznie nagrywane są na taśmy.
+Z uwagi na wysoką cenę tego typu urządzeń 
+ oraz łatwą publiczną dostępność danych źródłowych użytych na potrzeby niniejszej pracy, 
+ taki poziom dbałości o bezpieczeństwo danych nie jest konieczny. 
 
 W celu załadowania danych do bazy danych zostanie użyte narzędzie pgloader,
- które dobrze współpracuje z systemem zarządzania bazą danych Postgres.
+ które dobrze współpracuje z systemem zarządzania bazą danych PostgreSQL.
 Na listingu \ref{l:pgloader} został pokazany skrypt pgloader'a , który realizuje to zadanie.
 
-
 \lstinputlisting[ label=l:pgloader, language=sh, caption = {Skrypt pgloader'a ładujący dane do tabelki interfejsowej.}] {"./skrypt/pgloader.conf"}
-
 
 
 \subsection{Warstwa pośrednia}
 
 Celem warstwy pośredniej jest przekształcenie danych z formatu źródłowego, które znajdują się w tabeli interfejsowej,
 czyli w tabeli \textit{intf\_gpw}, pokazanej na listingu \ref{l:t_intf_gpw},
-na format umożliwiający załadowanie do tabeli docelowej.
+na format umożliwiający załadowanie danych do tabeli docelowej.
 Szczegółowe cele zależą najczęściej od konkretnego rozwiązania i jego architektury,
  a także od ładowanych danych. 
-W przykładzie stworzonym na potrzeby naszej pracy będą to:
+W przykładzie stworzonym na potrzeby tej pracy będą to:
 \begin{enumerate}
  \item \label{wp_stg}
    Usuwanie pobranych duplikatów.
  \item \label{wp_npw}
-  Zasilanie tabel przejściowych wymiarów. W naszym przykładzie, dla uproszczenia będzie zasilana tabela wymiarów pokazana na listingu \ref{l:wymiar},
+  Zasilanie tabel przejściowych wymiarów.
+  W naszym przykładzie, dla uproszczenia będzie zasilana tabela wymiarów pokazana na listingu \ref{l:wymiar},
  \item  \label{wp_promo}
-  Zamian klucza naturalnego, 
+  Zamiana klucza naturalnego, 
    którym jest nazwa papieru wartościowego na wartość \textit{integer}, 
    nadawaną przy użyciu  sekwencji dla każdej nowej nazwy pojawiającej się w tabeli.
 \end{enumerate}
 
 Aby osiągnąć cel wymieniony w  podpunkcie \ref{wp_stg}, 
- musi zostać utworzona tabelka 
- o identycznej strukturze co tabela \textit{intf\_gpw}, pokazana na listingu \ref{l:t_intf_gpw}.
-Kod realizujące owe zadanie został przedstawiony na listingu \ref{l:stg_gpw}
+ musi zostać utworzona tabela  o identycznej strukturze, co tabela \textit{intf\_gpw}, pokazana na listingu \ref{l:t_intf_gpw}.
+Kod realizujący owe zadanie został przedstawiony na listingu \ref{l:stg_gpw}
 \lstinputlisting[ label=l:stg_gpw, language=sql, caption ={ Usuwanie pobranych duplikatów.}] {"./sql/stg_gpw.sql"}
 
 
-W podpunkcie \ref{wp_npw}, zostało wspomnione, 
+W podpunkcie \ref{wp_npw},  wspomniano, 
  że dla uproszczenia przykładu do tabeli wymiarów ładowana jest tylko nazwa tabeli, 
  więc z tego powodu w tym miejscu zasilamy tabele wymiarów nazw papierów wartościowych, 
  a realizujemy to w sposób zaprezentowany na listingu \ref{l:npw_gpw}.
-W przypadku gdyby przykład nie został uproszczony to tabelka ta powinna zostać zasilona w warstwie docelowej opisanej na stronie
-\pageref{warstwa_docelowa} w podrozdziale  \ref{warstwa_docelowa}.
+W przypadku gdyby przykład nie został uproszczony, to tabelka ta powinna zostać zasilona w warstwie docelowej opisanej na stronie
+\pageref{warstwa_docelowa}, w podrozdziale  \ref{warstwa_docelowa}.
 
 \lstinputlisting[ label=l:npw_gpw, language=sql, caption = {Ładowanie danych do tabeli wymiaru -- papierów wartościowych.}] {"./sql/npw.sql"}  
 
-
-Kolejnym etapem jest nadawanie kluczy sztucznych w hurtowni, poprzez zastąpienie klucza naturlanego (nazwy papierów wartosciowych).
+Kolejnym etapem jest nadawanie kluczy sztucznych w hurtowni,
+ poprzez zastąpienie klucza naturalnego (nazwy papierów wartościowych).
 W omawianej warstwie  dokonuje się również  łączenia danych pochodzących z różnych źródeł.
 Dane, które będą zasilać tabelę faktów w naszej hurtowni danych pochodzą z jednego źródła, 
  z tego powodu tabela przejściowa będzie miała bardzo podobną strukturę do tabel opisanych poprzednio.
-Tabele tą będziemy nazywać \textit{promo\_gpw}, zaprezentowaną na listingu \ref{l:t_promo_gpw}
+Tabelę tę będziemy nazywać \textit{promo\_gpw}. Zaprezentowano ją  na listingu \ref{l:t_promo_gpw}
 \lstinputlisting[ label=l:t_promo_gpw, language=sql, caption = {Struktura tabelki promo\_gpw.}] {"./sql/tworz_promo_gpw.sql"} 
-Wykonanie zadania z podpunktu  \ref{wp_promo} ze strony \pageref{wp_promo} 
+Wykonanie zadania z podpunktu  \ref{wp_promo}, ze strony \pageref{wp_promo}, 
 zostało zaprezentowane na listingu \ref{l:promo_gpw}.
 \lstinputlisting[ label=l:promo_gpw, language=sql, caption = {Proces ładowania do tabeli promo\_gpw.}] {"./sql/promo_gpw.sql"} 
 
@@ -256,11 +266,14 @@ zostało zaprezentowane na listingu \ref{l:promo_gpw}.
 
 \subsection{Warstwa docelowa} \label{warstwa_docelowa}
 Celem warstwy docelowej jest załadowanie danych do tabel faktów i wymiarów,
- jak również udostępnianie ich dla użytkowników korzystających z hurtowni danych.
+ jak również udostępnienie ich dla użytkowników korzystających z hurtowni danych.
 
 Dane, które będą zasilać tabelę faktową w naszej hurtowni są dziennymi danymi podsumowującymi cały dzień notowań ciągłych na giełdzie. 
-Tego typu dane, z uwagi na swój charakter, nie zmieniają się po załadowaniu, dlatego
- zostanie pominięty UPDATE danych. Wykona jedynie zostanie operacja INSERT z danych 
+Tego typu dane, 
+ z uwagi na swój charakter,
+ nie zmieniają się po załadowaniu,
+ dlatego zostanie pominięty UPDATE danych. 
+Wykona jedynie zostanie operacja INSERT z danych 
  przygotowanych w tabel \textit{promo\_gpw}, do tabeli faktów \textit{gpw}, 
  co zostało pokazane na listingu \ref{l:gpw}
 

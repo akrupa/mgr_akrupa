@@ -188,7 +188,7 @@ Rozważmy przykłady. Niech alfabet $\Sigma$ będzie zbiór liter języka polski
 \section{Język wysokiego poziomu }
 
 Językiem wysokiego poziomu \ang{High-level language} nazywamy język, 
-którego składnia i słowa kluczowe języka ułatwiają użytkownikom  napisanie programu, bądź skrypty,
+którego składnia i słowa kluczowe języka ułatwiają użytkownikom  napisanie programu, bądź skryptu,
 jak również powinien być on wolny od zależności sprzętowych i systemowych.
 
 Celem niniejszej pracy jest napisanie języka wysokiego poziomu, który będzie językiem interpretowanym.
@@ -199,7 +199,7 @@ Na rysunku \ref{fig:etapy} został przedstawione etapy budowania, są to:
  \item Analizator semantyczny --- czynności związane z analizą semantyczną, które  została przedstawiona w podrozdziale \ref{p_semantyczna},
  \item Wykonywanie instrukcji --- Po przekazaniu polecenia jest ono wykonywane, zgodnie z założeniem programisty lub zwracany jest błąd.
 \end{enumerate}
-Pierwsze trzy etapy budowania oprogramowania są takie samie jak dla kompilatorów.\cite{aho}
+Pierwsze trzy etapy budowania oprogramowania są takie samie jak dla kompilatorów \cite{aho}.
 
  \begin{center}
 \begin{figure}[H]
@@ -229,16 +229,16 @@ czyli jeżeli przesłany strumień znaków należy do  n-tego wyrażenie regular
 \end{itemize}
 
 Podczas analizy leksykalnej możemy zaprojektować analizator leksykalny, aby mógł wykrywać następujące błędy:
+
 \begin{itemize}
- \item  znaki pojawiające się na wejściu nie stanowiące żadnego symbolu leksykalnego,
- \item  przypadków, w których na wejściu pojawia się znak nieobsługiwany,
- \item  sytuacji, w których istnieje możliwość przewidywania błędnych ciągów znakowych odpowiadających danemu symbolowi leksykalnemu.
-        Np. operator mniejszy równy \textquotedblleft$>=$\textquotedblright 
-        jest często pisany niepoprawnie w następujący sposób \textquotedblleft$=<$\textquotedblright.
+ \item znaki pojawiające się na wejściu nie stanowiące żadnego symbolu leksykalnego,
+ \item przypadku, w których na wejściu pojawia się znak nieobsługiwany,
+ \item sytuacje, w których istnieje możliwość przewidywania błędnych ciągów znaków w danym języku, 
+       odpowiadających danemu symbolowi leksykalnemu.
 \end{itemize}
 
-\subsection{Analiza składniowa} \label{p_skladniowa}
 
+\subsection{Analiza składniowa} \label{p_skladniowa}
 
 Analizator składniowy otrzymuje od analizatora ciąg symboli leksykalnych,
  które traktowane są jak symbole terminalne w gramatyce. Zadaniem analizatora składniowego --
@@ -250,11 +250,10 @@ Drzewem składniowym \ang{parse tree} nazywamy hierarchiczną strukturą danych,
  w której węzły odpowiadają:
 \begin{itemize}
   \item  
-    symbolu leksykalnemu, czyli skończonemu  ciągowi symboli terminalnych,
+    liściom drzew, które są symbolami terminalnymi, czyli symbolami leksykalnymi, przesyłanymi przez analizator leksykalny,
   \item  
-    symbolu nieterminalnemu.
+    węzłom wewnętrznym drzewa, które są symbolami nieterminalnymi.
 \end{itemize}
-
 
 Najpopularniejszymi metodami wykorzystywanymi w analizatorach składniowych
  dla gramatyk są zstępujące i wstępujące.
@@ -266,7 +265,7 @@ Analizator składniowy może wykryć błędy w przypadku,
  gdy strumień symboli leksykalnych nie jest akceptowany przez gramatykę języka.
 Jeżeli zostanie wykryty błąd to analizator składniowy powinien próbować odzyskać kontrolę w celu wykrycia kolejnych błędów
  i~poinformować o nich użytkownika.
-Poniżej zostały  wymienione następujące strategie\cite{aho}:
+Poniżej zostały  wymienione następujące strategie \cite{aho}:
 \begin{description}
   \item[Tryb paniki] --- 
      po natrafieniu na błąd,
@@ -283,13 +282,13 @@ Poniżej zostały  wymienione następujące strategie\cite{aho}:
 \end{description}
 
 \subsection{Analiza semantyczna} \label{p_semantyczna}
-Kolejnym etapem z rysunku \ref{fig:etapy} na stronie \pageref{fig:etapy} jest analiza semantyczna,
- której zadaniem jest sprawdzenie, 
- czy każdy identyfikator jakiegoś działania nazywany operatorem, ma odpowiednią ilość składników nazywanych argumentami.
-Zadaniem analizatora semantycznego jest również sprawdzenie, czy każdy argument ma odpowiedni typ danych.
-Wejściem do analizy semantycznej jest poprawnie zbudowane drzewo składniowe według gramatyk. \cite{aho}
+Kolejnym etapem z rysunku \ref{fig:etapy}, na stronie \pageref{fig:etapy} jest analiza semantyczna, 
+której zadaniem jest sprawdzenie zgodości semantyki języka z jego definicją. Poprawnie wykonana 
+analiza semantyczna definuje jaką rolę powinny pełnić zdania w danym języku.
 
- Błędy semantyczne możemy sklasyfikować w następujący sposób \cite{link_semantic}:
+Wejściem do analizy semantycznej jest poprawne zbudowanie drzewa składniowego według gramatyki \cite{aho}.
+
+Błędy semantyczne możemy sklasyfikować w następujący sposób \cite{link_semantic}:
 \begin{description}
  \item[Błędy krytyczne] ---
     błędy uniemożliwiające dalszą analizę. 

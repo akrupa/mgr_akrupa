@@ -138,9 +138,9 @@ Niestety pobierane dane do tabeli wymiarów wymagają modyfikacji,
  aby mogły być one załadowane do bazy danych przy użyciu skryptu pgloadera.
  Modyfikacje obejmują: 
 \begin{itemize}
- \item usunięcie trzech pierwszych linii
- \item usunięcie ostatniej linii
- \item rozdzieleni kolumn znakiem 
+ \item usunięcie trzech pierwszych linii,
+ \item usunięcie ostatniej linii,
+ \item rozdzielenie kolumn znakiem 
 \end{itemize}
 
 

@@ -2,19 +2,27 @@ Ojcem koncepcji hurtowni danych jest Bill Inmon.
 Napisał on ponad 40 książek związanych z tematyką hurtowni danych.
 Koncepcja ta tłumaczy,
  w jaki sposób wspomagać osoby zarządzające firmą lub korporacją w podejmowaniu działań strategicznych.
-Hurtownie danych odniosły sukces związany w rozwiązywaniu problemów biznesowych w zarządzaniu relacjami z~klientem,
+Hurtownie danych odniosły sukces w rozwiązywaniu problemów biznesowych w zarządzaniu relacjami z~klientem,
  w~skrócie CRM \ang{Customer Relationship Management}.
-Projektowanie jak i tworzenie hurtowni danych jest procesem bardzo złożonym i~kosztownym,
- który trwa od pół roku do dwóch lat. Firmy podejmujące się inwestowania w rynek hurtowni danych są świadome, 
- że głównym zadaniem zakupionego produktu nie jest genrowanie zysków tylko dostarczanie wiarygodnych i rzetelnych informacji, 
- na~podstawie których możliwe jest podjęcie decyzji strategicznych.
+Projektowanie jak i tworzenie hurtowni danych jest procesem złożonym i~kosztownym.
+ Firmy podejmujące się inwestowania w rynek hurtowni danych są świadome, 
+ że głównym zadaniem zakupionego produktu nie jest generowanie zysków tylko dostarczanie wiarygodnych i rzetelnych informacji, 
+ na~podstawie których możliwe będzie podejmowanie decyzji strategicznych.
 Jeżeli projekt hurtowni danych przechowuje niepoprawne dane, 
- bądź nie jest odpowiednio przygotowany pod danego klienta, staje się dużą stratą dla firmy.\cite{TodMan}
+ bądź nie jest odpowiednio przygotowany pod danego klienta,
+ staje się dużą stratą dla firmy.\cite{TodMan}
+
+Procesy zasilające hurtownie danych są elementem istotnym i koniecznym każdej hurtowni danych.
+Odpowiadają za cykliczne zasilanie hurtowni danymi pochodzącymi z różnych źródeł. 
+Tworzenie poprawnych procesów jest konieczne do generowania raportów,
+ które dostarczają rzetelnych i wiarygodych informacji,
+ na podstawie których mogą zostać podjęte strategiczne decyzje usprawniające funkcjonowanie firmy.
 
 Głównym celem tej pracy dyplomowej jest stworzenie języka wysokiego poziomu,
- który pomoże programistom w tworzeniu procesów zasilających hurtownie danych.
- Jednym z najważniejszych założeń owego języka, jest generowanie:
-
+który będzie wspomagał tworzenie procesów zasilających hurtownie danych. 
+Język wspomagający tworzenie takich procesów powinien być 
+przede wszystkim intuicyjny i zrozumiały, powinien przyspieszać tworzenie procesów i tym samym zwiększać 
+efektywność pracy programisty. Jednym z najważniejszych założeń owego języka jest generowanie:
 \begin{itemize}
  \item szablonu pobierającego dane (źródło),
  \item szablonu pgloader lub gotowego polecenia insert,
@@ -22,18 +30,20 @@ Głównym celem tej pracy dyplomowej jest stworzenie języka wysokiego poziomu,
  \item kodu języka SQL zasilającego tabele.
 \end{itemize}
 
-Pierwszy rozdział pracy opisuje hurtownie danych jej architekturę oraz przykłady wykorzystania hurtowni danych.
-Rozdział drugi opisuje, czym są procesy zasilania hurtowni danych oraz omawia przykładowe procesy zasilania, które zostały realizowane w ramach niniejszej pracy.
+Pierwszy rozdział pracy opisuje hurtownie danych, jej architekturę oraz przykłady wykorzystania hurtowni danych.
+Rozdział drugi opisuje,
+ czym są procesy zasilania hurtowni danych oraz omawia przykładowe procesy zasilania,
+ które zostały zrealizowane w ramach niniejszej pracy.
 Trzeci rozdział został w całości poświęcony teorii związanej z~tworzeniem języków interpretowanych.
-Rozdział czwarty, to opis programu poparty przykładem. Wszystkie przykłady zamieszczone w niniejszej pracy zostały przetestowane w składni języka SQL akceptowanego 
-przez PostgreSQL 8.4.14 na systemie Ubuntu 10.04 LTS. 
-Baza danych PstgresSQL została wybrana z następujących powodów:
+Rozdział czwarty, to opis programu poparty przykładem.
+Wszystkie przykłady zamieszczone w niniejszej pracy zostały przetestowane w składni języka SQL, akceptowanego 
+przez PostgreSQL 8.4.14, na systemie Ubuntu 10.04 LTS. 
+Baza danych PostgreSQL została wybrana z następujących powodów:
 \begin{itemize}
  \item bezpłatne, dobre oprogramowanie do zastosowań komercyjnych,
- \item wykorzystywane obecnie w firmie, w której zdobywam doświadczenie zawodowe pracując przy tworzeniu warstwy pośredniej hurtowni bazy danych.
+ \item wykorzystywane obecnie w firmie,
+    w której zdobywam doświadczenie zawodowe, pracując przy tworzeniu warstwy pośredniej hurtowni bazy danych.
 \end{itemize}
 
 Analizator składniowy i leksykalny został utworzony przy użyciu otwartego oprogramowania LEX i YACC, 
-które w znaczący sposób ułatwiły pracę w pierwszych dwóch etapach tworzenia języków interpretowanych i kompilatorów.
-Dobre zrozumienie specyfiki działania programów Lex i Yacc, wymaga dużego zaangażowania ze strony programisty i sporego nakładu pracy.
-Aby nie odbiegać od głównego celu pracy opis działania, jak również składni języka zostanie pominięty.
+ które w znaczący sposób ułatwiły pracę w pierwszych dwóch etapach tworzenia języków interpretowanych i kompilatorów.

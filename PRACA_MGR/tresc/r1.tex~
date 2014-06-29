@@ -1,9 +1,9 @@
 \chapter{Hurtownie danych}
 
 
-Definicję Hurtowni Danych \ang{Data Warehouse}  przypisuje się Bill'owi Inmon'owi,
+Definicję Hurtowni Danych \ang{Data Warehouse}  przypisuje się Billowi Inmon'owi,
  który jako pierwszy opisał ją w 1992 roku.
-Zgodnie z tą definicją hurtownią danych jest baza danych mającą następujące cztery cechy. \cite{TodMan}
+Zgodnie z tą definicją hurtownią danych jest baza danych mającą następujące cztery cechy \cite{TodMan}.
 
 \begin{itemize}
  \item Zorientowaną na temat \ang{ Subject-oriented} --- 
@@ -15,10 +15,10 @@ Zgodnie z tą definicją hurtownią danych jest baza danych mającą następują
     lub wybranego obszaru (np. biznesowego).
    Taka hurtownia jest określana jako lokalna hurtownia danych 
     lub tematyczna hurtownia danych \ang{data mart} stanowiąca podzbiór hurtowni danych.
- \item Nie ulotność \ang{Non-volatile} --- 
+ \item Nieulotność \ang{Non-volatile} --- 
     dane przechowywane w hurtowni danych nie są nigdy usuwane, ani modyfikowane. 
    Dane przeznaczone są wyłącznie do odczytu w celu utworzenia raportu na podstawie zadanego zapytania SQL.
- \item integracja \ang{Intergrated} --- 
+ \item Integracja \ang{Intergrated} --- 
     w hurtowni danych znajdują się informacje, 
     przechowywanych przy wykorzystaniu dowolnych technologii. 
     W związku z faktem, że dane pochodzą z całej firmy, musi wystąpić ujednolicenie typów danych.
@@ -30,49 +30,39 @@ Zgodnie z tą definicją hurtownią danych jest baza danych mającą następują
 
 \section{Powody budowania hurtowni danych.}
   
-      Uzasadnieniem budowania hurtowni danych może być:
+Uzasadnieniem budowania hurtowni danych może być:
 \begin{itemize}
- \item \textbf{Przeprowadzenie analizy danych bez ingerencji w operacyjną pracę systemów transakcyjnych.} --
-    analiza danych ze względu na bardzo dużą liczbę danych wymaga złożonych i czasochłonnych obliczeń.
-    Dopuszczalne są zapytania kilku sekundowe, kilku minutowe.
-    Mogą wystąpić nawet zapytania kilku dniowe. 
-    Zapytania te nie mogą wpłynąć na pracę systemu operacyjnego,
-     w którym zapytanie nie może trwać dużej, niż kilka sekund.
-    (np. użytkownik płacący kartą nie wie, czy odpowiedź o akceptacji przyjdzie za jedną sekundę, 
-    czy za 2 minuty.
-    Jest to sytuacja nie dopuszczalna.)
+ \item \textbf{Przetwarzanie analityczne danych} \ang{On-Line Analytical Processing, OLAP} --  
+    z danych zgromadzonych w hurtowni danych są tworzone zestawienia statystyczne,
+    wykresy i~raporty w~różnych okresach czasowych.
+ \item \textbf{Przeprowadzanie analizy danych bez ingerencji w operacyjną pracę systemów transakcyjnych} --
+    analiza danych ze względu na bardzo dużą ich liczbę wymaga złożonych i czasochłonnych obliczeń.
+    Dopuszczalne są zapytania kilkusekundowe, kilkuminutowe, mogą wystąpić nawet zapytania kilkudniowe. 
+    Zapytania te jednak nie mogą wpływać na pracę systemu obsługującego klienta w czasie rzeczywistym,
+    w którym takie zadanie musi zostać zrealizowane w możliwie jak najkrótszym czasie.
 \item \textbf{Całościowy wgląd w dane firmy} --
     firmy bardzo często przechowują dane w różnych aplikacjach oraz na różnych środowiskach sprzętowych.
-    Firma posiada głębszą wiedzę na temat zdarzeń,
-     które miały miejsce w jej firmie,
-     jeżeli ma możliwość zintegrowania danych.
-    Np. Pan K. ma sklep i warsztat samochodowy.
-    Chciałby wiedzieć ile zostało 
-     sprzedanych części samochodowych i~kto naprawiał samochód w jego warsztacie.
+    Firma posiada głębszą wiedzę na temat zdarzeń, które miały miejsce w jej firmie,
+    jeżeli ma możliwość zintegrowania danych. Na przykład osoba posiadająca sklep i warsztat samochodowy, 
+    która chciałaby wiedzieć ile zostało sprzedanych części i~kto naprawiał samochód w jego warsztacie.
 \item \textbf{Dostęp do danych historycznych} -- 
     dzięki danym historycznym możliwe jest wykonywanie analiz,
     z których można wyciągnąć wnioski, przekładające się na realne korzyści dla firmy.
 \item \textbf{Ujednolicenie posiadanych informacji} -- 
    eliminuje tzw. problem wielu wersji prawdy firmy. 
-   Przedstawiony raport opiera się na podstawie danych. 
-   Jeżeli dane pochodzą z różnych źródeł to są to wnioski osoby sporządzającej raport.
-   Firma w jednym obszarze może prosperować bardzo dobrze,
-    ale inny obszar może generować straty,
-    które mogą w późniejszym czasie stać się nawet przyczyną upadku firmy.
-
-\item \textbf{Przetwarzanie analityczne danych} \ang{On-Line Analytical Processing, OLAP} --  
-  z danych zgromadzonych w hurtowni danych są tworzone zestawienia statystyczne,
-   wykresy i~raporty w~różnych okresach czasowych.
-\item \textbf{Wspomaganie decyzji} \ang{Decision Support, DS} - wykonywanie 
-  analizy symulującej scenariusz biznesowy. 
-  
+   Raporty w frimie opierają się na danych pochodzących z różnych sektorów, które mogą generować zyski bądź straty.
+   Firma w jednym obszarze może prosperować bardzo dobrze, zaś w innym może generować duże straty, które mogą w późniejszym czasie 
+   stać się nawet przyczyną upadku tej firmy. Ujednolicenie informacji zebranych z różnych sektorów pozwoli na całościowy wgląd w
+   obecny stan firmy.
+\item \textbf{Wspomaganie decyzji} \ang{Decision Support, DS} -- wykonywanie 
+  analizy symulującej scenariusz biznesowy.
 \end{itemize}
 
 
 \subsection{OLAP a OLTP}
 Przetwarzanie analityczne danych \ang{On-Line Analytical Processing, OLAP} 
  i~przetwarzanie transakcyjne \ang{On-Line Transactional Processing,  OLTP}
- są to systemy optymalizowane pod kątem przetwarzania danych. \cite{Vincent_Rainardi} \cite{TodMan}
+ są to systemy optymalizowane pod kątem przetwarzania danych \cite{TodMan,Vincent_Rainardi}.
 
 System OLTP jest przeznaczony dla pracowników, komunikujących się 
  z systemem bazodanowym w celu uzyskania określonych informacji 
@@ -107,7 +97,7 @@ Systemy wspomagania decyzji \ang{decision support systems} tworzone są
  lepszego przewidywania ryzyka podejmowanych działań, podniesienia jakości w dziale obsługi klienta.
 System OLAP jest 
  jednym z takich narzędzi, które wspierają podejmowanie decyzji.
-Przykładowymi pytaniami, na które system powinien odpowiedzieć są\cite{TodMan} :
+Przykładowymi pytaniami, na które system powinien odpowiedzieć są \cite{TodMan}:
  \begin{enumerate}
   \item Jaki był dochód w rozbiciu na poszczególnych klientów?
   \item Jaki był procentowy wzrost lub spadek dochodu w porównaniu z zeszłym miesiącem?
@@ -129,7 +119,7 @@ Hurtownie danych odniosły sukces związany z zarządzaniem relacjami z klientem
    czyli dostosowany do jego wymagań, 
    które opierają się głównie na intuicji.
    Na rysunku \ref{fig:AHD} przedstawione zostały główne elementy hurtowni danych oraz kierunek przepływu danych.
-   Strzałki pokazują kierunek przepływu danych.\cite{TodMan} \cite{link_hd}
+   Strzałki pokazują kierunek przepływu danych \cite{TodMan,link_hd}.
 
 \begin{center}
 \begin{figure}[H]
@@ -181,7 +171,7 @@ Kolejnym etapem jest załadowanie danych w sposób zagregowany do centralnej hur
 
 
 \section{Projektowanie hurtowni danych.}
-Projektowanie hurtowni danych tak jak relacyjnych baz danych polega na utworzeniu następujących modeli\cite{TodMan}:
+Projektowanie hurtowni danych tak jak relacyjnych baz danych polega na utworzeniu następujących modeli \cite{TodMan}:
 
 \begin{itemize}
  \item \textbf{Model pojęciowy} --- 
@@ -210,7 +200,7 @@ Najpopularniejszymi metodami przyjętymi podczas tworzenia hurtowni danych są:
 
 
 
-\section{Wielowymiarowy danych danych}
+\section{Wielowymiarowy model danych}
 Wielowymiarowym modelem danych \ang{Multidimensional Data Model} 
 nazywamy dane zorganizowane w:
 \begin{itemize}
@@ -247,7 +237,7 @@ Podstawowymi schematami wielowymiarowego modelu danych są:
 Schemat gwiazdy jest podstawowym schematem wielowymiarowego modelu danych,
  w którym znajduje się jedna tabela faktów połączona z wieloma tabelami wymiarów.
 Tabela faktów w powyższym schemacie jest w trzeciej postaci normalnej, a tabela wymiarów jest w drugiej postaci normalnej.
-Dzięki takiej strukturze możliwe jest szybsze przeglądanie danych poprzez \cite{TodMan} \cite{link_hd}:
+Dzięki takiej strukturze możliwe jest szybsze przeglądanie danych poprzez \cite{TodMan, link_hd}:
 \begin{itemize}
  \item poszczególne wymiary,
  \item sumowanie danych,
@@ -265,7 +255,7 @@ Na rysunku  \ref{fig:gwiazda} został przedstawiona przykładowa architektura sc
     \label{fig:gwiazda}
 \end{figure}
 \end{center}
-Poniżej znajduje się listing zapytań do bazy danych w języku postgresql,
+Poniżej znajduje się listing zapytań do bazy danych w języku PostgreSQL,
  który realizuje model logiczny gwiazdy zawarty na rysunku \ref{fig:gwiazda}
 \lstinputlisting[language=sql, caption = {Listing kodu tworzący schemat gwiazdy. } ]{"./sql/gwiazda.sql"}
 
@@ -278,7 +268,7 @@ Normalizuje się tabele wymiarów, aby zmniejszyć jej liczebność, dzięki cze
 powinien się znacząco skrócić. 
 Wadą tego podejścia jest, że im bardziej znormalizowana jest tabela wymiarów,  
  tym bardziej skomplikowane łączenia SQL muszę zostać użyte, aby pobrać odpowiednie
-dane z hurtowni danych. \cite{TodMan} \cite{cube}
+dane z hurtowni danych. \cite{TodMan, cube}
 
 Przykładowa architektura płatka śniegu został przedstawiona na rysunku \ref{fig:platek_sniegu} .
 

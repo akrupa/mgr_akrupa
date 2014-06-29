@@ -1,16 +1,43 @@
-Głównym celem niniejszej pracy było utworzenie języka wysokiego poziomu do tworzenia procesów zasilających hurtownie danych,
- który zautomatyzuje część pracy programisty najbardziej powtarzalną, a więc najmniej ciekawą i najbardziej podatną na błędy.
+Najważniejszym celem niniejszej pracy było stworzenie języka wysokiego poziomu wspomagającego 
+ tworzenie procesów zasilających hurtownie danych.
+Język ten odpowiada za częściową automatyzację pracy programisty, najbardziej powtarzalnych i najmniej ciekawych 
+czynności, a zatem także najbardziej podatnych na błędy.
 
-Udało się osiągnąć zamierzony efekt,
- który doprowadził do zmniejszenia ilość kodu do napisania, 
- a więc zwiększenia produktywności,
- świadczą o tym przykłady zamieszczone w podrozdziale \ref{p_r_przyklady}
+Dzięki pracy nad projektem języka wysokiego poziomu udało się osiągnąć zamierzony efekt, którym było 
+zminimalizowanie ilości napisanego kodu, a tym samym zwiększenie efektywności pracy programisty. 
+Osiągnięty cel potwierdzają listingi przykładowych użyć programu, które zostały zamieszczone 
+w podrozdziale \ref{p_r_przyklady}. 
 
-Program, który został napisany, może być używany jako język generujący hurtownie danych "w locie",
- albo może tylko usprawnić pracę programisty.
-W napisanym programie istnieje możliwość dodania lub usunięcia procesu zasilania
- dla osoby znającej podstawy programowania w języku C++.
+Stworzony na potrzeby pracy program posiada następujące cechy:
 
+\begin{itemize} 
+\item skrypt odpowiedzialny za pobranie pliku z danymi zostaje utworzony przy użcyiu jednego polecenia,
+\item skrypt pgloader'a odpowiedzialny za załadowanie danych do bazy wygenerowany zostaje również przy użyciu jednego polecenia,
+\item raz utworzona tabela wymiarów lub tabela faktów jest wielokrotnie wykorzystywana do tworzenia procesów zasilających,
+\item automatycznie tworzone przez program tabele przejściowe i tabele docelowe pozwalają uniknąć błędów, które pojawiają
+      się często podczas pisania kodu SQL,
+\item język, w którym został napisany program jest prosty i intuicyjny, co pozwala uniknąć błędów składniowych.
+\item elastyczność działania wynikająca z niezależności względem wykorzystywanego systemu bazodanowego. 
+\end{itemize}
 
-5. że użycie Postgresa i basha nie umniejsza ogólności i łatwo można rozszerzyć to na inne bazy danych i języki / technologie
-6. że można łatwo dodawać inne, nowe typy przetwarzań
+Dzięki wielu godzinom poświęconym hurtowniom danych, zauważyłem jak niewiele w tej dziedzinie zostało poświęcone odpowiednim procesom
+automatyzującym i przyspieszającym tworzenie hurtowni danych. Dzięki zdobytemu podczas pisania tej pracy doświadczeniu spostrzegłem
+jak istotne jest to zagadnienie dla dziedziny jaką są hurtownie danych i jak procesy usprawniające tworzenie hurtowni mogą wpłynąć
+na efektywność pracy programistów. Dlatego też za cel obrałem sobie stowrzenie języka wysokiego poziomu, który by tą pracę usprawniał, 
+a zarazem czynił ją łatwiejszą. Program, który został napisany na potrzeby tej pracy dyplomowej może być wykorzystywany 
+jako język generujący hurtownie danych "w locie" albo może po prostu usprawniać pracę programisty zajmującego się hurtowniami danych.
+
+Tworzenie hurtowni danych jest procesem bardzo złożonym, dlatego perspektywa dalszego rozwoju języka daje również szerokie możliwości,
+które nie kończą się bynajmniej na funkcjonalnościach opisanych w powyższej pracy. 
+Dostrzegam wiele potencjalnych funkcjonalności, o które można by rozbudować ten język. Do tych funkcjonalności można zaliczyć:
+
+\begin{enumerate}
+  \item utworzenie skryptu, którego zadaniem byłoby uruchamianie w sposób cykliczny utworzonych procesów zasilających,
+  \item dodawanie lub usuwanie nowych elementów w warstwach procesów zasilających,
+  \item zapisywanie informacji o utworzonych procesach w bazie danych w sposób umożliwiający 
+        stworzenie zapytania zwracającego poprawną kolejność uruchamianych procesów,
+  \item uniwersalność języka sprawia, że może być on w przyszłości rozwijany niezależnie od wykorzystywanego systemu bazodanowego,
+  \item poszerzenie składni języka, która mogła by posłużyć do zapisywania
+        ważnych informacji dotyczących tabel, dzięki czemu będzie możliwe automatyczne tworzenie częściowej dokumentacji w języku \LaTeX,
+  \item utworzone pliki można by przechowywać na dysku w uporządkowanej strukturze katalogów.
+\end{enumerate}

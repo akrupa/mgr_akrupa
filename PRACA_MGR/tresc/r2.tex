@@ -14,7 +14,7 @@ Ogół procesów zasilania jest najczęściej określany skrótem ETL,
 
 \subsection{Ekstrakcja}
 Dane, które ostatecznie trafiają do hurtowni,
- pochodzą z różnych źródeł w firmie lub poza nią i różnią się sposobem dostępu.
+ pochodzą z różnych źródeł firmy lub spoza niej i różnią się sposobem dostępu.
 Źródłami mogą być systemy transakcyjne (transakcje bankowe, system płatności online, systemy obsługi klienta,
  zapisy partii szachowych online itp.),
  logi systemów (logi stron internetowych,
@@ -30,17 +30,14 @@ Różnorodność źródeł stawia po stronie hurtowni danych konieczność ekstr
 Czasami trudność przedstawia samo znalezienie właściwego źródła danych,
  bądź znalezienie kilku źródeł, które razem zawierają potrzebne informacje,
  czasami najtrudniejsze jest wykonanie ekstrakcji 
- (zwłaszcza, jeśli mamy do czynienia z wiekowymi systemami pisanymi kilkadziesiąt lat temu w języku COBOL na komputerach klasy mainframe 
- --- wbrew pozorom tego typu systemy są jeszcze w użyciu).
+ (zwłaszcza, jeżeli mamy do czynienia z systemami, które nie są juz wspierane, a są nadal w użyciu).
 Mogą również pojawić się problemy wydajnościowe związane z transportem danych 
  (
    np. danych jest na tyle dużo,
    że wąskim gardłem staje się przepustowość sieci 
    i należy uciec się do kompresji danych jako do rozwiązania problemu
  ).
-Jednym z problemów do rozwiązania przy ekstrakcji danych jest minimalizacja wpływu procesów ekstrakcji na funkcjonowanie źródła danych 
- --- zazwyczaj systemy transakcyjne nie potrafią sobie poradzić z pobieraniem dużej ilości danych, 
- gdyż same z siebie są zoptymalizowane do szybkich przetwarzań niewielkich ilości danych.
+Jednym z problemów występujących przy ekstrakcji danych jest minimalizacja wpływu procesów ekstrakcji na funkcjonowanie źródła danych. 
 Może okazać się, że próby ekstrakcji danych bezpośrednio z systemu źródłowego są tak wielkim obciążeniem wydajnościowym,
  że doprowadzają do nieakceptowalnych czasów działania systemu transakcyjnego.
 Do typowych rozwiązań należy harmonogramowanie procesów ETL w taki sposób,
@@ -52,12 +49,12 @@ Do typowych rozwiązań należy harmonogramowanie procesów ETL w taki sposób,
 
 
 \subsection{Transformacja}
-Po pobraniu danych, dane muszą zostać przekształcone do wspólnej postaci.
-Wynika to z faktu, że różne źródła, nawet podobne do siebie,
+Po pobraniu danych, dane te muszą zostać przekształcone do wspólnej postaci.
+Wynika to z faktu, że różne źródła, nawet te podobne do siebie,
  przechowują dane w różnej postaci i zakładają różne zależności pomiędzy poszczególnymi elementami. 
-Na przykład, bank powstały w wyniku fuzji kilku innych banków może korzystać z kilku systemów obsługi klienta. 
+Na przykład, bank powstały w wyniku fuzji kilku innych banków może korzystać z różnych systemów obsługi klienta. 
 W jednym systemie kluczowi klienci biznesowi mogą mieć przypisanego jednego opiekuna
- i taka bieżąca informacja jest dostępna w systemie źródłowym,
+ i taka informacja jest dostępna w systemie źródłowym,
  modelowana jako relacja jeden do wielu (jeden opiekun dla wielu klientów), 
  natomiast w drugim systemie może to być relacja wiele do wielu z archiwizacją historii przypisań opiekunów do klientów.
 Dane w systemach transakcyjnych bardzo często są zgodne z trzecią postacią normalną,
@@ -169,7 +166,7 @@ Zamiast tego, przydatne będzie wykrywanie,
  czy od ostatniego wykonania procesów zasilania pojawiły się nowe pliki z danymi 
  i pobranie wyłącznie nowych danych.
  
-Cel ten zostanie zrealizowany za pomocą skryptów powłoki systemu Linux,
+Cel ten zostanie zrealizowany za pomocą skryptów powłoki systemu UNIX,
  (przedstawiony na listingu)
  oraz podstawowych narzędzi systemowych dostępnych z poziomu systemu operacyjnego. 
 
@@ -202,16 +199,14 @@ W rozwiązaniu zbudowanym na potrzeby niniejszej pracy,
  archiwizacja będzie odbywać się za pomocą kompresji plików i przeniesienia ich do dedykowanego katalogu, 
  co zostało pokazane na listingu \ref{l:skrypt}. 
  
-W komercyjnych rozwiązaniach, jeśli archiwizacja danych odbywa się za pomocą plików,
- najczęściej stosowane są specjalistyczne narzędzia do backupów,
- a dane ostatecznie nagrywane są na taśmy.
-Z uwagi na wysoką cenę tego typu urządzeń 
- oraz łatwą publiczną dostępność danych źródłowych użytych na potrzeby niniejszej pracy, 
- taki poziom dbałości o bezpieczeństwo danych nie jest konieczny. 
+Jeśli w komercyjnych rozwiązaniach, archiwizacja danych odbywa się za pomocą plików,
+ najczęściej stosowane są specjalistyczne narzędzia do tworzenia kopii zapasowych.
 
-W celu załadowania danych do bazy danych zostanie użyte narzędzie pgloader,
- które dobrze współpracuje z systemem zarządzania bazą danych PostgresSql.
-Na listingu \ref{l:pgloader} został pokazany skrypt pgloader'a , który realizuje to zadanie.
+W programie stworzonym na potrzeby tej pracy dyplomowej zostało wykorzystane narzędzie pgloader (stworzone przez Dimitri Fontaine'a),
+służące do załadowania danych do bazy. Narzędzie pgloader dobrze współpracuje z systemem zarządzania bazą danych PostgreSQL.
+ Najważniejszą zaletą tego narzędzia jest ładowanie danych w sposób równoległy, co pozwala na wykorzystanie
+ większej mocy obliczeniowej maszyny, poprzez uruchomienie wielu wątków.
+Na listingu \ref{l:pgloader} został pokazany skrypt pgloader'a, który realizuje to zadanie.
 
 \lstinputlisting[ label=l:pgloader, language=sh, caption = {Skrypt pgloader'a ładujący dane do tabelki interfejsowej.}] {"./skrypt/pgloader.conf"}
 
