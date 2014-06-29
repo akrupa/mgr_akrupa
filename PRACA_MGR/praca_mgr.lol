@@ -10,7 +10,8 @@
 \contentsline {lstlisting}{\numberline {2.9}Proces \IeC {\l }adowania do tabeli promo\_gpw.}{29}
 \contentsline {lstlisting}{\numberline {2.10} Proces \IeC {\l }adowania danych do tabeli gpw.}{30}
 \contentsline {lstlisting}{\numberline {4.1}Analiza leksykalna przy u\IeC {\.z}yciu LEX'a.}{43}
-\contentsline {lstlisting}{\numberline {4.2}Analiza sk\IeC {\l }adniowa przy u\IeC {\.z}yciu YACC.}{45}
-\contentsline {lstlisting}{\numberline {4.3}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Schemat gwiazdy}{49}
-\contentsline {lstlisting}{\numberline {4.4}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Notowania GPW bez tabeli wymiar\IeC {\'o}w.}{51}
-\contentsline {lstlisting}{\numberline {4.5}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Notowania GPW.}{52}
+\contentsline {lstlisting}{\numberline {4.2}Gramatyka j\IeC {\k e}zyka w notacji EBNF.}{45}
+\contentsline {lstlisting}{\numberline {4.3}Gramatyka j\IeC {\k e}zyka w sk\IeC {\l }adni j\IeC {\k e}zyka YACC.}{46}
+\contentsline {lstlisting}{\numberline {4.4}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Schemat gwiazdy}{50}
+\contentsline {lstlisting}{\numberline {4.5}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Notowania GPW bez tabeli wymiar\IeC {\'o}w.}{52}
+\contentsline {lstlisting}{\numberline {4.6}Przyk\IeC {\l }ad dzia\IeC {\l }ania programu -- Notowania GPW.}{53}

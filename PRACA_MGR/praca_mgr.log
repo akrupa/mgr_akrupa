@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  29 JUN 2014 11:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.7)  29 JUN 2014 18:24
 entering extended mode
  %&-line parsing enabled.
 **praca_mgr.tex
@@ -607,32 +607,37 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 [43
 
 
-]) [44] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
-File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+]) [44]
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 27.
+
+ (/usr/share/texmf-texlive/tex/latex/polski/ot4cmtt.fd
+File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-(./skrypt/skladniowa.y [45]) [46] [47]
-Overfull \hbox (31.4493pt too wide) in paragraph at lines 101--106
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+) (./tresc/EBNF.y [45])
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+) (./skrypt/skladniowa.y
+[46] [47]) [48] [49]
+Overfull \hbox (31.4493pt too wide) in paragraph at lines 119--124
 \OT4/cmr/m/n/12 Dla ta-be-li fak-tów do-dat-ko-wo utwo-rzo-na zo-sta-je jed-na 
 ta-be-la cre-ate[]promo[]nazwa[]faktu,
  []
 
-[48] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
-File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)
-(./przyklady/wy_gwiazda.txt [49])
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-) [50] (./przyklady/wy_np.txt) [51] (/usr/share/texmf-texlive/tex/latex/ucs/utf
-8x.def
+) (./przyklady/wy_gwiazda.txt
+[50]) [51] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-(./przyklady/wy_np2.txt [52])) [53] [54
+(./przyklady/wy_np.txt [52]) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+) (./przyklady/wy_np2.txt [53])) [54] (./tresc/podsumowanie.tex [55
 
-] (./tresc/podsumowanie.tex [55
 
-
-])
-[56] (./praca_mgr.lof)
+]) [56]
+(./praca_mgr.lof)
 \tf@lof=\write4
 \openout4 = `praca_mgr.lof'.
 
@@ -651,50 +656,52 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ] [60
 
 ]
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 160
-.
-
-(/usr/share/texmf-texlive/tex/latex/polski/ot4cmtt.fd
-File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-) [61
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+[]$\OT4/cmtt/m/n/12 http : / / etl-[]tools . info / pl / bi / hurtownia _ danyc
+h _ schemat-[]gwiazdy . htm$\OT4/cmr/m/n/12 ,
+ []
 
 
-] (./praca_mgr.aux
-(./tresc/strona-tytulowa.aux))
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+[]$\OT4/cmtt/m/n/12 http : / / dbs . informatik . uni-[]halle . de / sqllint / 
+semerr _ techrep . pdf$\OT4/cmr/m/n/12 , dnia
+ []
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+[61
 
- ) 
+
+] (./praca_mgr.aux (./tresc/strona-tytulowa.aux)) ) 
 Here is how much of TeX's memory you used:
- 7218 strings out of 495020
- 94443 string characters out of 1181528
- 225619 words of memory out of 3000000
- 10138 multiletter control sequences out of 15000+50000
+ 7229 strings out of 495020
+ 94657 string characters out of 1181528
+ 224630 words of memory out of 3000000
+ 10144 multiletter control sequences out of 15000+50000
  18245 words of font info for 53 fonts, out of 3000000 for 9000
  48 hyphenation exceptions out of 8191
  33i,8n,43p,330b,1547s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texmf-texli
-ve/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/pl/plm
-s.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/pl/plme.enc}{/usr/share/texmf-t
-exlive/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/pl
-/plit.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/pl/plsc.enc}</usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/latxfont/lcircle1.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/symbols/msbm10.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plbx12.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/pl/plbx8.pfb></usr/share/texmf-tex
-live/fonts/type1/public/pl/plbxti10.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/pl/plcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plex10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/pl/plmi12.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/pl/plmi8.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/pl/plr12.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plr17.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/pl/plr8.pfb></usr/share/texmf-texlive
-/fonts/type1/public/pl/plsl8.pfb></usr/share/texmf-texlive/fonts/type1/public/p
-l/plsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plsy8.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/pl/plti12.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/pl/pltt12.pfb>
-Output written on praca_mgr.pdf (61 pages, 451055 bytes).
+{/usr/share/texmf-texlive/fo
+nts/enc/dvips/pl/pltt.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/pl/plmi.enc
+}{/usr/share/texmf-texlive/fonts/enc/dvips/pl/plms.enc}{/usr/share/texmf-texliv
+e/fonts/enc/dvips/pl/plme.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/pl/plrm
+.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/pl/plit.enc}{/usr/share/texmf-te
+xlive/fonts/enc/dvips/pl/plsc.enc}</usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/pl/plbx12.pfb></usr/share/texmf-texlive/font
+s/type1/public/pl/plbx8.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plb
+xti10.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plcsc10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/pl/plex10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/pl/plmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/p
+lmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plr12.pfb></usr/share/
+texmf-texlive/fonts/type1/public/pl/plr17.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/pl/plr8.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/plsl8.p
+fb></usr/share/texmf-texlive/fonts/type1/public/pl/plsy10.pfb></usr/share/texmf
+-texlive/fonts/type1/public/pl/plsy8.pfb></usr/share/texmf-texlive/fonts/type1/
+public/pl/plti12.pfb></usr/share/texmf-texlive/fonts/type1/public/pl/pltt12.pfb
+>
+Output written on praca_mgr.pdf (61 pages, 460030 bytes).
 PDF statistics:
  317 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

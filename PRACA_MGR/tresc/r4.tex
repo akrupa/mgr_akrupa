@@ -18,6 +18,24 @@ Poniżej został przedstawiony listing skryptu lex'a,
 
 Tworzone symbole leksykalne są przekazywane do kolejnego etapu,
  który nazywamy analiza składniową. 
+Polega ona na przekształceniu symboli leksykalnych, przy użyciu gramatyki w drzewo składniowe.
+Na listingu \ref{l:gramatyka} został przedstawiony opis utworzonej gramatyki  
+ w rozszerzonej notacja Backusa-Naura   \ang{ EBNF, Extended Backus-Naur Form},
+ w której:
+\begin{itemize}
+ \item symbolami terminalnymi są:
+\begin{verbatim}
+EXIT  SAVE_DIR TABLE_NAME BASE_NAME USER_NAME
+MAKE NUMBER IDENTIFIER 
+CREATE KEY FACT DIMENSION SITE_WEB SITE_WEB_ADDRESS PGLOADER
+LEFTPARENTHESIS RIGHTPARENTHESIS  SEMICOLON COMMA  LEX_ERROR 
+\end{verbatim}
+ \item symbolami nieterminalnymi są nazwy pisane małymi literami z prefiksem y\_
+\end{itemize}
+
+\lstinputlisting[ label=l:gramatyka, language=, caption = {Gramatyka języka w notacji EBNF.}] {"./tresc/EBNF.y"}
+
+
 Etap ten został zrealizowany przy użyciu programu YACC,
  utworzonego przez Stephen C. Johnson.
 Programy LEX i YACC, współpracują ze sobą, dzięki czemu tworzenie drzewa składniowego,
@@ -26,7 +44,7 @@ Programy LEX i YACC, współpracują ze sobą, dzięki czemu tworzenie drzewa sk
 Na początku listingu  \ref{l:yacc},
  po słowach kluczowych token zostały przedstawione symbole leksykalne,
 a w dalszej części pełna gramatyka tworzonego języka.
-\lstinputlisting[ label=l:yacc, language=, caption = {Analiza składniowa przy użyciu YACC.}] {"./skrypt/skladniowa.y"}  
+\lstinputlisting[ label=l:yacc, language=, caption = {Gramatyka języka w składni języka YACC.}] {"./skrypt/skladniowa.y"}  
 
 
 W niniejszym programie sprawdzenie poprawności budowania drzewa składniowego,

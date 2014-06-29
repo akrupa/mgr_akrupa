@@ -3,10 +3,11 @@ Najważniejszym celem niniejszej pracy było stworzenie języka wysokiego poziom
 Język ten odpowiada za częściową automatyzację pracy programisty, najbardziej powtarzalnych i najmniej ciekawych 
 czynności, a zatem także najbardziej podatnych na błędy.
 
-Dzięki pracy nad projektem języka wysokiego poziomu udało się osiągnąć zamierzony efekt, którym było 
-zminimalizowanie ilości napisanego kodu, a tym samym zwiększenie efektywności pracy programisty. 
-Osiągnięty cel potwierdzają listingi przykładowych użyć programu, które zostały zamieszczone 
-w podrozdziale \ref{p_r_przyklady}. 
+Dzięki pracy nad projektem języka wysokiego poziomu udało się osiągnąć zamierzony efekt,
+ którym było zminimalizowanie ilości napisanego kodu,
+ a tym samym zwiększenie efektywności pracy programisty. 
+Osiągnięty cel potwierdzają listingi przykładowych użyć programu,
+ które zostały zamieszczone w podrozdziale \ref{p_r_przyklady}. 
 
 Stworzony na potrzeby pracy program posiada następujące cechy:
 
@@ -20,10 +21,13 @@ Stworzony na potrzeby pracy program posiada następujące cechy:
 \item elastyczność działania wynikająca z niezależności względem wykorzystywanego systemu bazodanowego. 
 \end{itemize}
 
-Dzięki wielu godzinom poświęconym hurtowniom danych, zauważyłem jak niewiele w tej dziedzinie zostało poświęcone odpowiednim procesom
-automatyzującym i przyspieszającym tworzenie hurtowni danych. Dzięki zdobytemu podczas pisania tej pracy doświadczeniu spostrzegłem
-jak istotne jest to zagadnienie dla dziedziny jaką są hurtownie danych i jak procesy usprawniające tworzenie hurtowni mogą wpłynąć
-na efektywność pracy programistów. Dlatego też za cel obrałem sobie stowrzenie języka wysokiego poziomu, który by tą pracę usprawniał, 
+Dzięki wielu godzinom poświęconym hurtowniom danych,
+ zauważyłem jak niewiele w tej dziedzinie zostało poświęcone odpowiednim procesom
+automatyzującym i przyspieszającym tworzenie hurtowni danych.
+Dzięki zdobytemu podczas pisania tej pracy doświadczeniu spostrzegłem
+ jak istotne jest to zagadnienie dla dziedziny jaką są hurtownie danych i jak procesy usprawniające tworzenie hurtowni mogą wpłynąć
+ na efektywność pracy programistów.
+Dlatego też za cel obrałem sobie stowrzenie języka wysokiego poziomu, który by tą pracę usprawniał, 
 a zarazem czynił ją łatwiejszą. Program, który został napisany na potrzeby tej pracy dyplomowej może być wykorzystywany 
 jako język generujący hurtownie danych "w locie" albo może po prostu usprawniać pracę programisty zajmującego się hurtowniami danych.
 

@@ -6,7 +6,7 @@
 
 Analiza leksykalna została zrealizowana, 
   przy użyciu narzędzia \textit{Lex},
-  który został stworzony przez M. E. Lesk and E. Schmidt. \cite{link_lex}.
+  który został stworzony przez M. E. Lesk and E. Schmidt \cite{link_lex}.
 Oprogramowanie to w znaczący sposób ułatwia tworzenie pierwszego etapu analizy,
  który został przedstawiony na rysunku \ref{fig:etapy} na stronie \pageref{fig:etapy} 
  i dodatkowo opisany  w podrozdziale \ref{p_leksykalna}
@@ -18,6 +18,13 @@ Poniżej został przedstawiony listing skryptu lex'a,
 
 Tworzone symbole leksykalne są przekazywane do kolejnego etapu,
  który nazywamy analiza składniową. 
+Polega ona na przekrztałceniu syboli leksykalnych, przy użyciu gramatyki w drzewo składniowe.
+Na listingu \ref{l:gramatyka} został przedstawiony opis utworzonej gramtyki 
+ w rozszerzonej notacja Backusa-Naura   \ang{ EBNF, Extended Backus-Naur Form}
+
+\lstinputlisting[ label=l:gramatyka, language=, caption = {Gramatyka języka w notacji EBNF.}] {"./tresc/EBNF.y"}
+
+
 Etap ten został zrealizowany przy użyciu programu YACC,
  utworzonego przez Stephen C. Johnson.
 Programy LEX i YACC, współpracują ze sobą, dzięki czemu tworzenie drzewa składniowego,
@@ -98,16 +105,16 @@ W linii 30 na omawianym listingu zostało wykorzystane plecenie \textit{make;},
             w naszym przykładzie mamy 4 tabele, więc powinniśmy otrzymać 12 plików 
             odpowiedzialnych za utworzenie dwunastu tabel
         \end{itemize}
-      dla tabeli faktów dodatkowo tworzona jest jedna tabela create\_promo\_nazwa\_faktu,
+      Dla tabeli faktów dodatkowo utworzona zostaje  jedna tabela create\_promo\_nazwa\_faktu,
       związku z tym otrzymujemy 4 pliki,
-      łącznie mając ich 16. Program poinformuje nas o tworzonych plikach,
+      łącznie mając ich 16. Program poinformuje nas o utworzonych plikach,
       tak jak zostało to zaprezentowane na listingu.
    \item 
       pliki, które nie zaczynają się od \textit{create\_},
-      są to pliki, które są używane co cyklicznego zasilania,
-      kolejność tworzenia plików nie jest przypadkowa,
-      powinny one być uruchamiane w kolejność tworzenia ich,
-      a jest ich łącznie 11, po dwa dla każdego wymiaru i trzy dla faktu.
+      są plikami, wykorzystywanymi do cyklicznego zasilania.
+     Kolejność tworzenia plików nie jest tutaj przypadkowa.
+     Powinny być one uruchamiane w takiej kolejności, w jakiej zostały utworzone.
+     Jest ich łącznie 11, po dwa dla każdego wymiaru i trzy dla faktu.
   \end{itemize}
 
 
@@ -130,17 +137,17 @@ W ten sposób sygnalizujemy,
 \lstinputlisting[ label=l:wy_np, caption = {Przykład działania programu -- Notowania GPW bez tabeli wymiarów.}] {"./przyklady/wy_np.txt"}
 
 
-Na listingu \ref{l:wy_np2} został przedstawione pełna realizacja owego przykładu.
-Zostało w nim dodana tabela wymiarów,
+Na listingu \ref{l:wy_np2} została przedstawiona pełna realizacja owego przykładu.
+Została w nim dodana tabela wymiarów,
  polecenie tworzące skrypt do pobierania
  i skrypt pgloadera.
 Niestety pobierane dane do tabeli wymiarów wymagają modyfikacji,
- aby mogły być one załadowane do bazy danych przy użyciu skryptu pgloadera,
- a są nimi: 
+ aby mogły być one załadowane do bazy danych przy użyciu skryptu pgloadera.
+ Modyfikacje obejmują: 
 \begin{itemize}
- \item usunięcie trzech pierwszych linii
- \item usunięcie ostatniej linii
- \item rozdzieleni kolumn znakiem 
+ \item usunięcie trzech pierwszych linii,
+ \item usunięcie ostatniej linii,
+ \item rozdzielenie kolumn znakiem 
 \end{itemize}
 
 

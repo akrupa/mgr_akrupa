@@ -1,6 +1,5 @@
 %token EXIT  SAVE_DIR TABLE_NAME BASE_NAME USER_NAME
-%token MAKE
-%token NUMBER IDENTIFIER 
+%token MAKE  NUMBER IDENTIFIER 
 %token CREATE KEY FACT DIMENSION SITE_WEB SITE_WEB_ADDRESS PGLOADER
 %token  LEFTPARENTHESIS RIGHTPARENTHESIS  SEMICOLON COMMA  LEX_ERROR 
 
@@ -8,7 +7,7 @@
 
 // Polecenie ze średnikiem
 y_polecenie_srednik:
-  y_polecenie SEMICOLON { }   
+  y_polecenie SEMICOLON
 ;
 
 // polecenie bez średnika

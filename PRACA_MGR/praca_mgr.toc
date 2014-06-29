@@ -29,9 +29,9 @@
 \contentsline {subsection}{\numberline {3.2.3}Analiza semantyczna}{42}
 \contentsline {chapter}{\numberline {4}Program}{43}
 \contentsline {section}{\numberline {4.1}Opis implementacji programu}{43}
-\contentsline {section}{\numberline {4.2}Przyk\IeC {\l }adowe dzia\IeC {\l }ania programu.}{48}
-\contentsline {subsection}{\numberline {4.2.1}Abstrakcyjny przyk\IeC {\l }ad schematu gwiazdy}{48}
-\contentsline {subsection}{\numberline {4.2.2}Realizacja przyk\IeC {\l }adu opisanego w rozdziale 2\hbox {} }{50}
+\contentsline {section}{\numberline {4.2}Przyk\IeC {\l }adowe dzia\IeC {\l }ania programu.}{49}
+\contentsline {subsection}{\numberline {4.2.1}Abstrakcyjny przyk\IeC {\l }ad schematu gwiazdy}{49}
+\contentsline {subsection}{\numberline {4.2.2}Realizacja przyk\IeC {\l }adu opisanego w rozdziale 2\hbox {} }{52}
 \contentsline {chapter}{Podsumowanie}{55}
 \contentsline {chapter}{Spis rysunk\IeC {\'o}w}{57}
 \contentsline {chapter}{Spis listing\IeC {\'o}w}{57}
